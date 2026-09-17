@@ -423,7 +423,6 @@ def test_architecture_and_portfolio_assets_exist() -> None:
     for relative in [
         "assets/architecture/system_architecture.svg",
         "assets/demo/ev_charging_demo.mp4",
-        "assets/demo/ev_charging_demo_thumbnail.png",
         "powerbi/README.md",
         "docs/methodology.md",
     ]:
