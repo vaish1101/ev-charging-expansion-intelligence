@@ -1,0 +1,8 @@
+{
+  "warehouse_id": "__WAREHOUSE_ID__",
+  "catalog": "ev_analytics",
+  "schema": "gold",
+  "wait_timeout": "50s",
+  "on_wait_timeout": "CONTINUE",
+  "statement": "SELECT analysis_region_code, analysis_region_name, registered_bev_passenger_car_stock, registered_passenger_car_stock, bev_penetration_percent, in_service_registered_charging_facilities, in_service_registered_charging_points, in_service_registered_normal_charging_points, in_service_registered_fast_charging_points, in_service_registered_facility_nominal_power_kw, in_service_registered_charging_points_per_1000_bevs, in_service_registered_fast_charging_points_per_1000_bevs, in_service_registered_charging_facilities_per_1000_bevs, in_service_registered_facility_nominal_power_kw_per_1000_bevs, date_set_id, quality_status FROM __CATALOG__.gold.vw_powerbi_region_kpi_published WHERE date_set_id = '__DATE_SET_ID__' AND analysis_region_code IN ('11000','09184','07211','06415','07317') ORDER BY analysis_region_code"
+}

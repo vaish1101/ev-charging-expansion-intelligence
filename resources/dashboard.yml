@@ -1,0 +1,11 @@
+# Deployable version of the existing AI/BI dashboard definition. This points
+# at the same source-controlled file used throughout the repository; the
+# dashboard layout and queries are not duplicated here.
+
+resources:
+  dashboards:
+    ev_charging_intelligence:
+      display_name: "EV Charging Expansion Intelligence"
+      file_path: ../.bundle_artifacts/ev_charging_intelligence.lvdash.json
+      warehouse_id: ${var.warehouse_id}
+      embed_credentials: false

@@ -1,0 +1,8 @@
+{
+  "warehouse_id": "__WAREHOUSE_ID__",
+  "catalog": "ev_analytics",
+  "schema": "gold",
+  "wait_timeout": "50s",
+  "on_wait_timeout": "CONTINUE",
+  "statement": "SELECT date_set_id, date_set_label, kba_reference_date, bnetza_reference_date, destatis_reference_date, publication_state, gold_run_id, passed_dq_checks, failed_dq_checks, completed_at, kba_to_bnetza_lag_days, power_bi_refresh_ready FROM __CATALOG__.gold.vw_powerbi_date_set_quality WHERE date_set_id = '__DATE_SET_ID__'"
+}

@@ -1,0 +1,1229 @@
+{
+  "datasets": [
+    {
+      "name": "ds_region",
+      "displayName": "Published regional market and charging provision",
+      "queryLines": [
+        "WITH latest AS (SELECT date_set_id FROM ev_analytics.gold.vw_powerbi_date_set_quality WHERE publication_state = 'published' AND power_bi_refresh_ready = true ORDER BY completed_at DESC LIMIT 1),\n",
+        "display_labels(analysis_region_code, analysis_region_display_name) AS (VALUES ('01001', 'Flensburg, Stadt'), ('01002', 'Kiel, Stadt'), ('01003', 'Lübeck, Stadt'), ('01004', 'Neumünster, Stadt'), ('01051', 'Dithmarschen'), ('01053', 'Herzogtum Lauenburg'), ('01054', 'Nordfriesland'), ('01055', 'Ostholstein'), ('01056', 'Pinneberg'), ('01057', 'Plön'), ('01058', 'Rendsburg-Eckernförde'), ('01059', 'Schleswig-Flensburg'), ('01060', 'Segeberg'), ('01061', 'Steinburg'), ('01062', 'Stormarn'), ('02000', 'Hamburg'), ('03101', 'Braunschweig, Stadt'), ('03102', 'Salzgitter, Stadt'), ('03103', 'Wolfsburg, Stadt'), ('03151', 'Gifhorn, Landkreis'), ('03153', 'Goslar, Landkreis'), ('03154', 'Helmstedt, Landkreis'), ('03155', 'Northeim, Landkreis'), ('03157', 'Peine, Landkreis'), ('03158', 'Wolfenbüttel, Landkreis'), ('03159', 'Göttingen, Landkreis'), ('03241', 'Region Hannover, Landkreis'), ('03251', 'Diepholz, Landkreis'), ('03252', 'Hameln-Pyrmont, Landkreis'), ('03254', 'Hildesheim, Landkreis'), ('03255', 'Holzminden, Landkreis'), ('03256', 'Nienburg (Weser), Landkreis'), ('03257', 'Schaumburg, Landkreis'), ('03351', 'Celle, Landkreis'), ('03352', 'Cuxhaven, Landkreis'), ('03353', 'Harburg, Landkreis'), ('03354', 'Lüchow-Dannenberg, Landkreis'), ('03355', 'Lüneburg, Landkreis'), ('03356', 'Osterholz, Landkreis'), ('03357', 'Rotenburg (Wümme), Landkreis'), ('03358', 'Heidekreis'), ('03359', 'Stade, Landkreis'), ('03360', 'Uelzen, Landkreis'), ('03361', 'Verden, Landkreis'), ('03401', 'Delmenhorst, Stadt'), ('03402', 'Emden, Stadt'), ('03403', 'Oldenburg (Oldb), Stadt'), ('03404', 'Osnabrück, Stadt'), ('03405', 'Wilhelmshaven, Stadt'), ('03451', 'Ammerland, Landkreis'), ('03452', 'Aurich, Landkreis'), ('03453', 'Cloppenburg, Landkreis'), ('03454', 'Emsland, Landkreis'), ('03455', 'Friesland, Landkreis'), ('03456', 'Grafschaft Bentheim, Landkreis'), ('03457', 'Leer, Landkreis'), ('03458', 'Oldenburg, Landkreis'), ('03459', 'Osnabrück, Landkreis'), ('03460', 'Vechta, Landkreis'), ('03461', 'Wesermarsch, Landkreis'), ('03462', 'Wittmund, Landkreis'), ('04011', 'Bremen'), ('04012', 'Bremerhaven, Stadt'), ('05111', 'Düsseldorf, Stadt'), ('05112', 'Duisburg, Stadt'), ('05113', 'Essen, Stadt'), ('05114', 'Krefeld, Stadt'), ('05116', 'Mönchengladbach, Stadt'), ('05117', 'Mülheim an der Ruhr, Stadt'), ('05119', 'Oberhausen, Stadt'), ('05120', 'Remscheid, Stadt'), ('05122', 'Solingen, Stadt'), ('05124', 'Wuppertal, Stadt'), ('05154', 'Kleve'), ('05158', 'Mettmann'), ('05162', 'Rhein-Kreis Neuss'), ('05166', 'Viersen'), ('05170', 'Wesel'), ('05314', 'Bonn, Stadt'), ('05315', 'Köln, Stadt'), ('05316', 'Leverkusen, Stadt'), ('05334', 'Städteregion Aachen'), ('05358', 'Düren'), ('05362', 'Rhein-Erft-Kreis'), ('05366', 'Euskirchen'), ('05370', 'Heinsberg'), ('05374', 'Oberbergischer Kreis'), ('05378', 'Rheinisch-Bergischer Kreis'), ('05382', 'Rhein-Sieg-Kreis'), ('05512', 'Bottrop, Stadt'), ('05513', 'Gelsenkirchen, Stadt'), ('05515', 'Münster, Stadt'), ('05554', 'Borken'), ('05558', 'Coesfeld'), ('05562', 'Recklinghausen'), ('05566', 'Steinfurt'), ('05570', 'Warendorf'), ('05711', 'Bielefeld, Stadt'), ('05754', 'Gütersloh'), ('05758', 'Herford'), ('05762', 'Höxter'), ('05766', 'Lippe'), ('05770', 'Minden-Lübbecke'), ('05774', 'Paderborn'), ('05911', 'Bochum, Stadt'), ('05913', 'Dortmund, Stadt'), ('05914', 'Hagen, Stadt'), ('05915', 'Hamm, Stadt'), ('05916', 'Herne, Stadt'), ('05954', 'Ennepe-Ruhr-Kreis'), ('05958', 'Hochsauerlandkreis'), ('05962', 'Märkischer Kreis'), ('05966', 'Olpe'), ('05970', 'Siegen-Wittgenstein'), ('05974', 'Soest'), ('05978', 'Unna'), ('06411', 'Darmstadt, Stadt'), ('06412', 'Frankfurt am Main, Stadt'), ('06413', 'Offenbach am Main, Stadt'), ('06414', 'Wiesbaden, Stadt'), ('06415', 'Hanau, Stadt'), ('06431', 'Bergstraße, Landkreis'), ('06432', 'Darmstadt-Dieburg, Landkreis'), ('06433', 'Groß-Gerau, Landkreis'), ('06434', 'Hochtaunuskreis'), ('06435', 'Main-Kinzig-Kreis'), ('06436', 'Main-Taunus-Kreis'), ('06437', 'Odenwaldkreis'), ('06438', 'Offenbach, Landkreis'), ('06439', 'Rheingau-Taunus-Kreis'), ('06440', 'Wetteraukreis'), ('06531', 'Gießen, Landkreis'), ('06532', 'Lahn-Dill-Kreis'), ('06533', 'Limburg-Weilburg, Landkreis'), ('06534', 'Marburg-Biedenkopf, Landkreis'), ('06535', 'Vogelsbergkreis'), ('06611', 'Kassel, Stadt'), ('06631', 'Fulda, Landkreis'), ('06632', 'Hersfeld-Rotenburg, Landkreis'), ('06633', 'Kassel, Landkreis'), ('06634', 'Schwalm-Eder-Kreis'), ('06635', 'Waldeck-Frankenberg, Landkreis'), ('06636', 'Werra-Meißner-Kreis'), ('07111', 'Koblenz, Stadt'), ('07131', 'Ahrweiler, Landkreis'), ('07132', 'Altenkirchen (Westerwald), Landkreis'), ('07133', 'Bad Kreuznach, Landkreis'), ('07134', 'Birkenfeld, Landkreis'), ('07135', 'Cochem-Zell, Landkreis'), ('07137', 'Mayen-Koblenz, Landkreis'), ('07138', 'Neuwied, Landkreis'), ('07140', 'Rhein-Hunsrück-Kreis'), ('07141', 'Rhein-Lahn-Kreis'), ('07143', 'Westerwaldkreis'), ('07211', 'Trier-Saarburg (incl. Trier, Stadt)'), ('07231', 'Bernkastel-Wittlich, Landkreis'), ('07232', 'Eifelkreis Bitburg-Prüm'), ('07233', 'Vulkaneifel, Landkreis'), ('07311', 'Frankenthal (Pfalz), Stadt'), ('07312', 'Kaiserslautern, Stadt'), ('07313', 'Landau in der Pfalz, Stadt'), ('07314', 'Ludwigshafen am Rhein, Stadt'), ('07315', 'Mainz, Stadt'), ('07316', 'Neustadt an der Weinstraße, Stadt'), ('07317', 'Pirmasens, Stadt'), ('07318', 'Speyer, Stadt'), ('07319', 'Worms, Stadt'), ('07320', 'Zweibrücken, Stadt'), ('07331', 'Alzey-Worms, Landkreis'), ('07332', 'Bad Dürkheim, Landkreis'), ('07333', 'Donnersbergkreis'), ('07334', 'Germersheim, Landkreis'), ('07335', 'Kaiserslautern, Landkreis'), ('07336', 'Kusel, Landkreis'), ('07337', 'Südliche Weinstraße, Landkreis'), ('07338', 'Rhein-Pfalz-Kreis'), ('07339', 'Mainz-Bingen, Landkreis'), ('07340', 'Südwestpfalz, Landkreis'), ('08111', 'Stuttgart, Stadt'), ('08115', 'Böblingen, Landkreis'), ('08116', 'Esslingen, Landkreis'), ('08117', 'Göppingen, Landkreis'), ('08118', 'Ludwigsburg, Landkreis'), ('08119', 'Rems-Murr-Kreis'), ('08121', 'Heilbronn, Stadt'), ('08125', 'Heilbronn, Landkreis'), ('08126', 'Hohenlohekreis'), ('08127', 'Schwäbisch Hall, Landkreis'), ('08128', 'Main-Tauber-Kreis'), ('08135', 'Heidenheim, Landkreis'), ('08136', 'Ostalbkreis'), ('08211', 'Baden-Baden, Stadt'), ('08212', 'Karlsruhe, Stadt'), ('08215', 'Karlsruhe, Landkreis'), ('08216', 'Rastatt, Landkreis'), ('08221', 'Heidelberg, Stadt'), ('08222', 'Mannheim, Stadt'), ('08225', 'Neckar-Odenwald-Kreis'), ('08226', 'Rhein-Neckar-Kreis'), ('08231', 'Pforzheim, Stadt'), ('08235', 'Calw, Landkreis'), ('08236', 'Enzkreis'), ('08237', 'Freudenstadt, Landkreis'), ('08311', 'Freiburg im Breisgau, Stadt'), ('08315', 'Breisgau-Hochschwarzwald, Landkreis'), ('08316', 'Emmendingen, Landkreis'), ('08317', 'Ortenaukreis'), ('08325', 'Rottweil, Landkreis'), ('08326', 'Schwarzwald-Baar-Kreis'), ('08327', 'Tuttlingen, Landkreis'), ('08335', 'Konstanz, Landkreis'), ('08336', 'Lörrach, Landkreis'), ('08337', 'Waldshut, Landkreis'), ('08415', 'Reutlingen, Landkreis'), ('08416', 'Tübingen, Landkreis'), ('08417', 'Zollernalbkreis'), ('08421', 'Ulm, Stadt'), ('08425', 'Alb-Donau-Kreis'), ('08426', 'Biberach, Landkreis'), ('08435', 'Bodenseekreis'), ('08436', 'Ravensburg, Landkreis'), ('08437', 'Sigmaringen, Landkreis'), ('09161', 'Ingolstadt, Stadt'), ('09162', 'München, Stadt'), ('09163', 'Rosenheim, Stadt'), ('09171', 'Altötting, Landkreis'), ('09172', 'Berchtesgadener Land, Landkreis'), ('09173', 'Bad Tölz-Wolfratshausen, Landkreis'), ('09174', 'Dachau, Landkreis'), ('09175', 'Ebersberg, Landkreis'), ('09176', 'Eichstätt, Landkreis'), ('09177', 'Erding, Landkreis'), ('09178', 'Freising, Landkreis'), ('09179', 'Fürstenfeldbruck, Landkreis'), ('09180', 'Garmisch-Partenkirchen, Landkreis'), ('09181', 'Landsberg am Lech, Landkreis'), ('09182', 'Miesbach, Landkreis'), ('09183', 'Mühldorf a.Inn, Landkreis'), ('09184', 'München, Landkreis'), ('09185', 'Neuburg-Schrobenhausen, Landkreis'), ('09186', 'Pfaffenhofen a.d.Ilm, Landkreis'), ('09187', 'Rosenheim, Landkreis'), ('09188', 'Starnberg, Landkreis'), ('09189', 'Traunstein, Landkreis'), ('09190', 'Weilheim-Schongau, Landkreis'), ('09261', 'Landshut, Stadt'), ('09262', 'Passau, Stadt'), ('09263', 'Straubing, Stadt'), ('09271', 'Deggendorf, Landkreis'), ('09272', 'Freyung-Grafenau, Landkreis'), ('09273', 'Kelheim, Landkreis'), ('09274', 'Landshut, Landkreis'), ('09275', 'Passau, Landkreis'), ('09276', 'Regen, Landkreis'), ('09277', 'Rottal-Inn, Landkreis'), ('09278', 'Straubing-Bogen, Landkreis'), ('09279', 'Dingolfing-Landau, Landkreis'), ('09361', 'Amberg, Stadt'), ('09362', 'Regensburg, Stadt'), ('09363', 'Weiden i.d.OPf., Stadt'), ('09371', 'Amberg-Sulzbach, Landkreis'), ('09372', 'Cham, Landkreis'), ('09373', 'Neumarkt i.d.OPf., Landkreis'), ('09374', 'Neustadt a.d.Waldnaab, Landkreis'), ('09375', 'Regensburg, Landkreis'), ('09376', 'Schwandorf, Landkreis'), ('09377', 'Tirschenreuth, Landkreis'), ('09461', 'Bamberg, Stadt'), ('09462', 'Bayreuth, Stadt'), ('09463', 'Coburg, Stadt'), ('09464', 'Hof, Stadt'), ('09471', 'Bamberg, Landkreis'), ('09472', 'Bayreuth, Landkreis'), ('09473', 'Coburg, Landkreis'), ('09474', 'Forchheim, Landkreis'), ('09475', 'Hof, Landkreis'), ('09476', 'Kronach, Landkreis'), ('09477', 'Kulmbach, Landkreis'), ('09478', 'Lichtenfels, Landkreis'), ('09479', 'Wunsiedel i.Fichtelgebirge, Landkreis'), ('09561', 'Ansbach, Stadt'), ('09562', 'Erlangen, Stadt'), ('09563', 'Fürth, Stadt'), ('09564', 'Nürnberg, Stadt'), ('09565', 'Schwabach, Stadt'), ('09571', 'Ansbach, Landkreis'), ('09572', 'Erlangen-Höchstadt, Landkreis'), ('09573', 'Fürth, Landkreis'), ('09574', 'Nürnberger Land, Landkreis'), ('09575', 'Neustadt a.d.Aisch-Bad Windsheim, Landkreis'), ('09576', 'Roth, Landkreis'), ('09577', 'Weißenburg-Gunzenhausen, Landkreis'), ('09661', 'Aschaffenburg, Stadt'), ('09662', 'Schweinfurt, Stadt'), ('09663', 'Würzburg, Stadt'), ('09671', 'Aschaffenburg, Landkreis'), ('09672', 'Bad Kissingen, Landkreis'), ('09673', 'Rhön-Grabfeld, Landkreis'), ('09674', 'Haßberge, Landkreis'), ('09675', 'Kitzingen, Landkreis'), ('09676', 'Miltenberg, Landkreis'), ('09677', 'Main-Spessart, Landkreis'), ('09678', 'Schweinfurt, Landkreis'), ('09679', 'Würzburg, Landkreis'), ('09761', 'Augsburg, Stadt'), ('09762', 'Kaufbeuren, Stadt'), ('09763', 'Kempten (Allgäu), Stadt'), ('09764', 'Memmingen, Stadt'), ('09771', 'Aichach-Friedberg, Landkreis'), ('09772', 'Augsburg, Landkreis'), ('09773', 'Dillingen a.d.Donau, Landkreis'), ('09774', 'Günzburg, Landkreis'), ('09775', 'Neu-Ulm, Landkreis'), ('09776', 'Lindau (Bodensee), Landkreis'), ('09777', 'Ostallgäu, Landkreis'), ('09778', 'Unterallgäu, Landkreis'), ('09779', 'Donau-Ries, Landkreis'), ('09780', 'Oberallgäu, Landkreis'), ('10041', 'Regionalverband Saarbrücken'), ('10042', 'Merzig-Wadern, Landkreis'), ('10043', 'Neunkirchen, Landkreis'), ('10044', 'Saarlouis, Landkreis'), ('10045', 'Saarpfalz-Kreis'), ('10046', 'St. Wendel, Landkreis'), ('11000', 'Berlin'), ('12051', 'Brandenburg an der Havel, Stadt'), ('12052', 'Cottbus, Stadt'), ('12053', 'Frankfurt (Oder), Stadt'), ('12054', 'Potsdam, Stadt'), ('12060', 'Barnim, Landkreis'), ('12061', 'Dahme-Spreewald, Landkreis'), ('12062', 'Elbe-Elster, Landkreis'), ('12063', 'Havelland, Landkreis'), ('12064', 'Märkisch-Oderland, Landkreis'), ('12065', 'Oberhavel, Landkreis'), ('12066', 'Oberspreewald-Lausitz, Landkreis'), ('12067', 'Oder-Spree, Landkreis'), ('12068', 'Ostprignitz-Ruppin, Landkreis'), ('12069', 'Potsdam-Mittelmark, Landkreis'), ('12070', 'Prignitz, Landkreis'), ('12071', 'Spree-Neiße, Landkreis'), ('12072', 'Teltow-Fläming, Landkreis'), ('12073', 'Uckermark, Landkreis'), ('13003', 'Rostock'), ('13004', 'Schwerin'), ('13071', 'Mecklenburgische Seenplatte, Landkreis'), ('13072', 'Landkreis Rostock'), ('13073', 'Vorpommern-Rügen, Landkreis'), ('13074', 'Nordwestmecklenburg, Landkreis'), ('13075', 'Vorpommern-Greifswald, Landkreis'), ('13076', 'Ludwigslust-Parchim, Landkreis'), ('14511', 'Chemnitz, Stadt'), ('14521', 'Erzgebirgskreis'), ('14522', 'Mittelsachsen, Landkreis'), ('14523', 'Vogtlandkreis'), ('14524', 'Zwickau, Landkreis'), ('14612', 'Dresden, Stadt'), ('14625', 'Bautzen, Landkreis'), ('14626', 'Görlitz, Landkreis'), ('14627', 'Meißen, Landkreis'), ('14628', 'Sächsische Schweiz-Osterzgebirge, Landkreis'), ('14713', 'Leipzig, Stadt'), ('14729', 'Leipzig, Landkreis'), ('14730', 'Nordsachsen, Landkreis'), ('15001', 'Dessau-Roßlau, Stadt'), ('15002', 'Halle (Saale), Stadt'), ('15003', 'Magdeburg, Landeshauptstadt'), ('15081', 'Altmarkkreis Salzwedel'), ('15082', 'Anhalt-Bitterfeld, Landkreis'), ('15083', 'Börde, Landkreis'), ('15084', 'Burgenlandkreis'), ('15085', 'Harz, Landkreis'), ('15086', 'Jerichower Land, Landkreis'), ('15087', 'Mansfeld-Südharz, Landkreis'), ('15088', 'Saalekreis'), ('15089', 'Salzlandkreis'), ('15090', 'Stendal, Landkreis'), ('15091', 'Wittenberg, Landkreis'), ('16051', 'Erfurt, Stadt'), ('16052', 'Gera, Stadt'), ('16053', 'Jena, Stadt'), ('16054', 'Suhl, Stadt'), ('16055', 'Weimar, Stadt'), ('16061', 'Eichsfeld, Landkreis'), ('16062', 'Nordhausen, Landkreis'), ('16063', 'Wartburgkreis'), ('16064', 'Unstrut-Hainich-Kreis'), ('16065', 'Kyffhäuserkreis'), ('16066', 'Schmalkalden-Meiningen, Landkreis'), ('16067', 'Gotha, Landkreis'), ('16068', 'Sömmerda, Landkreis'), ('16069', 'Hildburghausen, Landkreis'), ('16070', 'Ilm-Kreis'), ('16071', 'Weimarer Land, Landkreis'), ('16072', 'Sonneberg, Landkreis'), ('16073', 'Saalfeld-Rudolstadt, Landkreis'), ('16074', 'Saale-Holzland-Kreis'), ('16075', 'Saale-Orla-Kreis'), ('16076', 'Greiz, Landkreis'), ('16077', 'Altenburger Land, Landkreis')),\n",
+        "base AS (SELECT r.*, l.analysis_region_display_name FROM ev_analytics.gold.vw_powerbi_region_kpi_published r INNER JOIN latest USING (date_set_id) INNER JOIN display_labels l USING (analysis_region_code)),\n",
+        "benchmarks AS (SELECT PERCENTILE(bev_penetration_percent, 0.5) AS median_bev_penetration_percent, PERCENTILE(in_service_registered_charging_points_per_1000_bevs, 0.5) AS median_points_per_1000_bevs, PERCENTILE(in_service_registered_fast_charging_points_per_1000_bevs, 0.5) AS median_fast_points_per_1000_bevs, PERCENTILE(in_service_registered_charging_facilities_per_1000_bevs, 0.5) AS median_facilities_per_1000_bevs FROM base),\n",
+        "ranked AS (SELECT b.*, m.*, ROW_NUMBER() OVER (ORDER BY registered_bev_passenger_car_stock DESC, analysis_region_code) AS bev_rank, in_service_registered_charging_points_per_1000_bevs - median_points_per_1000_bevs AS points_vs_median, 100.0 * (in_service_registered_charging_points_per_1000_bevs - median_points_per_1000_bevs) / median_points_per_1000_bevs AS points_vs_median_percent, in_service_registered_fast_charging_points_per_1000_bevs - median_fast_points_per_1000_bevs AS fast_points_vs_median, 100.0 * (in_service_registered_fast_charging_points_per_1000_bevs - median_fast_points_per_1000_bevs) / median_fast_points_per_1000_bevs AS fast_points_vs_median_percent, CASE WHEN in_service_registered_charging_points_per_1000_bevs < median_points_per_1000_bevs AND in_service_registered_fast_charging_points_per_1000_bevs < median_fast_points_per_1000_bevs THEN 'Below both medians' WHEN in_service_registered_charging_points_per_1000_bevs < median_points_per_1000_bevs THEN 'Below total median' WHEN in_service_registered_fast_charging_points_per_1000_bevs < median_fast_points_per_1000_bevs THEN 'Below fast median' ELSE 'At or above both medians' END AS screening_signal FROM base b CROSS JOIN benchmarks m),\n",
+        "profile AS (SELECT ranked.*, CONCAT(FORMAT_NUMBER(registered_bev_passenger_car_stock, 0), ' | BEV stock rank: ', CAST(bev_rank AS STRING), ' of 400') AS registered_bevs_rank_display, CONCAT(analysis_region_display_name, ' ranks ', CAST(bev_rank AS STRING), ' of 400 by registered BEV stock and is ', CASE WHEN points_vs_median < 0 AND fast_points_vs_median < 0 THEN 'below the regional median on both total and fast charging provision.' WHEN points_vs_median < 0 THEN 'below the regional median on total charging provision.' WHEN fast_points_vs_median < 0 THEN 'below the regional median on fast charging provision.' ELSE 'at or above both regional provision medians.' END) AS profile_story, CONCAT(FORMAT_NUMBER(ABS(points_vs_median_percent), 1), '% ', CASE WHEN points_vs_median_percent < 0 THEN 'below' ELSE 'above' END, ' regional median') AS total_comparison_label, CONCAT(FORMAT_NUMBER(ABS(fast_points_vs_median_percent), 1), '% ', CASE WHEN fast_points_vs_median_percent < 0 THEN 'below' ELSE 'above' END, ' regional median') AS fast_comparison_label, CASE WHEN bev_rank > 100 THEN 'Other regions' WHEN fast_points_vs_median < 0 THEN 'Top 100: fast below median' WHEN points_vs_median < 0 THEN 'Top 100: total below median' ELSE 'Top 100: at/above both medians' END AS market_focus_group FROM ranked)\n",
+        "SELECT * FROM profile"
+      ]
+    },
+    {
+      "name": "ds_national",
+      "displayName": "Published national scale and screening signal",
+      "queryLines": [
+        "WITH latest AS (SELECT date_set_id FROM ev_analytics.gold.vw_powerbi_date_set_quality WHERE publication_state = 'published' AND power_bi_refresh_ready = true ORDER BY completed_at DESC LIMIT 1),\n",
+        "base AS (SELECT r.* FROM ev_analytics.gold.vw_powerbi_region_kpi_published r INNER JOIN latest USING (date_set_id)),\n",
+        "ranked AS (SELECT b.*, ROW_NUMBER() OVER (ORDER BY registered_bev_passenger_car_stock DESC, analysis_region_code) AS bev_rank FROM base b),\n",
+        "benchmarks AS (SELECT PERCENTILE(in_service_registered_charging_points_per_1000_bevs, 0.5) AS median_points, PERCENTILE(in_service_registered_fast_charging_points_per_1000_bevs, 0.5) AS median_fast FROM base)\n",
+        "SELECT 'Germany' AS geography, COUNT(*) AS analysis_regions, SUM(registered_bev_passenger_car_stock) AS registered_bevs, SUM(registered_passenger_car_stock) AS registered_passenger_cars, CAST(100.0 * SUM(registered_bev_passenger_car_stock) / SUM(registered_passenger_car_stock) AS DECIMAL(18,4)) AS national_bev_penetration_percent, SUM(in_service_registered_charging_points) AS in_service_points, SUM(in_service_registered_normal_charging_points) AS in_service_normal_points, SUM(in_service_registered_fast_charging_points) AS in_service_fast_points, CAST(MAX(median_points) AS DECIMAL(18,4)) AS median_points_per_1000_bevs, CAST(MAX(median_fast) AS DECIMAL(18,4)) AS median_fast_points_per_1000_bevs, SUM(CASE WHEN bev_rank <= 100 AND in_service_registered_charging_points_per_1000_bevs < median_points AND in_service_registered_fast_charging_points_per_1000_bevs < median_fast THEN 1 ELSE 0 END) AS high_bev_below_both FROM ranked CROSS JOIN benchmarks"
+      ]
+    },
+    {
+      "name": "ds_profile_compare",
+      "displayName": "Selected region comparison with regional medians",
+      "queryLines": [
+        "WITH latest AS (SELECT date_set_id FROM ev_analytics.gold.vw_powerbi_date_set_quality WHERE publication_state = 'published' AND power_bi_refresh_ready = true ORDER BY completed_at DESC LIMIT 1),\n",
+        "display_labels(analysis_region_code, analysis_region_display_name) AS (VALUES ('01001', 'Flensburg, Stadt'), ('01002', 'Kiel, Stadt'), ('01003', 'Lübeck, Stadt'), ('01004', 'Neumünster, Stadt'), ('01051', 'Dithmarschen'), ('01053', 'Herzogtum Lauenburg'), ('01054', 'Nordfriesland'), ('01055', 'Ostholstein'), ('01056', 'Pinneberg'), ('01057', 'Plön'), ('01058', 'Rendsburg-Eckernförde'), ('01059', 'Schleswig-Flensburg'), ('01060', 'Segeberg'), ('01061', 'Steinburg'), ('01062', 'Stormarn'), ('02000', 'Hamburg'), ('03101', 'Braunschweig, Stadt'), ('03102', 'Salzgitter, Stadt'), ('03103', 'Wolfsburg, Stadt'), ('03151', 'Gifhorn, Landkreis'), ('03153', 'Goslar, Landkreis'), ('03154', 'Helmstedt, Landkreis'), ('03155', 'Northeim, Landkreis'), ('03157', 'Peine, Landkreis'), ('03158', 'Wolfenbüttel, Landkreis'), ('03159', 'Göttingen, Landkreis'), ('03241', 'Region Hannover, Landkreis'), ('03251', 'Diepholz, Landkreis'), ('03252', 'Hameln-Pyrmont, Landkreis'), ('03254', 'Hildesheim, Landkreis'), ('03255', 'Holzminden, Landkreis'), ('03256', 'Nienburg (Weser), Landkreis'), ('03257', 'Schaumburg, Landkreis'), ('03351', 'Celle, Landkreis'), ('03352', 'Cuxhaven, Landkreis'), ('03353', 'Harburg, Landkreis'), ('03354', 'Lüchow-Dannenberg, Landkreis'), ('03355', 'Lüneburg, Landkreis'), ('03356', 'Osterholz, Landkreis'), ('03357', 'Rotenburg (Wümme), Landkreis'), ('03358', 'Heidekreis'), ('03359', 'Stade, Landkreis'), ('03360', 'Uelzen, Landkreis'), ('03361', 'Verden, Landkreis'), ('03401', 'Delmenhorst, Stadt'), ('03402', 'Emden, Stadt'), ('03403', 'Oldenburg (Oldb), Stadt'), ('03404', 'Osnabrück, Stadt'), ('03405', 'Wilhelmshaven, Stadt'), ('03451', 'Ammerland, Landkreis'), ('03452', 'Aurich, Landkreis'), ('03453', 'Cloppenburg, Landkreis'), ('03454', 'Emsland, Landkreis'), ('03455', 'Friesland, Landkreis'), ('03456', 'Grafschaft Bentheim, Landkreis'), ('03457', 'Leer, Landkreis'), ('03458', 'Oldenburg, Landkreis'), ('03459', 'Osnabrück, Landkreis'), ('03460', 'Vechta, Landkreis'), ('03461', 'Wesermarsch, Landkreis'), ('03462', 'Wittmund, Landkreis'), ('04011', 'Bremen'), ('04012', 'Bremerhaven, Stadt'), ('05111', 'Düsseldorf, Stadt'), ('05112', 'Duisburg, Stadt'), ('05113', 'Essen, Stadt'), ('05114', 'Krefeld, Stadt'), ('05116', 'Mönchengladbach, Stadt'), ('05117', 'Mülheim an der Ruhr, Stadt'), ('05119', 'Oberhausen, Stadt'), ('05120', 'Remscheid, Stadt'), ('05122', 'Solingen, Stadt'), ('05124', 'Wuppertal, Stadt'), ('05154', 'Kleve'), ('05158', 'Mettmann'), ('05162', 'Rhein-Kreis Neuss'), ('05166', 'Viersen'), ('05170', 'Wesel'), ('05314', 'Bonn, Stadt'), ('05315', 'Köln, Stadt'), ('05316', 'Leverkusen, Stadt'), ('05334', 'Städteregion Aachen'), ('05358', 'Düren'), ('05362', 'Rhein-Erft-Kreis'), ('05366', 'Euskirchen'), ('05370', 'Heinsberg'), ('05374', 'Oberbergischer Kreis'), ('05378', 'Rheinisch-Bergischer Kreis'), ('05382', 'Rhein-Sieg-Kreis'), ('05512', 'Bottrop, Stadt'), ('05513', 'Gelsenkirchen, Stadt'), ('05515', 'Münster, Stadt'), ('05554', 'Borken'), ('05558', 'Coesfeld'), ('05562', 'Recklinghausen'), ('05566', 'Steinfurt'), ('05570', 'Warendorf'), ('05711', 'Bielefeld, Stadt'), ('05754', 'Gütersloh'), ('05758', 'Herford'), ('05762', 'Höxter'), ('05766', 'Lippe'), ('05770', 'Minden-Lübbecke'), ('05774', 'Paderborn'), ('05911', 'Bochum, Stadt'), ('05913', 'Dortmund, Stadt'), ('05914', 'Hagen, Stadt'), ('05915', 'Hamm, Stadt'), ('05916', 'Herne, Stadt'), ('05954', 'Ennepe-Ruhr-Kreis'), ('05958', 'Hochsauerlandkreis'), ('05962', 'Märkischer Kreis'), ('05966', 'Olpe'), ('05970', 'Siegen-Wittgenstein'), ('05974', 'Soest'), ('05978', 'Unna'), ('06411', 'Darmstadt, Stadt'), ('06412', 'Frankfurt am Main, Stadt'), ('06413', 'Offenbach am Main, Stadt'), ('06414', 'Wiesbaden, Stadt'), ('06415', 'Hanau, Stadt'), ('06431', 'Bergstraße, Landkreis'), ('06432', 'Darmstadt-Dieburg, Landkreis'), ('06433', 'Groß-Gerau, Landkreis'), ('06434', 'Hochtaunuskreis'), ('06435', 'Main-Kinzig-Kreis'), ('06436', 'Main-Taunus-Kreis'), ('06437', 'Odenwaldkreis'), ('06438', 'Offenbach, Landkreis'), ('06439', 'Rheingau-Taunus-Kreis'), ('06440', 'Wetteraukreis'), ('06531', 'Gießen, Landkreis'), ('06532', 'Lahn-Dill-Kreis'), ('06533', 'Limburg-Weilburg, Landkreis'), ('06534', 'Marburg-Biedenkopf, Landkreis'), ('06535', 'Vogelsbergkreis'), ('06611', 'Kassel, Stadt'), ('06631', 'Fulda, Landkreis'), ('06632', 'Hersfeld-Rotenburg, Landkreis'), ('06633', 'Kassel, Landkreis'), ('06634', 'Schwalm-Eder-Kreis'), ('06635', 'Waldeck-Frankenberg, Landkreis'), ('06636', 'Werra-Meißner-Kreis'), ('07111', 'Koblenz, Stadt'), ('07131', 'Ahrweiler, Landkreis'), ('07132', 'Altenkirchen (Westerwald), Landkreis'), ('07133', 'Bad Kreuznach, Landkreis'), ('07134', 'Birkenfeld, Landkreis'), ('07135', 'Cochem-Zell, Landkreis'), ('07137', 'Mayen-Koblenz, Landkreis'), ('07138', 'Neuwied, Landkreis'), ('07140', 'Rhein-Hunsrück-Kreis'), ('07141', 'Rhein-Lahn-Kreis'), ('07143', 'Westerwaldkreis'), ('07211', 'Trier-Saarburg (incl. Trier, Stadt)'), ('07231', 'Bernkastel-Wittlich, Landkreis'), ('07232', 'Eifelkreis Bitburg-Prüm'), ('07233', 'Vulkaneifel, Landkreis'), ('07311', 'Frankenthal (Pfalz), Stadt'), ('07312', 'Kaiserslautern, Stadt'), ('07313', 'Landau in der Pfalz, Stadt'), ('07314', 'Ludwigshafen am Rhein, Stadt'), ('07315', 'Mainz, Stadt'), ('07316', 'Neustadt an der Weinstraße, Stadt'), ('07317', 'Pirmasens, Stadt'), ('07318', 'Speyer, Stadt'), ('07319', 'Worms, Stadt'), ('07320', 'Zweibrücken, Stadt'), ('07331', 'Alzey-Worms, Landkreis'), ('07332', 'Bad Dürkheim, Landkreis'), ('07333', 'Donnersbergkreis'), ('07334', 'Germersheim, Landkreis'), ('07335', 'Kaiserslautern, Landkreis'), ('07336', 'Kusel, Landkreis'), ('07337', 'Südliche Weinstraße, Landkreis'), ('07338', 'Rhein-Pfalz-Kreis'), ('07339', 'Mainz-Bingen, Landkreis'), ('07340', 'Südwestpfalz, Landkreis'), ('08111', 'Stuttgart, Stadt'), ('08115', 'Böblingen, Landkreis'), ('08116', 'Esslingen, Landkreis'), ('08117', 'Göppingen, Landkreis'), ('08118', 'Ludwigsburg, Landkreis'), ('08119', 'Rems-Murr-Kreis'), ('08121', 'Heilbronn, Stadt'), ('08125', 'Heilbronn, Landkreis'), ('08126', 'Hohenlohekreis'), ('08127', 'Schwäbisch Hall, Landkreis'), ('08128', 'Main-Tauber-Kreis'), ('08135', 'Heidenheim, Landkreis'), ('08136', 'Ostalbkreis'), ('08211', 'Baden-Baden, Stadt'), ('08212', 'Karlsruhe, Stadt'), ('08215', 'Karlsruhe, Landkreis'), ('08216', 'Rastatt, Landkreis'), ('08221', 'Heidelberg, Stadt'), ('08222', 'Mannheim, Stadt'), ('08225', 'Neckar-Odenwald-Kreis'), ('08226', 'Rhein-Neckar-Kreis'), ('08231', 'Pforzheim, Stadt'), ('08235', 'Calw, Landkreis'), ('08236', 'Enzkreis'), ('08237', 'Freudenstadt, Landkreis'), ('08311', 'Freiburg im Breisgau, Stadt'), ('08315', 'Breisgau-Hochschwarzwald, Landkreis'), ('08316', 'Emmendingen, Landkreis'), ('08317', 'Ortenaukreis'), ('08325', 'Rottweil, Landkreis'), ('08326', 'Schwarzwald-Baar-Kreis'), ('08327', 'Tuttlingen, Landkreis'), ('08335', 'Konstanz, Landkreis'), ('08336', 'Lörrach, Landkreis'), ('08337', 'Waldshut, Landkreis'), ('08415', 'Reutlingen, Landkreis'), ('08416', 'Tübingen, Landkreis'), ('08417', 'Zollernalbkreis'), ('08421', 'Ulm, Stadt'), ('08425', 'Alb-Donau-Kreis'), ('08426', 'Biberach, Landkreis'), ('08435', 'Bodenseekreis'), ('08436', 'Ravensburg, Landkreis'), ('08437', 'Sigmaringen, Landkreis'), ('09161', 'Ingolstadt, Stadt'), ('09162', 'München, Stadt'), ('09163', 'Rosenheim, Stadt'), ('09171', 'Altötting, Landkreis'), ('09172', 'Berchtesgadener Land, Landkreis'), ('09173', 'Bad Tölz-Wolfratshausen, Landkreis'), ('09174', 'Dachau, Landkreis'), ('09175', 'Ebersberg, Landkreis'), ('09176', 'Eichstätt, Landkreis'), ('09177', 'Erding, Landkreis'), ('09178', 'Freising, Landkreis'), ('09179', 'Fürstenfeldbruck, Landkreis'), ('09180', 'Garmisch-Partenkirchen, Landkreis'), ('09181', 'Landsberg am Lech, Landkreis'), ('09182', 'Miesbach, Landkreis'), ('09183', 'Mühldorf a.Inn, Landkreis'), ('09184', 'München, Landkreis'), ('09185', 'Neuburg-Schrobenhausen, Landkreis'), ('09186', 'Pfaffenhofen a.d.Ilm, Landkreis'), ('09187', 'Rosenheim, Landkreis'), ('09188', 'Starnberg, Landkreis'), ('09189', 'Traunstein, Landkreis'), ('09190', 'Weilheim-Schongau, Landkreis'), ('09261', 'Landshut, Stadt'), ('09262', 'Passau, Stadt'), ('09263', 'Straubing, Stadt'), ('09271', 'Deggendorf, Landkreis'), ('09272', 'Freyung-Grafenau, Landkreis'), ('09273', 'Kelheim, Landkreis'), ('09274', 'Landshut, Landkreis'), ('09275', 'Passau, Landkreis'), ('09276', 'Regen, Landkreis'), ('09277', 'Rottal-Inn, Landkreis'), ('09278', 'Straubing-Bogen, Landkreis'), ('09279', 'Dingolfing-Landau, Landkreis'), ('09361', 'Amberg, Stadt'), ('09362', 'Regensburg, Stadt'), ('09363', 'Weiden i.d.OPf., Stadt'), ('09371', 'Amberg-Sulzbach, Landkreis'), ('09372', 'Cham, Landkreis'), ('09373', 'Neumarkt i.d.OPf., Landkreis'), ('09374', 'Neustadt a.d.Waldnaab, Landkreis'), ('09375', 'Regensburg, Landkreis'), ('09376', 'Schwandorf, Landkreis'), ('09377', 'Tirschenreuth, Landkreis'), ('09461', 'Bamberg, Stadt'), ('09462', 'Bayreuth, Stadt'), ('09463', 'Coburg, Stadt'), ('09464', 'Hof, Stadt'), ('09471', 'Bamberg, Landkreis'), ('09472', 'Bayreuth, Landkreis'), ('09473', 'Coburg, Landkreis'), ('09474', 'Forchheim, Landkreis'), ('09475', 'Hof, Landkreis'), ('09476', 'Kronach, Landkreis'), ('09477', 'Kulmbach, Landkreis'), ('09478', 'Lichtenfels, Landkreis'), ('09479', 'Wunsiedel i.Fichtelgebirge, Landkreis'), ('09561', 'Ansbach, Stadt'), ('09562', 'Erlangen, Stadt'), ('09563', 'Fürth, Stadt'), ('09564', 'Nürnberg, Stadt'), ('09565', 'Schwabach, Stadt'), ('09571', 'Ansbach, Landkreis'), ('09572', 'Erlangen-Höchstadt, Landkreis'), ('09573', 'Fürth, Landkreis'), ('09574', 'Nürnberger Land, Landkreis'), ('09575', 'Neustadt a.d.Aisch-Bad Windsheim, Landkreis'), ('09576', 'Roth, Landkreis'), ('09577', 'Weißenburg-Gunzenhausen, Landkreis'), ('09661', 'Aschaffenburg, Stadt'), ('09662', 'Schweinfurt, Stadt'), ('09663', 'Würzburg, Stadt'), ('09671', 'Aschaffenburg, Landkreis'), ('09672', 'Bad Kissingen, Landkreis'), ('09673', 'Rhön-Grabfeld, Landkreis'), ('09674', 'Haßberge, Landkreis'), ('09675', 'Kitzingen, Landkreis'), ('09676', 'Miltenberg, Landkreis'), ('09677', 'Main-Spessart, Landkreis'), ('09678', 'Schweinfurt, Landkreis'), ('09679', 'Würzburg, Landkreis'), ('09761', 'Augsburg, Stadt'), ('09762', 'Kaufbeuren, Stadt'), ('09763', 'Kempten (Allgäu), Stadt'), ('09764', 'Memmingen, Stadt'), ('09771', 'Aichach-Friedberg, Landkreis'), ('09772', 'Augsburg, Landkreis'), ('09773', 'Dillingen a.d.Donau, Landkreis'), ('09774', 'Günzburg, Landkreis'), ('09775', 'Neu-Ulm, Landkreis'), ('09776', 'Lindau (Bodensee), Landkreis'), ('09777', 'Ostallgäu, Landkreis'), ('09778', 'Unterallgäu, Landkreis'), ('09779', 'Donau-Ries, Landkreis'), ('09780', 'Oberallgäu, Landkreis'), ('10041', 'Regionalverband Saarbrücken'), ('10042', 'Merzig-Wadern, Landkreis'), ('10043', 'Neunkirchen, Landkreis'), ('10044', 'Saarlouis, Landkreis'), ('10045', 'Saarpfalz-Kreis'), ('10046', 'St. Wendel, Landkreis'), ('11000', 'Berlin'), ('12051', 'Brandenburg an der Havel, Stadt'), ('12052', 'Cottbus, Stadt'), ('12053', 'Frankfurt (Oder), Stadt'), ('12054', 'Potsdam, Stadt'), ('12060', 'Barnim, Landkreis'), ('12061', 'Dahme-Spreewald, Landkreis'), ('12062', 'Elbe-Elster, Landkreis'), ('12063', 'Havelland, Landkreis'), ('12064', 'Märkisch-Oderland, Landkreis'), ('12065', 'Oberhavel, Landkreis'), ('12066', 'Oberspreewald-Lausitz, Landkreis'), ('12067', 'Oder-Spree, Landkreis'), ('12068', 'Ostprignitz-Ruppin, Landkreis'), ('12069', 'Potsdam-Mittelmark, Landkreis'), ('12070', 'Prignitz, Landkreis'), ('12071', 'Spree-Neiße, Landkreis'), ('12072', 'Teltow-Fläming, Landkreis'), ('12073', 'Uckermark, Landkreis'), ('13003', 'Rostock'), ('13004', 'Schwerin'), ('13071', 'Mecklenburgische Seenplatte, Landkreis'), ('13072', 'Landkreis Rostock'), ('13073', 'Vorpommern-Rügen, Landkreis'), ('13074', 'Nordwestmecklenburg, Landkreis'), ('13075', 'Vorpommern-Greifswald, Landkreis'), ('13076', 'Ludwigslust-Parchim, Landkreis'), ('14511', 'Chemnitz, Stadt'), ('14521', 'Erzgebirgskreis'), ('14522', 'Mittelsachsen, Landkreis'), ('14523', 'Vogtlandkreis'), ('14524', 'Zwickau, Landkreis'), ('14612', 'Dresden, Stadt'), ('14625', 'Bautzen, Landkreis'), ('14626', 'Görlitz, Landkreis'), ('14627', 'Meißen, Landkreis'), ('14628', 'Sächsische Schweiz-Osterzgebirge, Landkreis'), ('14713', 'Leipzig, Stadt'), ('14729', 'Leipzig, Landkreis'), ('14730', 'Nordsachsen, Landkreis'), ('15001', 'Dessau-Roßlau, Stadt'), ('15002', 'Halle (Saale), Stadt'), ('15003', 'Magdeburg, Landeshauptstadt'), ('15081', 'Altmarkkreis Salzwedel'), ('15082', 'Anhalt-Bitterfeld, Landkreis'), ('15083', 'Börde, Landkreis'), ('15084', 'Burgenlandkreis'), ('15085', 'Harz, Landkreis'), ('15086', 'Jerichower Land, Landkreis'), ('15087', 'Mansfeld-Südharz, Landkreis'), ('15088', 'Saalekreis'), ('15089', 'Salzlandkreis'), ('15090', 'Stendal, Landkreis'), ('15091', 'Wittenberg, Landkreis'), ('16051', 'Erfurt, Stadt'), ('16052', 'Gera, Stadt'), ('16053', 'Jena, Stadt'), ('16054', 'Suhl, Stadt'), ('16055', 'Weimar, Stadt'), ('16061', 'Eichsfeld, Landkreis'), ('16062', 'Nordhausen, Landkreis'), ('16063', 'Wartburgkreis'), ('16064', 'Unstrut-Hainich-Kreis'), ('16065', 'Kyffhäuserkreis'), ('16066', 'Schmalkalden-Meiningen, Landkreis'), ('16067', 'Gotha, Landkreis'), ('16068', 'Sömmerda, Landkreis'), ('16069', 'Hildburghausen, Landkreis'), ('16070', 'Ilm-Kreis'), ('16071', 'Weimarer Land, Landkreis'), ('16072', 'Sonneberg, Landkreis'), ('16073', 'Saalfeld-Rudolstadt, Landkreis'), ('16074', 'Saale-Holzland-Kreis'), ('16075', 'Saale-Orla-Kreis'), ('16076', 'Greiz, Landkreis'), ('16077', 'Altenburger Land, Landkreis')),\n",
+        "base AS (SELECT r.*, l.analysis_region_display_name FROM ev_analytics.gold.vw_powerbi_region_kpi_published r INNER JOIN latest USING (date_set_id) INNER JOIN display_labels l USING (analysis_region_code)),\n",
+        "benchmarks AS (SELECT PERCENTILE(in_service_registered_charging_points_per_1000_bevs, 0.5) AS median_points, PERCENTILE(in_service_registered_fast_charging_points_per_1000_bevs, 0.5) AS median_fast, PERCENTILE(in_service_registered_charging_facilities_per_1000_bevs, 0.5) AS median_facilities FROM base)\n",
+        "SELECT analysis_region_display_name, 'Total points / 1,000 BEVs' AS metric, CAST(in_service_registered_charging_points_per_1000_bevs AS DOUBLE) AS selected_region, CAST(median_points AS DOUBLE) AS regional_median, 1 AS metric_order FROM base CROSS JOIN benchmarks UNION ALL SELECT analysis_region_display_name, 'Fast points / 1,000 BEVs' AS metric, CAST(in_service_registered_fast_charging_points_per_1000_bevs AS DOUBLE) AS selected_region, CAST(median_fast AS DOUBLE) AS regional_median, 2 AS metric_order FROM base CROSS JOIN benchmarks UNION ALL SELECT analysis_region_display_name, 'Facilities / 1,000 BEVs' AS metric, CAST(in_service_registered_charging_facilities_per_1000_bevs AS DOUBLE) AS selected_region, CAST(median_facilities AS DOUBLE) AS regional_median, 3 AS metric_order FROM base CROSS JOIN benchmarks"
+      ]
+    },
+    {
+      "name": "ds_quality",
+      "displayName": "Published trust status",
+      "queryLines": [
+        "SELECT CONCAT('Published · ', CAST(passed_dq_checks AS STRING), '/', CAST(passed_dq_checks + failed_dq_checks AS STRING), ' checks passed · ', CAST((SELECT COUNT(*) FROM ev_analytics.gold.vw_powerbi_region_kpi_published r WHERE r.date_set_id = q.date_set_id) AS STRING), ' regions · KBA ', DATE_FORMAT(kba_reference_date, 'MMM yyyy'), ' · BNetzA ', DATE_FORMAT(bnetza_reference_date, 'MMM yyyy'), ' · ', CAST(kba_to_bnetza_lag_days AS STRING), '-day lag') AS publication_summary FROM ev_analytics.gold.vw_powerbi_date_set_quality q WHERE publication_state = 'published' AND power_bi_refresh_ready = true ORDER BY completed_at DESC LIMIT 1"
+      ]
+    },
+    {
+      "name": "ds_profile_region",
+      "displayName": "Selected published region profile",
+      "queryLines": [
+        "WITH latest AS (SELECT date_set_id FROM ev_analytics.gold.vw_powerbi_date_set_quality WHERE publication_state = 'published' AND power_bi_refresh_ready = true ORDER BY completed_at DESC LIMIT 1),\n",
+        "display_labels(analysis_region_code, analysis_region_display_name) AS (VALUES ('01001', 'Flensburg, Stadt'), ('01002', 'Kiel, Stadt'), ('01003', 'Lübeck, Stadt'), ('01004', 'Neumünster, Stadt'), ('01051', 'Dithmarschen'), ('01053', 'Herzogtum Lauenburg'), ('01054', 'Nordfriesland'), ('01055', 'Ostholstein'), ('01056', 'Pinneberg'), ('01057', 'Plön'), ('01058', 'Rendsburg-Eckernförde'), ('01059', 'Schleswig-Flensburg'), ('01060', 'Segeberg'), ('01061', 'Steinburg'), ('01062', 'Stormarn'), ('02000', 'Hamburg'), ('03101', 'Braunschweig, Stadt'), ('03102', 'Salzgitter, Stadt'), ('03103', 'Wolfsburg, Stadt'), ('03151', 'Gifhorn, Landkreis'), ('03153', 'Goslar, Landkreis'), ('03154', 'Helmstedt, Landkreis'), ('03155', 'Northeim, Landkreis'), ('03157', 'Peine, Landkreis'), ('03158', 'Wolfenbüttel, Landkreis'), ('03159', 'Göttingen, Landkreis'), ('03241', 'Region Hannover, Landkreis'), ('03251', 'Diepholz, Landkreis'), ('03252', 'Hameln-Pyrmont, Landkreis'), ('03254', 'Hildesheim, Landkreis'), ('03255', 'Holzminden, Landkreis'), ('03256', 'Nienburg (Weser), Landkreis'), ('03257', 'Schaumburg, Landkreis'), ('03351', 'Celle, Landkreis'), ('03352', 'Cuxhaven, Landkreis'), ('03353', 'Harburg, Landkreis'), ('03354', 'Lüchow-Dannenberg, Landkreis'), ('03355', 'Lüneburg, Landkreis'), ('03356', 'Osterholz, Landkreis'), ('03357', 'Rotenburg (Wümme), Landkreis'), ('03358', 'Heidekreis'), ('03359', 'Stade, Landkreis'), ('03360', 'Uelzen, Landkreis'), ('03361', 'Verden, Landkreis'), ('03401', 'Delmenhorst, Stadt'), ('03402', 'Emden, Stadt'), ('03403', 'Oldenburg (Oldb), Stadt'), ('03404', 'Osnabrück, Stadt'), ('03405', 'Wilhelmshaven, Stadt'), ('03451', 'Ammerland, Landkreis'), ('03452', 'Aurich, Landkreis'), ('03453', 'Cloppenburg, Landkreis'), ('03454', 'Emsland, Landkreis'), ('03455', 'Friesland, Landkreis'), ('03456', 'Grafschaft Bentheim, Landkreis'), ('03457', 'Leer, Landkreis'), ('03458', 'Oldenburg, Landkreis'), ('03459', 'Osnabrück, Landkreis'), ('03460', 'Vechta, Landkreis'), ('03461', 'Wesermarsch, Landkreis'), ('03462', 'Wittmund, Landkreis'), ('04011', 'Bremen'), ('04012', 'Bremerhaven, Stadt'), ('05111', 'Düsseldorf, Stadt'), ('05112', 'Duisburg, Stadt'), ('05113', 'Essen, Stadt'), ('05114', 'Krefeld, Stadt'), ('05116', 'Mönchengladbach, Stadt'), ('05117', 'Mülheim an der Ruhr, Stadt'), ('05119', 'Oberhausen, Stadt'), ('05120', 'Remscheid, Stadt'), ('05122', 'Solingen, Stadt'), ('05124', 'Wuppertal, Stadt'), ('05154', 'Kleve'), ('05158', 'Mettmann'), ('05162', 'Rhein-Kreis Neuss'), ('05166', 'Viersen'), ('05170', 'Wesel'), ('05314', 'Bonn, Stadt'), ('05315', 'Köln, Stadt'), ('05316', 'Leverkusen, Stadt'), ('05334', 'Städteregion Aachen'), ('05358', 'Düren'), ('05362', 'Rhein-Erft-Kreis'), ('05366', 'Euskirchen'), ('05370', 'Heinsberg'), ('05374', 'Oberbergischer Kreis'), ('05378', 'Rheinisch-Bergischer Kreis'), ('05382', 'Rhein-Sieg-Kreis'), ('05512', 'Bottrop, Stadt'), ('05513', 'Gelsenkirchen, Stadt'), ('05515', 'Münster, Stadt'), ('05554', 'Borken'), ('05558', 'Coesfeld'), ('05562', 'Recklinghausen'), ('05566', 'Steinfurt'), ('05570', 'Warendorf'), ('05711', 'Bielefeld, Stadt'), ('05754', 'Gütersloh'), ('05758', 'Herford'), ('05762', 'Höxter'), ('05766', 'Lippe'), ('05770', 'Minden-Lübbecke'), ('05774', 'Paderborn'), ('05911', 'Bochum, Stadt'), ('05913', 'Dortmund, Stadt'), ('05914', 'Hagen, Stadt'), ('05915', 'Hamm, Stadt'), ('05916', 'Herne, Stadt'), ('05954', 'Ennepe-Ruhr-Kreis'), ('05958', 'Hochsauerlandkreis'), ('05962', 'Märkischer Kreis'), ('05966', 'Olpe'), ('05970', 'Siegen-Wittgenstein'), ('05974', 'Soest'), ('05978', 'Unna'), ('06411', 'Darmstadt, Stadt'), ('06412', 'Frankfurt am Main, Stadt'), ('06413', 'Offenbach am Main, Stadt'), ('06414', 'Wiesbaden, Stadt'), ('06415', 'Hanau, Stadt'), ('06431', 'Bergstraße, Landkreis'), ('06432', 'Darmstadt-Dieburg, Landkreis'), ('06433', 'Groß-Gerau, Landkreis'), ('06434', 'Hochtaunuskreis'), ('06435', 'Main-Kinzig-Kreis'), ('06436', 'Main-Taunus-Kreis'), ('06437', 'Odenwaldkreis'), ('06438', 'Offenbach, Landkreis'), ('06439', 'Rheingau-Taunus-Kreis'), ('06440', 'Wetteraukreis'), ('06531', 'Gießen, Landkreis'), ('06532', 'Lahn-Dill-Kreis'), ('06533', 'Limburg-Weilburg, Landkreis'), ('06534', 'Marburg-Biedenkopf, Landkreis'), ('06535', 'Vogelsbergkreis'), ('06611', 'Kassel, Stadt'), ('06631', 'Fulda, Landkreis'), ('06632', 'Hersfeld-Rotenburg, Landkreis'), ('06633', 'Kassel, Landkreis'), ('06634', 'Schwalm-Eder-Kreis'), ('06635', 'Waldeck-Frankenberg, Landkreis'), ('06636', 'Werra-Meißner-Kreis'), ('07111', 'Koblenz, Stadt'), ('07131', 'Ahrweiler, Landkreis'), ('07132', 'Altenkirchen (Westerwald), Landkreis'), ('07133', 'Bad Kreuznach, Landkreis'), ('07134', 'Birkenfeld, Landkreis'), ('07135', 'Cochem-Zell, Landkreis'), ('07137', 'Mayen-Koblenz, Landkreis'), ('07138', 'Neuwied, Landkreis'), ('07140', 'Rhein-Hunsrück-Kreis'), ('07141', 'Rhein-Lahn-Kreis'), ('07143', 'Westerwaldkreis'), ('07211', 'Trier-Saarburg (incl. Trier, Stadt)'), ('07231', 'Bernkastel-Wittlich, Landkreis'), ('07232', 'Eifelkreis Bitburg-Prüm'), ('07233', 'Vulkaneifel, Landkreis'), ('07311', 'Frankenthal (Pfalz), Stadt'), ('07312', 'Kaiserslautern, Stadt'), ('07313', 'Landau in der Pfalz, Stadt'), ('07314', 'Ludwigshafen am Rhein, Stadt'), ('07315', 'Mainz, Stadt'), ('07316', 'Neustadt an der Weinstraße, Stadt'), ('07317', 'Pirmasens, Stadt'), ('07318', 'Speyer, Stadt'), ('07319', 'Worms, Stadt'), ('07320', 'Zweibrücken, Stadt'), ('07331', 'Alzey-Worms, Landkreis'), ('07332', 'Bad Dürkheim, Landkreis'), ('07333', 'Donnersbergkreis'), ('07334', 'Germersheim, Landkreis'), ('07335', 'Kaiserslautern, Landkreis'), ('07336', 'Kusel, Landkreis'), ('07337', 'Südliche Weinstraße, Landkreis'), ('07338', 'Rhein-Pfalz-Kreis'), ('07339', 'Mainz-Bingen, Landkreis'), ('07340', 'Südwestpfalz, Landkreis'), ('08111', 'Stuttgart, Stadt'), ('08115', 'Böblingen, Landkreis'), ('08116', 'Esslingen, Landkreis'), ('08117', 'Göppingen, Landkreis'), ('08118', 'Ludwigsburg, Landkreis'), ('08119', 'Rems-Murr-Kreis'), ('08121', 'Heilbronn, Stadt'), ('08125', 'Heilbronn, Landkreis'), ('08126', 'Hohenlohekreis'), ('08127', 'Schwäbisch Hall, Landkreis'), ('08128', 'Main-Tauber-Kreis'), ('08135', 'Heidenheim, Landkreis'), ('08136', 'Ostalbkreis'), ('08211', 'Baden-Baden, Stadt'), ('08212', 'Karlsruhe, Stadt'), ('08215', 'Karlsruhe, Landkreis'), ('08216', 'Rastatt, Landkreis'), ('08221', 'Heidelberg, Stadt'), ('08222', 'Mannheim, Stadt'), ('08225', 'Neckar-Odenwald-Kreis'), ('08226', 'Rhein-Neckar-Kreis'), ('08231', 'Pforzheim, Stadt'), ('08235', 'Calw, Landkreis'), ('08236', 'Enzkreis'), ('08237', 'Freudenstadt, Landkreis'), ('08311', 'Freiburg im Breisgau, Stadt'), ('08315', 'Breisgau-Hochschwarzwald, Landkreis'), ('08316', 'Emmendingen, Landkreis'), ('08317', 'Ortenaukreis'), ('08325', 'Rottweil, Landkreis'), ('08326', 'Schwarzwald-Baar-Kreis'), ('08327', 'Tuttlingen, Landkreis'), ('08335', 'Konstanz, Landkreis'), ('08336', 'Lörrach, Landkreis'), ('08337', 'Waldshut, Landkreis'), ('08415', 'Reutlingen, Landkreis'), ('08416', 'Tübingen, Landkreis'), ('08417', 'Zollernalbkreis'), ('08421', 'Ulm, Stadt'), ('08425', 'Alb-Donau-Kreis'), ('08426', 'Biberach, Landkreis'), ('08435', 'Bodenseekreis'), ('08436', 'Ravensburg, Landkreis'), ('08437', 'Sigmaringen, Landkreis'), ('09161', 'Ingolstadt, Stadt'), ('09162', 'München, Stadt'), ('09163', 'Rosenheim, Stadt'), ('09171', 'Altötting, Landkreis'), ('09172', 'Berchtesgadener Land, Landkreis'), ('09173', 'Bad Tölz-Wolfratshausen, Landkreis'), ('09174', 'Dachau, Landkreis'), ('09175', 'Ebersberg, Landkreis'), ('09176', 'Eichstätt, Landkreis'), ('09177', 'Erding, Landkreis'), ('09178', 'Freising, Landkreis'), ('09179', 'Fürstenfeldbruck, Landkreis'), ('09180', 'Garmisch-Partenkirchen, Landkreis'), ('09181', 'Landsberg am Lech, Landkreis'), ('09182', 'Miesbach, Landkreis'), ('09183', 'Mühldorf a.Inn, Landkreis'), ('09184', 'München, Landkreis'), ('09185', 'Neuburg-Schrobenhausen, Landkreis'), ('09186', 'Pfaffenhofen a.d.Ilm, Landkreis'), ('09187', 'Rosenheim, Landkreis'), ('09188', 'Starnberg, Landkreis'), ('09189', 'Traunstein, Landkreis'), ('09190', 'Weilheim-Schongau, Landkreis'), ('09261', 'Landshut, Stadt'), ('09262', 'Passau, Stadt'), ('09263', 'Straubing, Stadt'), ('09271', 'Deggendorf, Landkreis'), ('09272', 'Freyung-Grafenau, Landkreis'), ('09273', 'Kelheim, Landkreis'), ('09274', 'Landshut, Landkreis'), ('09275', 'Passau, Landkreis'), ('09276', 'Regen, Landkreis'), ('09277', 'Rottal-Inn, Landkreis'), ('09278', 'Straubing-Bogen, Landkreis'), ('09279', 'Dingolfing-Landau, Landkreis'), ('09361', 'Amberg, Stadt'), ('09362', 'Regensburg, Stadt'), ('09363', 'Weiden i.d.OPf., Stadt'), ('09371', 'Amberg-Sulzbach, Landkreis'), ('09372', 'Cham, Landkreis'), ('09373', 'Neumarkt i.d.OPf., Landkreis'), ('09374', 'Neustadt a.d.Waldnaab, Landkreis'), ('09375', 'Regensburg, Landkreis'), ('09376', 'Schwandorf, Landkreis'), ('09377', 'Tirschenreuth, Landkreis'), ('09461', 'Bamberg, Stadt'), ('09462', 'Bayreuth, Stadt'), ('09463', 'Coburg, Stadt'), ('09464', 'Hof, Stadt'), ('09471', 'Bamberg, Landkreis'), ('09472', 'Bayreuth, Landkreis'), ('09473', 'Coburg, Landkreis'), ('09474', 'Forchheim, Landkreis'), ('09475', 'Hof, Landkreis'), ('09476', 'Kronach, Landkreis'), ('09477', 'Kulmbach, Landkreis'), ('09478', 'Lichtenfels, Landkreis'), ('09479', 'Wunsiedel i.Fichtelgebirge, Landkreis'), ('09561', 'Ansbach, Stadt'), ('09562', 'Erlangen, Stadt'), ('09563', 'Fürth, Stadt'), ('09564', 'Nürnberg, Stadt'), ('09565', 'Schwabach, Stadt'), ('09571', 'Ansbach, Landkreis'), ('09572', 'Erlangen-Höchstadt, Landkreis'), ('09573', 'Fürth, Landkreis'), ('09574', 'Nürnberger Land, Landkreis'), ('09575', 'Neustadt a.d.Aisch-Bad Windsheim, Landkreis'), ('09576', 'Roth, Landkreis'), ('09577', 'Weißenburg-Gunzenhausen, Landkreis'), ('09661', 'Aschaffenburg, Stadt'), ('09662', 'Schweinfurt, Stadt'), ('09663', 'Würzburg, Stadt'), ('09671', 'Aschaffenburg, Landkreis'), ('09672', 'Bad Kissingen, Landkreis'), ('09673', 'Rhön-Grabfeld, Landkreis'), ('09674', 'Haßberge, Landkreis'), ('09675', 'Kitzingen, Landkreis'), ('09676', 'Miltenberg, Landkreis'), ('09677', 'Main-Spessart, Landkreis'), ('09678', 'Schweinfurt, Landkreis'), ('09679', 'Würzburg, Landkreis'), ('09761', 'Augsburg, Stadt'), ('09762', 'Kaufbeuren, Stadt'), ('09763', 'Kempten (Allgäu), Stadt'), ('09764', 'Memmingen, Stadt'), ('09771', 'Aichach-Friedberg, Landkreis'), ('09772', 'Augsburg, Landkreis'), ('09773', 'Dillingen a.d.Donau, Landkreis'), ('09774', 'Günzburg, Landkreis'), ('09775', 'Neu-Ulm, Landkreis'), ('09776', 'Lindau (Bodensee), Landkreis'), ('09777', 'Ostallgäu, Landkreis'), ('09778', 'Unterallgäu, Landkreis'), ('09779', 'Donau-Ries, Landkreis'), ('09780', 'Oberallgäu, Landkreis'), ('10041', 'Regionalverband Saarbrücken'), ('10042', 'Merzig-Wadern, Landkreis'), ('10043', 'Neunkirchen, Landkreis'), ('10044', 'Saarlouis, Landkreis'), ('10045', 'Saarpfalz-Kreis'), ('10046', 'St. Wendel, Landkreis'), ('11000', 'Berlin'), ('12051', 'Brandenburg an der Havel, Stadt'), ('12052', 'Cottbus, Stadt'), ('12053', 'Frankfurt (Oder), Stadt'), ('12054', 'Potsdam, Stadt'), ('12060', 'Barnim, Landkreis'), ('12061', 'Dahme-Spreewald, Landkreis'), ('12062', 'Elbe-Elster, Landkreis'), ('12063', 'Havelland, Landkreis'), ('12064', 'Märkisch-Oderland, Landkreis'), ('12065', 'Oberhavel, Landkreis'), ('12066', 'Oberspreewald-Lausitz, Landkreis'), ('12067', 'Oder-Spree, Landkreis'), ('12068', 'Ostprignitz-Ruppin, Landkreis'), ('12069', 'Potsdam-Mittelmark, Landkreis'), ('12070', 'Prignitz, Landkreis'), ('12071', 'Spree-Neiße, Landkreis'), ('12072', 'Teltow-Fläming, Landkreis'), ('12073', 'Uckermark, Landkreis'), ('13003', 'Rostock'), ('13004', 'Schwerin'), ('13071', 'Mecklenburgische Seenplatte, Landkreis'), ('13072', 'Landkreis Rostock'), ('13073', 'Vorpommern-Rügen, Landkreis'), ('13074', 'Nordwestmecklenburg, Landkreis'), ('13075', 'Vorpommern-Greifswald, Landkreis'), ('13076', 'Ludwigslust-Parchim, Landkreis'), ('14511', 'Chemnitz, Stadt'), ('14521', 'Erzgebirgskreis'), ('14522', 'Mittelsachsen, Landkreis'), ('14523', 'Vogtlandkreis'), ('14524', 'Zwickau, Landkreis'), ('14612', 'Dresden, Stadt'), ('14625', 'Bautzen, Landkreis'), ('14626', 'Görlitz, Landkreis'), ('14627', 'Meißen, Landkreis'), ('14628', 'Sächsische Schweiz-Osterzgebirge, Landkreis'), ('14713', 'Leipzig, Stadt'), ('14729', 'Leipzig, Landkreis'), ('14730', 'Nordsachsen, Landkreis'), ('15001', 'Dessau-Roßlau, Stadt'), ('15002', 'Halle (Saale), Stadt'), ('15003', 'Magdeburg, Landeshauptstadt'), ('15081', 'Altmarkkreis Salzwedel'), ('15082', 'Anhalt-Bitterfeld, Landkreis'), ('15083', 'Börde, Landkreis'), ('15084', 'Burgenlandkreis'), ('15085', 'Harz, Landkreis'), ('15086', 'Jerichower Land, Landkreis'), ('15087', 'Mansfeld-Südharz, Landkreis'), ('15088', 'Saalekreis'), ('15089', 'Salzlandkreis'), ('15090', 'Stendal, Landkreis'), ('15091', 'Wittenberg, Landkreis'), ('16051', 'Erfurt, Stadt'), ('16052', 'Gera, Stadt'), ('16053', 'Jena, Stadt'), ('16054', 'Suhl, Stadt'), ('16055', 'Weimar, Stadt'), ('16061', 'Eichsfeld, Landkreis'), ('16062', 'Nordhausen, Landkreis'), ('16063', 'Wartburgkreis'), ('16064', 'Unstrut-Hainich-Kreis'), ('16065', 'Kyffhäuserkreis'), ('16066', 'Schmalkalden-Meiningen, Landkreis'), ('16067', 'Gotha, Landkreis'), ('16068', 'Sömmerda, Landkreis'), ('16069', 'Hildburghausen, Landkreis'), ('16070', 'Ilm-Kreis'), ('16071', 'Weimarer Land, Landkreis'), ('16072', 'Sonneberg, Landkreis'), ('16073', 'Saalfeld-Rudolstadt, Landkreis'), ('16074', 'Saale-Holzland-Kreis'), ('16075', 'Saale-Orla-Kreis'), ('16076', 'Greiz, Landkreis'), ('16077', 'Altenburger Land, Landkreis')),\n",
+        "base AS (SELECT r.*, l.analysis_region_display_name FROM ev_analytics.gold.vw_powerbi_region_kpi_published r INNER JOIN latest USING (date_set_id) INNER JOIN display_labels l USING (analysis_region_code)),\n",
+        "benchmarks AS (SELECT PERCENTILE(bev_penetration_percent, 0.5) AS median_bev_penetration_percent, PERCENTILE(in_service_registered_charging_points_per_1000_bevs, 0.5) AS median_points_per_1000_bevs, PERCENTILE(in_service_registered_fast_charging_points_per_1000_bevs, 0.5) AS median_fast_points_per_1000_bevs, PERCENTILE(in_service_registered_charging_facilities_per_1000_bevs, 0.5) AS median_facilities_per_1000_bevs FROM base),\n",
+        "ranked AS (SELECT b.*, m.*, ROW_NUMBER() OVER (ORDER BY registered_bev_passenger_car_stock DESC, analysis_region_code) AS bev_rank, in_service_registered_charging_points_per_1000_bevs - median_points_per_1000_bevs AS points_vs_median, 100.0 * (in_service_registered_charging_points_per_1000_bevs - median_points_per_1000_bevs) / median_points_per_1000_bevs AS points_vs_median_percent, in_service_registered_fast_charging_points_per_1000_bevs - median_fast_points_per_1000_bevs AS fast_points_vs_median, 100.0 * (in_service_registered_fast_charging_points_per_1000_bevs - median_fast_points_per_1000_bevs) / median_fast_points_per_1000_bevs AS fast_points_vs_median_percent, CASE WHEN in_service_registered_charging_points_per_1000_bevs < median_points_per_1000_bevs AND in_service_registered_fast_charging_points_per_1000_bevs < median_fast_points_per_1000_bevs THEN 'Below both medians' WHEN in_service_registered_charging_points_per_1000_bevs < median_points_per_1000_bevs THEN 'Below total median' WHEN in_service_registered_fast_charging_points_per_1000_bevs < median_fast_points_per_1000_bevs THEN 'Below fast median' ELSE 'At or above both medians' END AS screening_signal FROM base b CROSS JOIN benchmarks m),\n",
+        "profile AS (SELECT ranked.*, CONCAT(FORMAT_NUMBER(registered_bev_passenger_car_stock, 0), ' | BEV stock rank: ', CAST(bev_rank AS STRING), ' of 400') AS registered_bevs_rank_display, CONCAT(analysis_region_display_name, ' ranks ', CAST(bev_rank AS STRING), ' of 400 by registered BEV stock and is ', CASE WHEN points_vs_median < 0 AND fast_points_vs_median < 0 THEN 'below the regional median on both total and fast charging provision.' WHEN points_vs_median < 0 THEN 'below the regional median on total charging provision.' WHEN fast_points_vs_median < 0 THEN 'below the regional median on fast charging provision.' ELSE 'at or above both regional provision medians.' END) AS profile_story, CONCAT(FORMAT_NUMBER(ABS(points_vs_median_percent), 1), '% ', CASE WHEN points_vs_median_percent < 0 THEN 'below' ELSE 'above' END, ' regional median') AS total_comparison_label, CONCAT(FORMAT_NUMBER(ABS(fast_points_vs_median_percent), 1), '% ', CASE WHEN fast_points_vs_median_percent < 0 THEN 'below' ELSE 'above' END, ' regional median') AS fast_comparison_label, CASE WHEN bev_rank > 100 THEN 'Other regions' WHEN fast_points_vs_median < 0 THEN 'Top 100: fast below median' WHEN points_vs_median < 0 THEN 'Top 100: total below median' ELSE 'Top 100: at/above both medians' END AS market_focus_group FROM ranked)\n",
+        "SELECT * FROM profile WHERE analysis_region_display_name = :region_name"
+      ],
+      "parameters": [
+        {
+          "keyword": "region_name",
+          "displayName": "Region",
+          "dataType": "STRING",
+          "defaultSelection": {
+            "values": {
+              "dataType": "STRING",
+              "values": [
+                {
+                  "value": "München, Stadt"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ds_profile_compare_parameterized",
+      "displayName": "Selected region comparison with regional medians",
+      "queryLines": [
+        "WITH latest AS (SELECT date_set_id FROM ev_analytics.gold.vw_powerbi_date_set_quality WHERE publication_state = 'published' AND power_bi_refresh_ready = true ORDER BY completed_at DESC LIMIT 1),\n",
+        "display_labels(analysis_region_code, analysis_region_display_name) AS (VALUES ('01001', 'Flensburg, Stadt'), ('01002', 'Kiel, Stadt'), ('01003', 'Lübeck, Stadt'), ('01004', 'Neumünster, Stadt'), ('01051', 'Dithmarschen'), ('01053', 'Herzogtum Lauenburg'), ('01054', 'Nordfriesland'), ('01055', 'Ostholstein'), ('01056', 'Pinneberg'), ('01057', 'Plön'), ('01058', 'Rendsburg-Eckernförde'), ('01059', 'Schleswig-Flensburg'), ('01060', 'Segeberg'), ('01061', 'Steinburg'), ('01062', 'Stormarn'), ('02000', 'Hamburg'), ('03101', 'Braunschweig, Stadt'), ('03102', 'Salzgitter, Stadt'), ('03103', 'Wolfsburg, Stadt'), ('03151', 'Gifhorn, Landkreis'), ('03153', 'Goslar, Landkreis'), ('03154', 'Helmstedt, Landkreis'), ('03155', 'Northeim, Landkreis'), ('03157', 'Peine, Landkreis'), ('03158', 'Wolfenbüttel, Landkreis'), ('03159', 'Göttingen, Landkreis'), ('03241', 'Region Hannover, Landkreis'), ('03251', 'Diepholz, Landkreis'), ('03252', 'Hameln-Pyrmont, Landkreis'), ('03254', 'Hildesheim, Landkreis'), ('03255', 'Holzminden, Landkreis'), ('03256', 'Nienburg (Weser), Landkreis'), ('03257', 'Schaumburg, Landkreis'), ('03351', 'Celle, Landkreis'), ('03352', 'Cuxhaven, Landkreis'), ('03353', 'Harburg, Landkreis'), ('03354', 'Lüchow-Dannenberg, Landkreis'), ('03355', 'Lüneburg, Landkreis'), ('03356', 'Osterholz, Landkreis'), ('03357', 'Rotenburg (Wümme), Landkreis'), ('03358', 'Heidekreis'), ('03359', 'Stade, Landkreis'), ('03360', 'Uelzen, Landkreis'), ('03361', 'Verden, Landkreis'), ('03401', 'Delmenhorst, Stadt'), ('03402', 'Emden, Stadt'), ('03403', 'Oldenburg (Oldb), Stadt'), ('03404', 'Osnabrück, Stadt'), ('03405', 'Wilhelmshaven, Stadt'), ('03451', 'Ammerland, Landkreis'), ('03452', 'Aurich, Landkreis'), ('03453', 'Cloppenburg, Landkreis'), ('03454', 'Emsland, Landkreis'), ('03455', 'Friesland, Landkreis'), ('03456', 'Grafschaft Bentheim, Landkreis'), ('03457', 'Leer, Landkreis'), ('03458', 'Oldenburg, Landkreis'), ('03459', 'Osnabrück, Landkreis'), ('03460', 'Vechta, Landkreis'), ('03461', 'Wesermarsch, Landkreis'), ('03462', 'Wittmund, Landkreis'), ('04011', 'Bremen'), ('04012', 'Bremerhaven, Stadt'), ('05111', 'Düsseldorf, Stadt'), ('05112', 'Duisburg, Stadt'), ('05113', 'Essen, Stadt'), ('05114', 'Krefeld, Stadt'), ('05116', 'Mönchengladbach, Stadt'), ('05117', 'Mülheim an der Ruhr, Stadt'), ('05119', 'Oberhausen, Stadt'), ('05120', 'Remscheid, Stadt'), ('05122', 'Solingen, Stadt'), ('05124', 'Wuppertal, Stadt'), ('05154', 'Kleve'), ('05158', 'Mettmann'), ('05162', 'Rhein-Kreis Neuss'), ('05166', 'Viersen'), ('05170', 'Wesel'), ('05314', 'Bonn, Stadt'), ('05315', 'Köln, Stadt'), ('05316', 'Leverkusen, Stadt'), ('05334', 'Städteregion Aachen'), ('05358', 'Düren'), ('05362', 'Rhein-Erft-Kreis'), ('05366', 'Euskirchen'), ('05370', 'Heinsberg'), ('05374', 'Oberbergischer Kreis'), ('05378', 'Rheinisch-Bergischer Kreis'), ('05382', 'Rhein-Sieg-Kreis'), ('05512', 'Bottrop, Stadt'), ('05513', 'Gelsenkirchen, Stadt'), ('05515', 'Münster, Stadt'), ('05554', 'Borken'), ('05558', 'Coesfeld'), ('05562', 'Recklinghausen'), ('05566', 'Steinfurt'), ('05570', 'Warendorf'), ('05711', 'Bielefeld, Stadt'), ('05754', 'Gütersloh'), ('05758', 'Herford'), ('05762', 'Höxter'), ('05766', 'Lippe'), ('05770', 'Minden-Lübbecke'), ('05774', 'Paderborn'), ('05911', 'Bochum, Stadt'), ('05913', 'Dortmund, Stadt'), ('05914', 'Hagen, Stadt'), ('05915', 'Hamm, Stadt'), ('05916', 'Herne, Stadt'), ('05954', 'Ennepe-Ruhr-Kreis'), ('05958', 'Hochsauerlandkreis'), ('05962', 'Märkischer Kreis'), ('05966', 'Olpe'), ('05970', 'Siegen-Wittgenstein'), ('05974', 'Soest'), ('05978', 'Unna'), ('06411', 'Darmstadt, Stadt'), ('06412', 'Frankfurt am Main, Stadt'), ('06413', 'Offenbach am Main, Stadt'), ('06414', 'Wiesbaden, Stadt'), ('06415', 'Hanau, Stadt'), ('06431', 'Bergstraße, Landkreis'), ('06432', 'Darmstadt-Dieburg, Landkreis'), ('06433', 'Groß-Gerau, Landkreis'), ('06434', 'Hochtaunuskreis'), ('06435', 'Main-Kinzig-Kreis'), ('06436', 'Main-Taunus-Kreis'), ('06437', 'Odenwaldkreis'), ('06438', 'Offenbach, Landkreis'), ('06439', 'Rheingau-Taunus-Kreis'), ('06440', 'Wetteraukreis'), ('06531', 'Gießen, Landkreis'), ('06532', 'Lahn-Dill-Kreis'), ('06533', 'Limburg-Weilburg, Landkreis'), ('06534', 'Marburg-Biedenkopf, Landkreis'), ('06535', 'Vogelsbergkreis'), ('06611', 'Kassel, Stadt'), ('06631', 'Fulda, Landkreis'), ('06632', 'Hersfeld-Rotenburg, Landkreis'), ('06633', 'Kassel, Landkreis'), ('06634', 'Schwalm-Eder-Kreis'), ('06635', 'Waldeck-Frankenberg, Landkreis'), ('06636', 'Werra-Meißner-Kreis'), ('07111', 'Koblenz, Stadt'), ('07131', 'Ahrweiler, Landkreis'), ('07132', 'Altenkirchen (Westerwald), Landkreis'), ('07133', 'Bad Kreuznach, Landkreis'), ('07134', 'Birkenfeld, Landkreis'), ('07135', 'Cochem-Zell, Landkreis'), ('07137', 'Mayen-Koblenz, Landkreis'), ('07138', 'Neuwied, Landkreis'), ('07140', 'Rhein-Hunsrück-Kreis'), ('07141', 'Rhein-Lahn-Kreis'), ('07143', 'Westerwaldkreis'), ('07211', 'Trier-Saarburg (incl. Trier, Stadt)'), ('07231', 'Bernkastel-Wittlich, Landkreis'), ('07232', 'Eifelkreis Bitburg-Prüm'), ('07233', 'Vulkaneifel, Landkreis'), ('07311', 'Frankenthal (Pfalz), Stadt'), ('07312', 'Kaiserslautern, Stadt'), ('07313', 'Landau in der Pfalz, Stadt'), ('07314', 'Ludwigshafen am Rhein, Stadt'), ('07315', 'Mainz, Stadt'), ('07316', 'Neustadt an der Weinstraße, Stadt'), ('07317', 'Pirmasens, Stadt'), ('07318', 'Speyer, Stadt'), ('07319', 'Worms, Stadt'), ('07320', 'Zweibrücken, Stadt'), ('07331', 'Alzey-Worms, Landkreis'), ('07332', 'Bad Dürkheim, Landkreis'), ('07333', 'Donnersbergkreis'), ('07334', 'Germersheim, Landkreis'), ('07335', 'Kaiserslautern, Landkreis'), ('07336', 'Kusel, Landkreis'), ('07337', 'Südliche Weinstraße, Landkreis'), ('07338', 'Rhein-Pfalz-Kreis'), ('07339', 'Mainz-Bingen, Landkreis'), ('07340', 'Südwestpfalz, Landkreis'), ('08111', 'Stuttgart, Stadt'), ('08115', 'Böblingen, Landkreis'), ('08116', 'Esslingen, Landkreis'), ('08117', 'Göppingen, Landkreis'), ('08118', 'Ludwigsburg, Landkreis'), ('08119', 'Rems-Murr-Kreis'), ('08121', 'Heilbronn, Stadt'), ('08125', 'Heilbronn, Landkreis'), ('08126', 'Hohenlohekreis'), ('08127', 'Schwäbisch Hall, Landkreis'), ('08128', 'Main-Tauber-Kreis'), ('08135', 'Heidenheim, Landkreis'), ('08136', 'Ostalbkreis'), ('08211', 'Baden-Baden, Stadt'), ('08212', 'Karlsruhe, Stadt'), ('08215', 'Karlsruhe, Landkreis'), ('08216', 'Rastatt, Landkreis'), ('08221', 'Heidelberg, Stadt'), ('08222', 'Mannheim, Stadt'), ('08225', 'Neckar-Odenwald-Kreis'), ('08226', 'Rhein-Neckar-Kreis'), ('08231', 'Pforzheim, Stadt'), ('08235', 'Calw, Landkreis'), ('08236', 'Enzkreis'), ('08237', 'Freudenstadt, Landkreis'), ('08311', 'Freiburg im Breisgau, Stadt'), ('08315', 'Breisgau-Hochschwarzwald, Landkreis'), ('08316', 'Emmendingen, Landkreis'), ('08317', 'Ortenaukreis'), ('08325', 'Rottweil, Landkreis'), ('08326', 'Schwarzwald-Baar-Kreis'), ('08327', 'Tuttlingen, Landkreis'), ('08335', 'Konstanz, Landkreis'), ('08336', 'Lörrach, Landkreis'), ('08337', 'Waldshut, Landkreis'), ('08415', 'Reutlingen, Landkreis'), ('08416', 'Tübingen, Landkreis'), ('08417', 'Zollernalbkreis'), ('08421', 'Ulm, Stadt'), ('08425', 'Alb-Donau-Kreis'), ('08426', 'Biberach, Landkreis'), ('08435', 'Bodenseekreis'), ('08436', 'Ravensburg, Landkreis'), ('08437', 'Sigmaringen, Landkreis'), ('09161', 'Ingolstadt, Stadt'), ('09162', 'München, Stadt'), ('09163', 'Rosenheim, Stadt'), ('09171', 'Altötting, Landkreis'), ('09172', 'Berchtesgadener Land, Landkreis'), ('09173', 'Bad Tölz-Wolfratshausen, Landkreis'), ('09174', 'Dachau, Landkreis'), ('09175', 'Ebersberg, Landkreis'), ('09176', 'Eichstätt, Landkreis'), ('09177', 'Erding, Landkreis'), ('09178', 'Freising, Landkreis'), ('09179', 'Fürstenfeldbruck, Landkreis'), ('09180', 'Garmisch-Partenkirchen, Landkreis'), ('09181', 'Landsberg am Lech, Landkreis'), ('09182', 'Miesbach, Landkreis'), ('09183', 'Mühldorf a.Inn, Landkreis'), ('09184', 'München, Landkreis'), ('09185', 'Neuburg-Schrobenhausen, Landkreis'), ('09186', 'Pfaffenhofen a.d.Ilm, Landkreis'), ('09187', 'Rosenheim, Landkreis'), ('09188', 'Starnberg, Landkreis'), ('09189', 'Traunstein, Landkreis'), ('09190', 'Weilheim-Schongau, Landkreis'), ('09261', 'Landshut, Stadt'), ('09262', 'Passau, Stadt'), ('09263', 'Straubing, Stadt'), ('09271', 'Deggendorf, Landkreis'), ('09272', 'Freyung-Grafenau, Landkreis'), ('09273', 'Kelheim, Landkreis'), ('09274', 'Landshut, Landkreis'), ('09275', 'Passau, Landkreis'), ('09276', 'Regen, Landkreis'), ('09277', 'Rottal-Inn, Landkreis'), ('09278', 'Straubing-Bogen, Landkreis'), ('09279', 'Dingolfing-Landau, Landkreis'), ('09361', 'Amberg, Stadt'), ('09362', 'Regensburg, Stadt'), ('09363', 'Weiden i.d.OPf., Stadt'), ('09371', 'Amberg-Sulzbach, Landkreis'), ('09372', 'Cham, Landkreis'), ('09373', 'Neumarkt i.d.OPf., Landkreis'), ('09374', 'Neustadt a.d.Waldnaab, Landkreis'), ('09375', 'Regensburg, Landkreis'), ('09376', 'Schwandorf, Landkreis'), ('09377', 'Tirschenreuth, Landkreis'), ('09461', 'Bamberg, Stadt'), ('09462', 'Bayreuth, Stadt'), ('09463', 'Coburg, Stadt'), ('09464', 'Hof, Stadt'), ('09471', 'Bamberg, Landkreis'), ('09472', 'Bayreuth, Landkreis'), ('09473', 'Coburg, Landkreis'), ('09474', 'Forchheim, Landkreis'), ('09475', 'Hof, Landkreis'), ('09476', 'Kronach, Landkreis'), ('09477', 'Kulmbach, Landkreis'), ('09478', 'Lichtenfels, Landkreis'), ('09479', 'Wunsiedel i.Fichtelgebirge, Landkreis'), ('09561', 'Ansbach, Stadt'), ('09562', 'Erlangen, Stadt'), ('09563', 'Fürth, Stadt'), ('09564', 'Nürnberg, Stadt'), ('09565', 'Schwabach, Stadt'), ('09571', 'Ansbach, Landkreis'), ('09572', 'Erlangen-Höchstadt, Landkreis'), ('09573', 'Fürth, Landkreis'), ('09574', 'Nürnberger Land, Landkreis'), ('09575', 'Neustadt a.d.Aisch-Bad Windsheim, Landkreis'), ('09576', 'Roth, Landkreis'), ('09577', 'Weißenburg-Gunzenhausen, Landkreis'), ('09661', 'Aschaffenburg, Stadt'), ('09662', 'Schweinfurt, Stadt'), ('09663', 'Würzburg, Stadt'), ('09671', 'Aschaffenburg, Landkreis'), ('09672', 'Bad Kissingen, Landkreis'), ('09673', 'Rhön-Grabfeld, Landkreis'), ('09674', 'Haßberge, Landkreis'), ('09675', 'Kitzingen, Landkreis'), ('09676', 'Miltenberg, Landkreis'), ('09677', 'Main-Spessart, Landkreis'), ('09678', 'Schweinfurt, Landkreis'), ('09679', 'Würzburg, Landkreis'), ('09761', 'Augsburg, Stadt'), ('09762', 'Kaufbeuren, Stadt'), ('09763', 'Kempten (Allgäu), Stadt'), ('09764', 'Memmingen, Stadt'), ('09771', 'Aichach-Friedberg, Landkreis'), ('09772', 'Augsburg, Landkreis'), ('09773', 'Dillingen a.d.Donau, Landkreis'), ('09774', 'Günzburg, Landkreis'), ('09775', 'Neu-Ulm, Landkreis'), ('09776', 'Lindau (Bodensee), Landkreis'), ('09777', 'Ostallgäu, Landkreis'), ('09778', 'Unterallgäu, Landkreis'), ('09779', 'Donau-Ries, Landkreis'), ('09780', 'Oberallgäu, Landkreis'), ('10041', 'Regionalverband Saarbrücken'), ('10042', 'Merzig-Wadern, Landkreis'), ('10043', 'Neunkirchen, Landkreis'), ('10044', 'Saarlouis, Landkreis'), ('10045', 'Saarpfalz-Kreis'), ('10046', 'St. Wendel, Landkreis'), ('11000', 'Berlin'), ('12051', 'Brandenburg an der Havel, Stadt'), ('12052', 'Cottbus, Stadt'), ('12053', 'Frankfurt (Oder), Stadt'), ('12054', 'Potsdam, Stadt'), ('12060', 'Barnim, Landkreis'), ('12061', 'Dahme-Spreewald, Landkreis'), ('12062', 'Elbe-Elster, Landkreis'), ('12063', 'Havelland, Landkreis'), ('12064', 'Märkisch-Oderland, Landkreis'), ('12065', 'Oberhavel, Landkreis'), ('12066', 'Oberspreewald-Lausitz, Landkreis'), ('12067', 'Oder-Spree, Landkreis'), ('12068', 'Ostprignitz-Ruppin, Landkreis'), ('12069', 'Potsdam-Mittelmark, Landkreis'), ('12070', 'Prignitz, Landkreis'), ('12071', 'Spree-Neiße, Landkreis'), ('12072', 'Teltow-Fläming, Landkreis'), ('12073', 'Uckermark, Landkreis'), ('13003', 'Rostock'), ('13004', 'Schwerin'), ('13071', 'Mecklenburgische Seenplatte, Landkreis'), ('13072', 'Landkreis Rostock'), ('13073', 'Vorpommern-Rügen, Landkreis'), ('13074', 'Nordwestmecklenburg, Landkreis'), ('13075', 'Vorpommern-Greifswald, Landkreis'), ('13076', 'Ludwigslust-Parchim, Landkreis'), ('14511', 'Chemnitz, Stadt'), ('14521', 'Erzgebirgskreis'), ('14522', 'Mittelsachsen, Landkreis'), ('14523', 'Vogtlandkreis'), ('14524', 'Zwickau, Landkreis'), ('14612', 'Dresden, Stadt'), ('14625', 'Bautzen, Landkreis'), ('14626', 'Görlitz, Landkreis'), ('14627', 'Meißen, Landkreis'), ('14628', 'Sächsische Schweiz-Osterzgebirge, Landkreis'), ('14713', 'Leipzig, Stadt'), ('14729', 'Leipzig, Landkreis'), ('14730', 'Nordsachsen, Landkreis'), ('15001', 'Dessau-Roßlau, Stadt'), ('15002', 'Halle (Saale), Stadt'), ('15003', 'Magdeburg, Landeshauptstadt'), ('15081', 'Altmarkkreis Salzwedel'), ('15082', 'Anhalt-Bitterfeld, Landkreis'), ('15083', 'Börde, Landkreis'), ('15084', 'Burgenlandkreis'), ('15085', 'Harz, Landkreis'), ('15086', 'Jerichower Land, Landkreis'), ('15087', 'Mansfeld-Südharz, Landkreis'), ('15088', 'Saalekreis'), ('15089', 'Salzlandkreis'), ('15090', 'Stendal, Landkreis'), ('15091', 'Wittenberg, Landkreis'), ('16051', 'Erfurt, Stadt'), ('16052', 'Gera, Stadt'), ('16053', 'Jena, Stadt'), ('16054', 'Suhl, Stadt'), ('16055', 'Weimar, Stadt'), ('16061', 'Eichsfeld, Landkreis'), ('16062', 'Nordhausen, Landkreis'), ('16063', 'Wartburgkreis'), ('16064', 'Unstrut-Hainich-Kreis'), ('16065', 'Kyffhäuserkreis'), ('16066', 'Schmalkalden-Meiningen, Landkreis'), ('16067', 'Gotha, Landkreis'), ('16068', 'Sömmerda, Landkreis'), ('16069', 'Hildburghausen, Landkreis'), ('16070', 'Ilm-Kreis'), ('16071', 'Weimarer Land, Landkreis'), ('16072', 'Sonneberg, Landkreis'), ('16073', 'Saalfeld-Rudolstadt, Landkreis'), ('16074', 'Saale-Holzland-Kreis'), ('16075', 'Saale-Orla-Kreis'), ('16076', 'Greiz, Landkreis'), ('16077', 'Altenburger Land, Landkreis')),\n",
+        "base AS (SELECT r.*, l.analysis_region_display_name FROM ev_analytics.gold.vw_powerbi_region_kpi_published r INNER JOIN latest USING (date_set_id) INNER JOIN display_labels l USING (analysis_region_code)),\n",
+        "benchmarks AS (SELECT PERCENTILE(in_service_registered_charging_points_per_1000_bevs, 0.5) AS median_points, PERCENTILE(in_service_registered_fast_charging_points_per_1000_bevs, 0.5) AS median_fast, PERCENTILE(in_service_registered_charging_facilities_per_1000_bevs, 0.5) AS median_facilities FROM base)\n",
+        "SELECT * FROM (SELECT analysis_region_display_name, 'Total points / 1,000 BEVs' AS metric, CAST(in_service_registered_charging_points_per_1000_bevs AS DOUBLE) AS selected_region, CAST(median_points AS DOUBLE) AS regional_median, 1 AS metric_order FROM base CROSS JOIN benchmarks UNION ALL SELECT analysis_region_display_name, 'Fast points / 1,000 BEVs' AS metric, CAST(in_service_registered_fast_charging_points_per_1000_bevs AS DOUBLE) AS selected_region, CAST(median_fast AS DOUBLE) AS regional_median, 2 AS metric_order FROM base CROSS JOIN benchmarks UNION ALL SELECT analysis_region_display_name, 'Facilities / 1,000 BEVs' AS metric, CAST(in_service_registered_charging_facilities_per_1000_bevs AS DOUBLE) AS selected_region, CAST(median_facilities AS DOUBLE) AS regional_median, 3 AS metric_order FROM base CROSS JOIN benchmarks) comparisons WHERE analysis_region_display_name = :region_name"
+      ],
+      "parameters": [
+        {
+          "keyword": "region_name",
+          "displayName": "Region",
+          "dataType": "STRING",
+          "defaultSelection": {
+            "values": {
+              "dataType": "STRING",
+              "values": [
+                {
+                  "value": "München, Stadt"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "germany_market_provision_screening",
+      "displayName": "Germany Market & Provision Screening",
+      "layout": [
+        {
+          "widget": {
+            "name": "market_header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# Germany Market & Provision Screening\n",
+                "\n",
+                "Compare registered EV adoption with public charging provision across 400 German analysis regions."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "market_registered_bevs",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_national",
+                  "fields": [
+                    {
+                      "name": "registered_bevs",
+                      "expression": "`registered_bevs`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "registered_bevs",
+                  "displayName": "Registered BEVs",
+                  "format": {
+                    "type": "number",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Registered BEVs",
+                "showDescription": true,
+                "description": "4.76% of registered passenger cars"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "market_public_points",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_national",
+                  "fields": [
+                    {
+                      "name": "in_service_points",
+                      "expression": "`in_service_points`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "in_service_points",
+                  "displayName": "Public charging points",
+                  "format": {
+                    "type": "number",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 1
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Public Charging Points",
+                "showDescription": true,
+                "description": "Regional median: 84.7 / 1,000 BEVs"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "market_fast_points",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_national",
+                  "fields": [
+                    {
+                      "name": "in_service_fast_points",
+                      "expression": "`in_service_fast_points`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "in_service_fast_points",
+                  "displayName": "Fast charging points",
+                  "format": {
+                    "type": "number",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 1
+                    }
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Fast Charging Points",
+                "showDescription": true,
+                "description": "Regional median: 25.3 / 1,000 BEVs"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "market_screening_signal",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_national",
+                  "fields": [
+                    {
+                      "name": "high_bev_below_both",
+                      "expression": "`high_bev_below_both`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "high_bev_below_both",
+                  "displayName": "Largest BEV markets below both medians",
+                  "format": {
+                    "type": "number"
+                  },
+                  "formatTemplate": "{{ @formatted }} of 100"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Largest BEV Markets Below Both Medians",
+                "showDescription": true,
+                "description": "Screening signal, not an investment ranking"
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 2,
+            "width": 3,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "market_scale_provision_scatter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_region",
+                  "fields": [
+                    {
+                      "name": "analysis_region_display_name",
+                      "expression": "`analysis_region_display_name`"
+                    },
+                    {
+                      "name": "registered_bev_passenger_car_stock",
+                      "expression": "`registered_bev_passenger_car_stock`"
+                    },
+                    {
+                      "name": "in_service_registered_charging_points_per_1000_bevs",
+                      "expression": "`in_service_registered_charging_points_per_1000_bevs`"
+                    },
+                    {
+                      "name": "market_focus_group",
+                      "expression": "`market_focus_group`"
+                    },
+                    {
+                      "name": "in_service_registered_fast_charging_points_per_1000_bevs",
+                      "expression": "`in_service_registered_fast_charging_points_per_1000_bevs`"
+                    },
+                    {
+                      "name": "screening_signal",
+                      "expression": "`screening_signal`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "scatter",
+              "encodings": {
+                "x": {
+                  "fieldName": "registered_bev_passenger_car_stock",
+                  "displayName": "Registered BEVs",
+                  "scale": {
+                    "type": "quantitative",
+                    "domainMin": 0
+                  }
+                },
+                "y": {
+                  "fieldName": "in_service_registered_charging_points_per_1000_bevs",
+                  "displayName": "Charging Points per 1,000 BEVs",
+                  "scale": {
+                    "type": "quantitative",
+                    "domainMin": 0
+                  }
+                },
+                "color": {
+                  "fieldName": "market_focus_group",
+                  "displayName": "Screening group",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Top 100: fast below median",
+                        "color": "#D94F8A"
+                      },
+                      {
+                        "value": "Top 100: total below median",
+                        "color": "#18B3AE"
+                      },
+                      {
+                        "value": "Top 100: at/above both medians",
+                        "color": "#38A8C7"
+                      },
+                      {
+                        "value": "Other regions",
+                        "color": "#7F969B"
+                      }
+                    ]
+                  },
+                  "legend": {
+                    "position": "bottom"
+                  }
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "EV Market Scale vs Public Charging Provision",
+                "showDescription": true,
+                "description": "Regions farther right have larger BEV markets; regions lower on the chart have fewer public charging points per 1,000 BEVs."
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "width": 9,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "market_point_mix",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_national",
+                  "fields": [
+                    {
+                      "name": "geography",
+                      "expression": "`geography`"
+                    },
+                    {
+                      "name": "in_service_normal_points",
+                      "expression": "`in_service_normal_points`"
+                    },
+                    {
+                      "name": "in_service_fast_points",
+                      "expression": "`in_service_fast_points`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "fields": [
+                    {
+                      "fieldName": "in_service_normal_points",
+                      "displayName": "Normal"
+                    },
+                    {
+                      "fieldName": "in_service_fast_points",
+                      "displayName": "Fast"
+                    }
+                  ]
+                },
+                "y": {
+                  "fieldName": "geography",
+                  "displayName": "Germany",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "National Charging-Point Mix",
+                "showDescription": true,
+                "description": "74.0% normal (154,702) | 26.0% fast (54,396)"
+              },
+              "mark": {
+                "layout": "stack-100"
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 5,
+            "width": 3,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "market_regions_to_investigate",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_region",
+                  "fields": [
+                    {
+                      "name": "analysis_region_display_name",
+                      "expression": "`analysis_region_display_name`"
+                    },
+                    {
+                      "name": "registered_bev_passenger_car_stock",
+                      "expression": "`registered_bev_passenger_car_stock`"
+                    },
+                    {
+                      "name": "in_service_registered_charging_points_per_1000_bevs",
+                      "expression": "`in_service_registered_charging_points_per_1000_bevs`"
+                    },
+                    {
+                      "name": "points_vs_median_percent",
+                      "expression": "`points_vs_median_percent`"
+                    },
+                    {
+                      "name": "in_service_registered_fast_charging_points_per_1000_bevs",
+                      "expression": "`in_service_registered_fast_charging_points_per_1000_bevs`"
+                    },
+                    {
+                      "name": "fast_points_vs_median_percent",
+                      "expression": "`fast_points_vs_median_percent`"
+                    },
+                    {
+                      "name": "screening_signal",
+                      "expression": "`screening_signal`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`bev_rank` <= 100 AND (`points_vs_median` < 0 OR `fast_points_vs_median` < 0)"
+                    }
+                  ],
+                  "disaggregated": true,
+                  "orders": [
+                    {
+                      "direction": "DESC",
+                      "expression": "`registered_bev_passenger_car_stock`"
+                    }
+                  ]
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "analysis_region_display_name",
+                    "displayName": "Region"
+                  },
+                  {
+                    "fieldName": "registered_bev_passenger_car_stock",
+                    "displayName": "Registered BEVs",
+                    "format": {
+                      "type": "number"
+                    }
+                  },
+                  {
+                    "fieldName": "in_service_registered_charging_points_per_1000_bevs",
+                    "displayName": "Total / 1,000",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 1
+                      }
+                    }
+                  },
+                  {
+                    "fieldName": "points_vs_median_percent",
+                    "displayName": "Δ Total %",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 1
+                      }
+                    },
+                    "formatTemplate": "{{ @formatted }}%"
+                  },
+                  {
+                    "fieldName": "in_service_registered_fast_charging_points_per_1000_bevs",
+                    "displayName": "Fast / 1,000",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 1
+                      }
+                    }
+                  },
+                  {
+                    "fieldName": "fast_points_vs_median_percent",
+                    "displayName": "Δ Fast %",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 1
+                      }
+                    },
+                    "formatTemplate": "{{ @formatted }}%"
+                  },
+                  {
+                    "fieldName": "screening_signal",
+                    "displayName": "Screening signal"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Regions to Investigate",
+                "showDescription": true,
+                "description": "Largest BEV markets below one or both regional medians. Right-click a row and choose Drill to > Region Profile."
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 12,
+            "width": 12,
+            "height": 7
+          }
+        },
+        {
+          "widget": {
+            "name": "market_footer",
+            "multilineTextboxSpec": {
+              "lines": [
+                "**Data:** KBA Jul 2026 | BNetzA Sep 2026 | Destatis Jun 2026 | demand-to-supply lag: 62 days\n\n**Screening scope:** Registered BEV stock and registered public charging provision. Results do not prescribe investment."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 19,
+            "width": 12,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "region_profile",
+      "displayName": "Region Profile",
+      "layout": [
+        {
+          "widget": {
+            "name": "profile_header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "# Region Profile\n",
+                "\n",
+                "See why one region surfaced and compare its registered charging provision with regional medians."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 8,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_region_filter",
+            "queries": [
+              {
+                "name": "region_options",
+                "query": {
+                  "datasetName": "ds_region",
+                  "fields": [
+                    {
+                      "name": "analysis_region_display_name",
+                      "expression": "`analysis_region_display_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "profile_region_parameter",
+                "query": {
+                  "datasetName": "ds_profile_region",
+                  "parameters": [
+                    {
+                      "name": "region_name",
+                      "keyword": "region_name"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              },
+              {
+                "name": "profile_compare_parameter",
+                "query": {
+                  "datasetName": "ds_profile_compare_parameterized",
+                  "parameters": [
+                    {
+                      "name": "region_name",
+                      "keyword": "region_name"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "analysis_region_display_name",
+                    "displayName": "Region",
+                    "queryName": "region_options"
+                  },
+                  {
+                    "parameterName": "region_name",
+                    "queryName": "profile_region_parameter"
+                  },
+                  {
+                    "parameterName": "region_name",
+                    "queryName": "profile_compare_parameter"
+                  }
+                ]
+              },
+              "selection": {
+                "defaultSelection": {
+                  "values": {
+                    "dataType": "STRING",
+                    "values": [
+                      {
+                        "value": "München, Stadt"
+                      }
+                    ]
+                  }
+                }
+              },
+              "disallowAll": true,
+              "frame": {
+                "showTitle": true,
+                "title": "Region"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 0,
+            "width": 4,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_story",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_profile_region",
+                  "fields": [
+                    {
+                      "name": "profile_story",
+                      "expression": "MAX(`profile_story`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "profile_story",
+                  "displayName": "Screening statement"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Region summary"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 12,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_registered_bevs",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_profile_region",
+                  "fields": [
+                    {
+                      "name": "registered_bevs_rank_display",
+                      "expression": "MAX(`registered_bevs_rank_display`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "registered_bevs_rank_display",
+                  "displayName": "Registered BEVs and market rank"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Registered BEVs"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_total_provision",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_profile_region",
+                  "fields": [
+                    {
+                      "name": "selected_total",
+                      "expression": "MAX(`in_service_registered_charging_points_per_1000_bevs`)"
+                    },
+                    {
+                      "name": "total_comparison_label",
+                      "expression": "MAX(`total_comparison_label`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "selected_total",
+                  "displayName": "Total charging provision",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    }
+                  },
+                  "formatTemplate": "{{ @formatted }} / 1,000 | {{total_comparison_label}}"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Total Charging Provision"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 5,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_fast_provision",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_profile_region",
+                  "fields": [
+                    {
+                      "name": "selected_fast",
+                      "expression": "MAX(`in_service_registered_fast_charging_points_per_1000_bevs`)"
+                    },
+                    {
+                      "name": "fast_comparison_label",
+                      "expression": "MAX(`fast_comparison_label`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "selected_fast",
+                  "displayName": "Fast charging provision",
+                  "format": {
+                    "type": "number-plain",
+                    "decimalPlaces": {
+                      "type": "exact",
+                      "places": 1
+                    }
+                  },
+                  "formatTemplate": "{{ @formatted }} / 1,000 | {{fast_comparison_label}}"
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Fast Charging Provision"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 5,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_comparison_bars",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_profile_compare_parameterized",
+                  "fields": [
+                    {
+                      "name": "metric",
+                      "expression": "`metric`"
+                    },
+                    {
+                      "name": "selected_region",
+                      "expression": "`selected_region`"
+                    },
+                    {
+                      "name": "regional_median",
+                      "expression": "`regional_median`"
+                    }
+                  ],
+                  "disaggregated": true,
+                  "orders": [
+                    {
+                      "direction": "ASC",
+                      "expression": "`metric_order`"
+                    }
+                  ]
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "scale": {
+                    "type": "quantitative",
+                    "domainMin": 0
+                  },
+                  "fields": [
+                    {
+                      "fieldName": "selected_region",
+                      "displayName": "Selected region"
+                    },
+                    {
+                      "fieldName": "regional_median",
+                      "displayName": "Regional median"
+                    }
+                  ]
+                },
+                "y": {
+                  "fieldName": "metric",
+                  "displayName": "Provision measure",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "custom-order",
+                      "orderedValues": [
+                        "Total points / 1,000 BEVs",
+                        "Fast points / 1,000 BEVs",
+                        "Facilities / 1,000 BEVs"
+                      ]
+                    }
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Selected Region vs Regional Median",
+                "showDescription": true,
+                "description": "Compares three provision measures on their shared per-1,000-BEV scale."
+              },
+              "mark": {
+                "layout": "group"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 8,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_infrastructure_details",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_profile_region",
+                  "fields": [
+                    {
+                      "name": "facilities",
+                      "expression": "MAX(`in_service_registered_charging_facilities`)"
+                    },
+                    {
+                      "name": "normal_points",
+                      "expression": "MAX(`in_service_registered_normal_charging_points`)"
+                    },
+                    {
+                      "name": "fast_points",
+                      "expression": "MAX(`in_service_registered_fast_charging_points`)"
+                    },
+                    {
+                      "name": "nominal_power",
+                      "expression": "MAX(`in_service_registered_facility_nominal_power_kw`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "facilities",
+                    "displayName": "Facilities",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 0
+                      }
+                    }
+                  },
+                  {
+                    "fieldName": "normal_points",
+                    "displayName": "Normal points",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 0
+                      }
+                    }
+                  },
+                  {
+                    "fieldName": "fast_points",
+                    "displayName": "Fast points",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 0
+                      }
+                    }
+                  },
+                  {
+                    "fieldName": "nominal_power",
+                    "displayName": "Registered nominal power (kW)",
+                    "format": {
+                      "type": "number-plain",
+                      "decimalPlaces": {
+                        "type": "exact",
+                        "places": 1
+                      }
+                    }
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Infrastructure Details"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_scope",
+            "multilineTextboxSpec": {
+              "lines": [
+                "**Screening scope:** Registered BEV stock and public charging provision. Utilization, traffic, grid feasibility, site availability and economics are not included."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 17,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "profile_trust_strip",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ds_quality",
+                  "fields": [
+                    {
+                      "name": "publication_summary",
+                      "expression": "`publication_summary`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "publication_summary",
+                    "displayName": "Published status"
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": false
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 19,
+            "width": 12,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "canvasBackgroundColor": {
+        "light": "#071A1F",
+        "dark": "#071A1F"
+      },
+      "widgetBackgroundColor": {
+        "light": "#0D242A",
+        "dark": "#0D242A"
+      },
+      "widgetBorderColor": {
+        "light": "#17343B",
+        "dark": "#17343B"
+      },
+      "fontColor": {
+        "light": "#E8F1F2",
+        "dark": "#E8F1F2"
+      },
+      "selectionColor": {
+        "light": "#18B3AE",
+        "dark": "#18B3AE"
+      },
+      "visualizationColors": [
+        "#18B3AE",
+        "#7F969B",
+        "#D94F8A",
+        "#38A8C7"
+      ],
+      "widgetHeaderAlignment": "LEFT",
+      "fontFamily": "Inter",
+      "widgetCornerRadius": 4
+    }
+  }
+}

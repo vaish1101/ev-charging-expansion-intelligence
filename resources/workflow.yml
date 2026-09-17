@@ -1,0 +1,95 @@
+# Canonical deployable workflow definition.
+# A bundle deploy uploads the notebooks under
+# databricks/notebooks/ to a workspace path for you, so this resource
+# references them by local repo path instead of a pre-existing /Shared/ path.
+
+resources:
+  jobs:
+    ev_charging_pipeline:
+      name: "EV Analytics - Governed Publication Workflow"
+      timeout_seconds: 7200
+      max_concurrent_runs: 1
+
+      environments:
+        - environment_key: source_and_bronze
+          spec:
+            environment_version: "4"
+            dependencies:
+              - openpyxl==3.1.5
+        - environment_key: silver
+          spec:
+            environment_version: "4"
+            dependencies:
+              - openpyxl==3.1.5
+        - environment_key: gold_and_serving
+          spec:
+            environment_version: "4"
+            dependencies: []
+
+      tasks:
+        - task_key: immutable_source_landing
+          description: Verify the three local approved snapshots and copy them into immutable managed-Volume paths.
+          environment_key: source_and_bronze
+          notebook_task:
+            notebook_path: ../databricks/notebooks/phase4_source_landing.py
+            base_parameters:
+              bundle_root: ${workspace.file_path}
+              catalog: ${var.catalog}
+              volume_root: /Volumes/${var.catalog}/landing/raw_sources
+
+        - task_key: source_landing_validation
+          description: Validate exact landed source hashes, schemas, dates, grain and keys before any Bronze write.
+          depends_on:
+            - task_key: immutable_source_landing
+          environment_key: source_and_bronze
+          notebook_task:
+            notebook_path: ../databricks/notebooks/phase4_source_validation.py
+            base_parameters:
+              bundle_root: ${workspace.file_path}
+              catalog: ${var.catalog}
+              volume_root: /Volumes/${var.catalog}/landing/raw_sources
+
+        - task_key: bronze_ingestion
+          description: Run immutable source-faithful Bronze ingestion after source validation succeeds.
+          depends_on:
+            - task_key: source_landing_validation
+          environment_key: source_and_bronze
+          notebook_task:
+            notebook_path: ../databricks/notebooks/phase2b_bronze_ingestion.py
+            base_parameters:
+              bundle_root: ${workspace.file_path}
+              catalog: ${var.catalog}
+              volume_root: /Volumes/${var.catalog}/landing/raw_sources
+
+        - task_key: silver_transformations
+          description: Build governed Silver entities, geography bridges and reconciliation evidence.
+          depends_on:
+            - task_key: bronze_ingestion
+          environment_key: silver
+          notebook_task:
+            notebook_path: ../databricks/notebooks/phase2c_silver.py
+            base_parameters:
+              bundle_root: ${workspace.file_path}
+              catalog: ${var.catalog}
+
+        - task_key: gold_candidate_validate_publish
+          description: Build Gold candidates, run all blocking DQ gates, and publish only when every gate passes.
+          depends_on:
+            - task_key: silver_transformations
+          environment_key: gold_and_serving
+          notebook_task:
+            notebook_path: ../databricks/notebooks/phase2d_gold.py
+            base_parameters:
+              bundle_root: ${workspace.file_path}
+              catalog: ${var.catalog}
+
+        - task_key: serving_readiness
+          description: Verify publication state, DQ status and serving-view national controls.
+          depends_on:
+            - task_key: gold_candidate_validate_publish
+          environment_key: gold_and_serving
+          notebook_task:
+            notebook_path: ../databricks/notebooks/phase4_serving_readiness.py
+            base_parameters:
+              bundle_root: ${workspace.file_path}
+              catalog: ${var.catalog}

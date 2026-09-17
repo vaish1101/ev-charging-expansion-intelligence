@@ -1,0 +1,86 @@
+{
+  "validated_at_utc": "2026-09-14T08:16:47.964725+00:00",
+  "exercise": "controlled failure/recovery test",
+  "scope": "isolated test inputs; approved raw files and production tables were not modified",
+  "schema_failure": {
+    "result": "PASS",
+    "failure_stage": "pre_bronze_source_contract",
+    "isolated_file": "bnetza_schema_failure.csv",
+    "mutation": "renamed required Status header",
+    "observed_error": "BNetzA missing required columns: ['Status']",
+    "publication_attempted": false
+  },
+  "checksum_failure": {
+    "result": "PASS",
+    "failure_stage": "pre_bronze_revision_integrity",
+    "isolated_file": "kba_checksum_failure.xlsx",
+    "mutation": "appended isolated test bytes",
+    "approved_sha256": "d6a26702fa6f8358cc5f0e15e88c04ac6c36527be404058674138dd9571bc803",
+    "observed_sha256": "01b9c94a4df9366ce45cd7adc1960ed016ce06755ef86b9b4ecef1761eb54d29",
+    "observed_error": "sha256 01b9c94a4df9366ce45cd7adc1960ed016ce06755ef86b9b4ecef1761eb54d29 != approved d6a26702fa6f8358cc5f0e15e88c04ac6c36527be404058674138dd9571bc803",
+    "publication_attempted": false
+  },
+  "published_gold_before": {
+    "signature": {
+      "date_set_id": "ds_4d740680cd09d152a4b4b3d148b91a6cdd0e7157f2b152089f553c8a554ce17d",
+      "publication_state": "published",
+      "power_bi_refresh_ready": true,
+      "passed_dq_checks": 73,
+      "failed_dq_checks": 0,
+      "region_rows": 400,
+      "registered_bevs": 2362218,
+      "registered_passenger_cars": 49644855,
+      "facilities": 116423,
+      "points": 209098,
+      "normal_points": 154702,
+      "fast_points": 54396,
+      "nominal_power_kw": 9086313.5
+    }
+  },
+  "published_gold_after": {
+    "signature": {
+      "date_set_id": "ds_4d740680cd09d152a4b4b3d148b91a6cdd0e7157f2b152089f553c8a554ce17d",
+      "publication_state": "published",
+      "power_bi_refresh_ready": true,
+      "passed_dq_checks": 73,
+      "failed_dq_checks": 0,
+      "region_rows": 400,
+      "registered_bevs": 2362218,
+      "registered_passenger_cars": 49644855,
+      "facilities": 116423,
+      "points": 209098,
+      "normal_points": 154702,
+      "fast_points": 54396,
+      "nominal_power_kw": 9086313.5
+    }
+  },
+  "published_gold_preserved": true,
+  "approved_source_recovery": {
+    "result": "PASS",
+    "sources": [
+      {
+        "provider": "bnetza",
+        "reference_date": "2026-09-01",
+        "sha256": "cdd8e38f1fa7e8512bd97caa8cf77e9f875436be1f8fe3fe1f2bd9789a504c5b",
+        "contract_conforms": true
+      },
+      {
+        "provider": "kba",
+        "reference_date": "2026-07-01",
+        "sha256": "d6a26702fa6f8358cc5f0e15e88c04ac6c36527be404058674138dd9571bc803",
+        "contract_conforms": true
+      },
+      {
+        "provider": "destatis",
+        "reference_date": "2026-06-30",
+        "sha256": "92e51ee097b1fea2f76a1c383c02d01ffa889975647d640b61c39845a1067174",
+        "contract_conforms": true
+      }
+    ]
+  },
+  "valid_orchestrated_rerun": {
+    "result": "SUCCESS",
+    "idempotency": "Bronze, Silver and Gold task outputs returned NO_OP"
+  },
+  "result": "PASS"
+}

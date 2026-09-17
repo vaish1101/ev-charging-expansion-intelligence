@@ -1,0 +1,44 @@
+# Databricks Asset Bundle for EV Charging Expansion Intelligence.
+#
+# This bundle packages the existing job and dashboard definitions as
+# deployable resources. It does not duplicate pipeline logic: the tasks
+# below run the same notebooks under databricks/notebooks/, and the
+# dashboard resource points at the catalog-parameterized dashboard rendered
+# by scripts/prepare_bundle.py from this repository.
+#
+# Usage (after configuring a Databricks CLI profile for your own workspace):
+#   python scripts/bootstrap_databricks.py --profile <your-profile> \
+#     --warehouse-id <warehouse-id> --catalog ev_analytics
+#   python scripts/prepare_bundle.py --catalog ev_analytics
+#   databricks bundle validate --profile <your-profile> \
+#     --var="warehouse_id=<warehouse-id>" --var="catalog=ev_analytics"
+#   databricks bundle deploy   --profile <your-profile>
+#   databricks bundle run ev_charging_pipeline --profile <your-profile>
+
+bundle:
+  name: ev-charging-expansion-intelligence
+
+variables:
+  warehouse_id:
+    description: SQL Warehouse ID used by the dashboard and validation queries.
+  catalog:
+    description: Unity Catalog catalog name.
+    default: ev_analytics
+
+sync:
+  include:
+    - data/raw/bnetza/Ladesaeulenregister_BNetzA_2026-09-01.csv
+    - data/raw/kba/fz27_202607.xlsx
+    - data/raw/destatis/30062026_Auszug_GV.xlsx
+    - data/reference/geography/geographic_reconciliation.csv
+    - data/reference/geography/analysis_region_bridge.csv
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
