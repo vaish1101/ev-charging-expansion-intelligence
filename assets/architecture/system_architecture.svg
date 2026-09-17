@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">EV Charging Expansion Intelligence architecture</title>
+  <desc id="desc">A persisted Databricks Workflow validates official KBA, Bundesnetzagentur and Destatis snapshots, then runs managed landing, Bronze, Silver, Gold candidate validation and publication, serving readiness, Databricks SQL, Databricks AI/BI and a Power BI design package. Unity Catalog, data quality, source revisions and date set identity govern the flow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FAFC"/>
+      <stop offset="1" stop-color="#EDF3F8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#15324B" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#56758D"/>
+    </marker>
+    <style>
+      .title{font:700 42px Inter,Arial,sans-serif;fill:#102A43}.subtitle{font:400 20px Inter,Arial,sans-serif;fill:#486581}
+      .stage{font:700 14px Inter,Arial,sans-serif;letter-spacing:1.8px;fill:#627D98}.boxTitle{font:700 23px Inter,Arial,sans-serif;fill:#102A43}
+      .boxBody{font:400 17px Inter,Arial,sans-serif;fill:#334E68}.small{font:500 15px Inter,Arial,sans-serif;fill:#486581}
+      .flow{stroke:#56758D;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="980" rx="28" fill="url(#bg)"/>
+  <text x="92" y="78" class="title">EV Charging Expansion Intelligence</text>
+  <text x="92" y="114" class="subtitle">Governed regional decision-support on Databricks Express</text>
+
+  <text x="88" y="180" class="stage">OFFICIAL SOURCES</text>
+  <g filter="url(#shadow)">
+    <rect x="88" y="205" width="230" height="126" rx="18" fill="#FFFFFF"/>
+    <rect x="345" y="205" width="230" height="126" rx="18" fill="#FFFFFF"/>
+    <rect x="602" y="205" width="230" height="126" rx="18" fill="#FFFFFF"/>
+  </g>
+  <circle cx="133" cy="250" r="22" fill="#0B5CAD"/><text x="133" y="257" text-anchor="middle" font-family="Inter,Arial" font-size="16" font-weight="700" fill="#FFF">K</text>
+  <text x="170" y="256" class="boxTitle">KBA</text><text x="112" y="296" class="boxBody">BEV &amp; Pkw stock</text>
+  <circle cx="390" cy="250" r="22" fill="#1B998B"/><text x="390" y="257" text-anchor="middle" font-family="Inter,Arial" font-size="14" font-weight="700" fill="#FFF">BN</text>
+  <text x="427" y="256" class="boxTitle">BNetzA</text><text x="369" y="296" class="boxBody">Facilities &amp; points</text>
+  <circle cx="647" cy="250" r="22" fill="#F2A900"/><text x="647" y="257" text-anchor="middle" font-family="Inter,Arial" font-size="15" font-weight="700" fill="#FFF">D</text>
+  <text x="684" y="256" class="boxTitle">Destatis</text><text x="626" y="296" class="boxBody">Official geography</text>
+
+  <path class="flow" d="M 860 268 L 936 268"/>
+  <text x="956" y="180" class="stage">LANDING</text>
+  <g filter="url(#shadow)"><rect x="936" y="205" width="260" height="126" rx="18" fill="#E6F0FA" stroke="#82B3DD" stroke-width="2"/></g>
+  <text x="966" y="250" class="boxTitle">Managed Volume</text>
+  <text x="966" y="283" class="boxBody">Immutable snapshots</text>
+  <text x="966" y="309" class="small">checksums + manifests</text>
+  <path class="flow" d="M 1196 268 L 1272 268"/>
+  <text x="1292" y="180" class="stage">BRONZE</text>
+  <g filter="url(#shadow)"><rect x="1272" y="205" width="240" height="126" rx="18" fill="#F4E9DF" stroke="#C99663" stroke-width="2"/></g>
+  <text x="1302" y="250" class="boxTitle">Source-faithful</text>
+  <text x="1302" y="283" class="boxBody">Managed Delta tables</text>
+  <text x="1302" y="309" class="small">row-level lineage</text>
+
+  <path class="flow" d="M 1392 331 L 1392 402 L 1168 402"/>
+  <rect x="88" y="358" width="1080" height="52" rx="14" fill="#E6F0FA" stroke="#82B3DD" stroke-width="2"/>
+  <text x="116" y="390" font-family="Inter,Arial" font-size="17" font-weight="700" fill="#102A43">Databricks Workflow · validate → Bronze → Silver → Gold candidate + DQ + publish → serving readiness</text>
+  <text x="88" y="427" class="stage">SILVER — GOVERNED ENTITIES</text>
+  <g filter="url(#shadow)"><rect x="88" y="452" width="1080" height="190" rx="22" fill="#FFFFFF" stroke="#B8CBD9" stroke-width="2"/></g>
+  <rect x="120" y="489" width="180" height="106" rx="14" fill="#EAF4FF"/><text x="148" y="529" class="boxTitle">Geography</text><text x="148" y="562" class="small">401 districts</text>
+  <rect x="326" y="489" width="180" height="106" rx="14" fill="#E9F7F4"/><text x="354" y="529" class="boxTitle">Facilities</text><text x="354" y="562" class="small">status + nominal kW</text>
+  <rect x="532" y="489" width="180" height="106" rx="14" fill="#FFF5DE"/><text x="560" y="529" class="boxTitle">Points</text><text x="560" y="562" class="small">normal / fast</text>
+  <rect x="738" y="489" width="180" height="106" rx="14" fill="#F3EEFF"/><text x="766" y="529" class="boxTitle">EV stock</text><text x="766" y="562" class="small">400 KBA regions</text>
+  <rect x="944" y="489" width="192" height="106" rx="14" fill="#FFF0EC"/><text x="972" y="529" class="boxTitle">Bridges</text><text x="972" y="562" class="small">Trier + Hanau</text>
+
+  <path class="flow" d="M 1168 548 L 1244 548"/>
+  <text x="1264" y="427" class="stage">GOLD</text>
+  <g filter="url(#shadow)"><rect x="1244" y="452" width="268" height="190" rx="22" fill="#FFF" stroke="#D0B36A" stroke-width="2"/></g>
+  <text x="1274" y="496" class="boxTitle">Regional marts</text>
+  <text x="1274" y="530" class="boxBody">EV stock + supply</text>
+  <text x="1274" y="562" class="boxBody">12-KPI snapshot</text>
+  <text x="1274" y="594" class="boxBody">validated publication</text>
+
+  <path class="flow" d="M 1378 642 L 1378 706"/>
+  <text x="1040" y="710" class="stage">SERVING</text>
+  <g filter="url(#shadow)"><rect x="1018" y="735" width="276" height="118" rx="18" fill="#E6F0FA" stroke="#82B3DD" stroke-width="2"/></g>
+  <text x="1050" y="780" class="boxTitle">Databricks SQL</text>
+  <text x="1050" y="815" class="boxBody">published-only views</text>
+  <path class="flow" d="M 1294 794 L 1358 794"/>
+  <text x="1378" y="710" class="stage">CONSUMPTION</text>
+  <g filter="url(#shadow)"><rect x="1358" y="735" width="154" height="118" rx="18" fill="#FFFFFF"/></g>
+  <text x="1380" y="777" font-family="Inter,Arial" font-size="18" font-weight="700" fill="#102A43">Databricks</text>
+  <text x="1380" y="805" class="small">AI/BI dashboard</text>
+  <text x="1380" y="833" class="small">Power BI design</text>
+
+  <text x="88" y="710" class="stage">CROSS-CUTTING GOVERNANCE</text>
+  <g filter="url(#shadow)"><rect x="88" y="735" width="842" height="118" rx="18" fill="#132F4C"/></g>
+  <text x="126" y="782" font-family="Inter,Arial" font-size="19" font-weight="700" fill="#FFF">Unity Catalog</text>
+  <text x="318" y="782" font-family="Inter,Arial" font-size="19" font-weight="700" fill="#FFF">DQ &amp; reconciliation</text>
+  <text x="563" y="782" font-family="Inter,Arial" font-size="19" font-weight="700" fill="#FFF">source revisions</text>
+  <text x="760" y="782" font-family="Inter,Arial" font-size="19" font-weight="700" fill="#FFF">date_set_id</text>
+  <text x="126" y="819" font-family="Inter,Arial" font-size="15" fill="#CFE2F3">immutable → candidate → validate → publish → reproducible no-op</text>
+
+  <text x="88" y="926" font-family="Inter,Arial" font-size="15" fill="#627D98">Implemented: Databricks Express, serverless compute and Databricks-managed storage. Azure Databricks is a future enterprise extension.</text>
+</svg>

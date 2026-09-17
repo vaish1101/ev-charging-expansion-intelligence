@@ -1,0 +1,39 @@
+# macOS and Python-generated files
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Local environment and secret material
+.env
+.env.*
+!.env.example
+.databrickscfg
+.databricks/
+.secrets/
+*.token
+*.pat
+*.pem
+*.key
+
+# Local Databricks state and generated bundles
+.databricks-cache/
+.databricks/bundle/
+.bundle_artifacts/
+.private_capture/
+.private_archive/
+EV_Charging_GitHub_Release/
+
+# Power BI Desktop local state and binary authoring artifacts
+**/.pbi/
+*.pbix
+*.pbit
+
+# Official raw snapshots remain immutable locally/in the managed Volume; do not
+# duplicate large provider files in a public Git repository. Their source URLs,
+# sizes and SHA-256 values are source controlled in config/ and reports/.
+data/raw/**/*.csv
+data/raw/**/*.xlsx
