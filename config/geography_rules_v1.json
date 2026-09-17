@@ -1,0 +1,51 @@
+{
+  "bnetza_district_mapping": {
+    "evidence_path": "data/reference/geography/geographic_reconciliation.csv",
+    "evidence_sha256": "e8ad366375ddad03e0ed0440f66a612e7b7f70636743b25fd03bbddfe43d04ec",
+    "selection_contract": "source_reference=BNetzA 2026-09-01; target_reference=2026-06-30; retain matched=True; exact-row deduplicate; all 401 raw identities must remain",
+    "version": "phase1_bnetza_district_mapping_v1"
+  },
+  "current_geography_reference_date": "2026-06-30",
+  "destatis_analysis_region_bridge": {
+    "evidence_path": "data/reference/geography/analysis_region_bridge.csv",
+    "evidence_sha256": "14f1d6aaaf2a878923a9ac5f164f07d89f2cdc6c09bf9e9b064825aef1972b1a",
+    "version": "phase1_district_analysis_region_bridge_v1"
+  },
+  "hanau": {
+    "bnetza_current_exception": {
+      "exception_reason": "Hanau became a kreisfreie Stadt effective 2026-01-01.",
+      "raw_bundesland": "Hessen",
+      "raw_district_label": "Kreisfreie Stadt Hanau",
+      "target_district_code": "06415",
+      "valid_from": "2026-01-01",
+      "valid_to": null
+    },
+    "municipality_history": [
+      {
+        "administrative_unit_code": "06435014",
+        "canonical_name": "Hanau, Brüder-Grimm-Stadt",
+        "parent_district_code": "06435",
+        "relationship": "municipality within Main-Kinzig-Kreis",
+        "valid_from": "0001-01-01",
+        "valid_to": "2026-01-01"
+      },
+      {
+        "administrative_unit_code": "06415000",
+        "canonical_name": "Hanau, Brüder-Grimm-Stadt",
+        "parent_district_code": "06415",
+        "relationship": "kreisfreie Stadt / district-level administrative unit",
+        "valid_from": "2026-01-01",
+        "valid_to": null
+      }
+    ]
+  },
+  "open_start_sentinel": "0001-01-01",
+  "trier": {
+    "relationship_type": "many-to-one aggregation",
+    "source_district_codes": [
+      "07211",
+      "07235"
+    ],
+    "target_analysis_region_code": "07211"
+  }
+}

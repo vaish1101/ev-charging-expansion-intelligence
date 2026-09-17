@@ -1,0 +1,11 @@
+{
+  "bnetza_district_mapping_version": "phase1_bnetza_district_mapping_v1",
+  "bnetza_source_revision_id": "bnetza:ladesaeulenregister:2026-09-01:cdd8e38f1fa7e8512bd97caa8cf77e9f875436be1f8fe3fe1f2bd9789a504c5b",
+  "context_source_revision_id": null,
+  "date_set_contract_version": "1",
+  "destatis_geography_source_revision_id": "destatis:gv_isys:2026-06-30:92e51ee097b1fea2f76a1c383c02d01ffa889975647d640b61c39845a1067174",
+  "district_analysis_region_bridge_version": "phase1_district_analysis_region_bridge_v1",
+  "kba_source_revision_id": "kba:fz27_15:2026-07-01:d6a26702fa6f8358cc5f0e15e88c04ac6c36527be404058674138dd9571bc803",
+  "kpi_definition_version": "phase1_kpi_dictionary_v1",
+  "transformation_rule_version": "phase1_transformation_rules_v1"
+}

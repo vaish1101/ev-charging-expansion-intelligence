@@ -1,0 +1,1204 @@
+source_reference,target_reference,Bundesland,source_district_label,facility_rows,matched,matched_district_key,matched_district_name,match_method
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Alb-Donau-Kreis,609,True,08425,Alb-Donau-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Biberach,170,True,08426,Biberach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Bodenseekreis,354,True,08435,Bodenseekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,389,True,08315,Breisgau-Hochschwarzwald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Böblingen,1113,True,08115,Böblingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Calw,264,True,08235,Calw,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Emmendingen,262,True,08316,Emmendingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Enzkreis,212,True,08236,Enzkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Esslingen,717,True,08116,Esslingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Freudenstadt,198,True,08237,Freudenstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Göppingen,424,True,08117,Göppingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Heidenheim,134,True,08135,Heidenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Heilbronn,664,True,08125,Heilbronn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Hohenlohekreis,285,True,08126,Hohenlohekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Karlsruhe,536,True,08215,Karlsruhe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Konstanz,417,True,08335,Konstanz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Ludwigsburg,723,True,08118,Ludwigsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Lörrach,256,True,08336,Lörrach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Main-Tauber-Kreis,255,True,08128,Main-Tauber-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Neckar-Odenwald-Kreis,178,True,08225,Neckar-Odenwald-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Ortenaukreis,727,True,08317,Ortenaukreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Ostalbkreis,460,True,08136,Ostalbkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Rastatt,328,True,08216,Rastatt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Ravensburg,614,True,08436,Ravensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Rems-Murr-Kreis,586,True,08119,Rems-Murr-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Reutlingen,377,True,08415,Reutlingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Rhein-Neckar-Kreis,635,True,08226,Rhein-Neckar-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Rottweil,192,True,08325,Rottweil,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Schwarzwald-Baar-Kreis,266,True,08326,Schwarzwald-Baar-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Schwäbisch Hall,316,True,08127,Schwäbisch Hall,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Sigmaringen,119,True,08437,Sigmaringen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Tuttlingen,183,True,08327,Tuttlingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Tübingen,377,True,08416,Tübingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Waldshut,228,True,08337,Waldshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Landkreis Zollernalbkreis,154,True,08417,Zollernalbkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Baden-Baden,109,True,08211,"Baden-Baden, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Freiburg im Breisgau,475,True,08311,"Freiburg im Breisgau, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Heidelberg,411,True,08221,"Heidelberg, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Heilbronn,405,True,08121,"Heilbronn, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Karlsruhe,334,True,08212,"Karlsruhe, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Mannheim,468,True,08222,"Mannheim, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Pforzheim,185,True,08231,"Pforzheim, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Stuttgart,2414,True,08111,"Stuttgart, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Baden-Württemberg,Stadtkreis Ulm,340,True,08421,"Ulm, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Amberg,44,True,09361,Amberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Ansbach,57,True,09561,Ansbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Aschaffenburg,95,True,09661,Aschaffenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Augsburg,331,True,09761,Augsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Bamberg,170,True,09461,Bamberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Bayreuth,146,True,09462,Bayreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Coburg,66,True,09463,Coburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Erlangen,139,True,09562,Erlangen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Fürth,284,True,09563,Fürth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Hof,46,True,09464,Hof,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Ingolstadt,858,True,09161,Ingolstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Kaufbeuren,111,True,09762,Kaufbeuren,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Kempten (Allgäu),166,True,09763,Kempten (Allgäu),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Landshut,125,True,09261,Landshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Memmingen,115,True,09764,Memmingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt München,2390,True,09162,"München, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Nürnberg,840,True,09564,Nürnberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Passau,173,True,09262,Passau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Regensburg,802,True,09362,Regensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Rosenheim,85,True,09163,Rosenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Schwabach,36,True,09565,Schwabach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Schweinfurt,123,True,09662,Schweinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Straubing,75,True,09263,Straubing,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Weiden i.d. OPf.,57,True,09363,Weiden i.d.OPf.,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Kreisfreie Stadt Würzburg,306,True,09663,Würzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Aichach-Friedberg,160,True,09771,Aichach-Friedberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Altötting,214,True,09171,Altötting,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Amberg-Sulzbach,128,True,09371,Amberg-Sulzbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Ansbach,393,True,09571,Ansbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Aschaffenburg,263,True,09671,Aschaffenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Augsburg,312,True,09772,Augsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Bad Kissingen,112,True,09672,Bad Kissingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Bad Tölz-Wolfratshausen,200,True,09173,Bad Tölz-Wolfratshausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Bamberg,174,True,09471,Bamberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Bayreuth,97,True,09472,Bayreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Berchtesgadener Land,211,True,09172,Berchtesgadener Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Cham,161,True,09372,Cham,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Coburg,89,True,09473,Coburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Dachau,155,True,09174,Dachau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Deggendorf,271,True,09271,Deggendorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Dillingen a.d. Donau,89,True,09773,Dillingen a.d.Donau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Dingolfing-Landau,468,True,09279,Dingolfing-Landau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Donau-Ries,175,True,09779,Donau-Ries,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Ebersberg,236,True,09175,Ebersberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Eichstätt,229,True,09176,Eichstätt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Erding,197,True,09177,Erding,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Erlangen-Höchstadt,166,True,09572,Erlangen-Höchstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Forchheim,152,True,09474,Forchheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Freising,482,True,09178,Freising,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Freyung-Grafenau,186,True,09272,Freyung-Grafenau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Fürstenfeldbruck,268,True,09179,Fürstenfeldbruck,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Fürth,120,True,09573,Fürth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Garmisch-Partenkirchen,205,True,09180,Garmisch-Partenkirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Günzburg,238,True,09774,Günzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Haßberge,106,True,09674,Haßberge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Hof,160,True,09475,Hof,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Kelheim,179,True,09273,Kelheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Kitzingen,256,True,09675,Kitzingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Kronach,72,True,09476,Kronach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Kulmbach,134,True,09477,Kulmbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Landsberg am Lech,236,True,09181,Landsberg am Lech,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Landshut,245,True,09274,Landshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Lichtenfels,52,True,09478,Lichtenfels,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Lindau (Bodensee),139,True,09776,Lindau (Bodensee),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Main-Spessart,164,True,09677,Main-Spessart,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Miesbach,251,True,09182,Miesbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Miltenberg,100,True,09676,Miltenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Mühldorf a. Inn,162,True,09183,Mühldorf a.Inn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis München,859,True,09184,München,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Neu-Ulm,300,True,09775,Neu-Ulm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Neuburg-Schrobenhausen,117,True,09185,Neuburg-Schrobenhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Neumarkt i.d. OPf.,201,True,09373,Neumarkt i.d.OPf.,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Neustadt a.d. Aisch-Bad Windsheim,164,True,09575,Neustadt a.d.Aisch-Bad Windsheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Neustadt a.d. Waldnaab,153,True,09374,Neustadt a.d.Waldnaab,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Nürnberger Land,250,True,09574,Nürnberger Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Oberallgäu,372,True,09780,Oberallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Ostallgäu,319,True,09777,Ostallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Passau,371,True,09275,Passau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Pfaffenhofen a.d. Ilm,229,True,09186,Pfaffenhofen a.d.Ilm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Regen,137,True,09276,Regen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Regensburg,278,True,09375,Regensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Rhön-Grabfeld,98,True,09673,Rhön-Grabfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Rosenheim,474,True,09187,Rosenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Roth,227,True,09576,Roth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Rottal-Inn,128,True,09277,Rottal-Inn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Schwandorf,222,True,09376,Schwandorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Schweinfurt,146,True,09678,Schweinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Starnberg,173,True,09188,Starnberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Straubing-Bogen,148,True,09278,Straubing-Bogen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Tirschenreuth,119,True,09377,Tirschenreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Traunstein,283,True,09189,Traunstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Unterallgäu,381,True,09778,Unterallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Weilheim-Schongau,200,True,09190,Weilheim-Schongau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Weißenburg-Gunzenhausen,122,True,09577,Weißenburg-Gunzenhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Wunsiedel i. Fichtelgebirge,106,True,09479,Wunsiedel i.Fichtelgebirge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bayern,Landkreis Würzburg,214,True,09679,Würzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Berlin,Kreisfreie Stadt Berlin,4953,True,11000,"Berlin, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Kreisfreie Stadt Brandenburg an der Havel,69,True,12051,"Brandenburg an der Havel, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Kreisfreie Stadt Cottbus,103,True,12052,"Cottbus, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Kreisfreie Stadt Frankfurt (Oder),63,True,12053,"Frankfurt (Oder), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Kreisfreie Stadt Potsdam,153,True,12054,"Potsdam, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Barnim,201,True,12060,Barnim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Dahme-Spreewald,248,True,12061,Dahme-Spreewald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Elbe-Elster,58,True,12062,Elbe-Elster,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Havelland,161,True,12063,Havelland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Märkisch-Oderland,132,True,12064,Märkisch-Oderland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Oberhavel,197,True,12065,Oberhavel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Oberspreewald-Lausitz,116,True,12066,Oberspreewald-Lausitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Oder-Spree,717,True,12067,Oder-Spree,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Ostprignitz-Ruppin,143,True,12068,Ostprignitz-Ruppin,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Potsdam-Mittelmark,215,True,12069,Potsdam-Mittelmark,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Prignitz,37,True,12070,Prignitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Spree-Neiße,71,True,12071,Spree-Neiße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Teltow-Fläming,204,True,12072,Teltow-Fläming,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Brandenburg,Landkreis Uckermark,144,True,12073,Uckermark,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bremen,Kreisfreie Stadt Bremen,796,True,04011,"Bremen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Bremen,Kreisfreie Stadt Bremerhaven,88,True,04012,"Bremerhaven, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hamburg,Kreisfreie Stadt Hamburg,3314,True,02000,"Hamburg, Freie und Hansestadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Kreisfreie Stadt Darmstadt,182,True,06411,"Darmstadt, Wissenschaftsstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Kreisfreie Stadt Frankfurt am Main,1297,True,06412,"Frankfurt am Main, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Kreisfreie Stadt Hanau,144,False,,,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Kreisfreie Stadt Kassel,303,True,06611,"Kassel, documenta-Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Kreisfreie Stadt Offenbach am Main,113,True,06413,"Offenbach am Main, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Kreisfreie Stadt Wiesbaden,740,True,06414,"Wiesbaden, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Bergstraße,371,True,06431,Bergstraße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Darmstadt-Dieburg,345,True,06432,Darmstadt-Dieburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Fulda,420,True,06631,Fulda,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Gießen,364,True,06531,Gießen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Groß-Gerau,659,True,06433,Groß-Gerau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Hersfeld-Rotenburg,187,True,06632,Hersfeld-Rotenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Hochtaunuskreis,215,True,06434,Hochtaunuskreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Kassel,340,True,06633,Kassel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Lahn-Dill-Kreis,307,True,06532,Lahn-Dill-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Limburg-Weilburg,243,True,06533,Limburg-Weilburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Main-Kinzig-Kreis,437,True,06435,Main-Kinzig-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Main-Taunus-Kreis,341,True,06436,Main-Taunus-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Marburg-Biedenkopf,266,True,06534,Marburg-Biedenkopf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Odenwaldkreis,77,True,06437,Odenwaldkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Offenbach,355,True,06438,Offenbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Rheingau-Taunus-Kreis,194,True,06439,Rheingau-Taunus-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Schwalm-Eder-Kreis,262,True,06634,Schwalm-Eder-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Vogelsbergkreis,152,True,06535,Vogelsbergkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Waldeck-Frankenberg,238,True,06635,Waldeck-Frankenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Werra-Meißner-Kreis,96,True,06636,Werra-Meißner-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Hessen,Landkreis Wetteraukreis,304,True,06440,Wetteraukreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Kreisfreie Stadt Rostock,201,True,13003,Rostock,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Kreisfreie Stadt Schwerin,121,True,13004,Schwerin,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Landkreis Ludwigslust-Parchim,180,True,13076,Ludwigslust-Parchim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Landkreis Mecklenburgische Seenplatte,263,True,13071,Mecklenburgische Seenplatte,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Landkreis Nordwestmecklenburg,159,True,13074,Nordwestmecklenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Landkreis Rostock,253,True,13072,Landkreis Rostock,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Landkreis Vorpommern-Greifswald,205,True,13075,Vorpommern-Greifswald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Mecklenburg-Vorpommern,Landkreis Vorpommern-Rügen,455,True,13073,Vorpommern-Rügen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Braunschweig,674,True,03101,"Braunschweig, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Delmenhorst,90,True,03401,"Delmenhorst, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Emden,111,True,03402,"Emden, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Oldenburg (Oldb),216,True,03403,"Oldenburg (Oldenburg), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Osnabrück,303,True,03404,"Osnabrück, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Salzgitter,175,True,03102,"Salzgitter, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Wilhelmshaven,56,True,03405,"Wilhelmshaven, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Kreisfreie Stadt Wolfsburg,653,True,03103,"Wolfsburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Ammerland,152,True,03451,Ammerland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Aurich,216,True,03452,Aurich,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Celle,182,True,03351,Celle,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Cloppenburg,299,True,03453,Cloppenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Cuxhaven,190,True,03352,Cuxhaven,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Diepholz,318,True,03251,Diepholz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Emsland,617,True,03454,Emsland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Friesland,141,True,03455,Friesland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Gifhorn,179,True,03151,Gifhorn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Goslar,179,True,03153,Goslar,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Grafschaft Bentheim,200,True,03456,Grafschaft Bentheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Göttingen,363,True,03159,Göttingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Hameln-Pyrmont,116,True,03252,Hameln-Pyrmont,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Harburg,289,True,03353,Harburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Heidekreis,314,True,03358,Heidekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Helmstedt,99,True,03154,Helmstedt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Hildesheim,299,True,03254,Hildesheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Holzminden,50,True,03255,Holzminden,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Leer,176,True,03457,Leer,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Lüchow-Dannenberg,39,True,03354,Lüchow-Dannenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Lüneburg,189,True,03355,Lüneburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Nienburg (Weser),130,True,03256,Nienburg (Weser),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Northeim,262,True,03155,Northeim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Oldenburg,134,True,03458,Oldenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Osnabrück,378,True,03459,Osnabrück,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Osterholz,126,True,03356,Osterholz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Peine,153,True,03157,Peine,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Region Hannover,1946,True,03241,Region Hannover,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Rotenburg (Wümme),263,True,03357,Rotenburg (Wümme),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Schaumburg,200,True,03257,Schaumburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Stade,208,True,03359,Stade,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Uelzen,87,True,03360,Uelzen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Vechta,242,True,03460,Vechta,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Verden,179,True,03361,Verden,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Wesermarsch,137,True,03461,Wesermarsch,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Wittmund,66,True,03462,Wittmund,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Niedersachsen,Landkreis Wolfenbüttel,86,True,03158,Wolfenbüttel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Borken,727,True,05554,Borken,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Coesfeld,276,True,05558,Coesfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Düren,443,True,05358,Düren,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Ennepe-Ruhr-Kreis,301,True,05954,Ennepe-Ruhr-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Euskirchen,210,True,05366,Euskirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Gütersloh,416,True,05754,Gütersloh,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Heinsberg,295,True,05370,Heinsberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Herford,220,True,05758,Herford,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Hochsauerlandkreis,328,True,05958,Hochsauerlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Höxter,169,True,05762,Höxter,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Kleve,381,True,05154,Kleve,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Lippe,296,True,05766,Lippe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Mettmann,735,True,05158,Mettmann,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Minden-Lübbecke,284,True,05770,Minden-Lübbecke,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Märkischer Kreis,376,True,05962,Märkischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Oberbergischer Kreis,229,True,05374,Oberbergischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Olpe,113,True,05966,Olpe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Paderborn,513,True,05774,Paderborn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Recklinghausen,586,True,05562,Recklinghausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Rhein-Erft-Kreis,426,True,05362,Rhein-Erft-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Rhein-Kreis Neuss,508,True,05162,Rhein-Kreis Neuss,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Rhein-Sieg-Kreis,554,True,05382,Rhein-Sieg-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Rheinisch-Bergischer Kreis,270,True,05378,Rheinisch-Bergischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Siegen-Wittgenstein,243,True,05970,Siegen-Wittgenstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Soest,383,True,05974,Soest,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Steinfurt,469,True,05566,Steinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Städteregion Aachen,974,True,05334,Städteregion Aachen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Unna,485,True,05978,Unna,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Viersen,365,True,05166,Viersen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Warendorf,323,True,05570,Warendorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreis Wesel,643,True,05170,Wesel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Bielefeld,396,True,05711,"Bielefeld, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Bochum,598,True,05911,"Bochum, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Bonn,613,True,05314,"Bonn, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Bottrop,124,True,05512,"Bottrop, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Dortmund,912,True,05913,"Dortmund, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Duisburg,632,True,05112,"Duisburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Düsseldorf,1457,True,05111,"Düsseldorf, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Essen,673,True,05113,"Essen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Gelsenkirchen,238,True,05513,"Gelsenkirchen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Hagen,167,True,05914,"Hagen, Stadt der FernUniversität",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Hamm,202,True,05915,"Hamm, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Herne,105,True,05916,"Herne, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Krefeld,151,True,05114,"Krefeld, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Köln,1475,True,05315,"Köln, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Leverkusen,201,True,05316,"Leverkusen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Mönchengladbach,387,True,05116,"Mönchengladbach, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Mülheim an der Ruhr,209,True,05117,"Mülheim an der Ruhr, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Münster,405,True,05515,"Münster, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Oberhausen,394,True,05119,"Oberhausen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Remscheid,122,True,05120,"Remscheid, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Solingen,234,True,05122,"Solingen, Klingenstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Nordrhein-Westfalen,Kreisfreie Stadt Wuppertal,264,True,05124,"Wuppertal, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Frankenthal (Pfalz),42,True,07311,"Frankenthal (Pfalz), kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Kaiserslautern,196,True,07312,"Kaiserslautern, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Koblenz,218,True,07111,"Koblenz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Landau in der Pfalz,80,True,07313,"Landau in der Pfalz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Ludwigshafen am Rhein,211,True,07314,"Ludwigshafen am Rhein, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Mainz,330,True,07315,"Mainz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Neustadt an der Weinstraße,74,True,07316,"Neustadt an der Weinstraße, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Pirmasens,23,True,07317,"Pirmasens, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Speyer,119,True,07318,"Speyer, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Trier,112,True,07211,"Trier, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Worms,60,True,07319,"Worms, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Kreisfreie Stadt Zweibrücken,89,True,07320,"Zweibrücken, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Ahrweiler,176,True,07131,Ahrweiler,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),94,True,07132,Altenkirchen (Westerwald),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Alzey-Worms,126,True,07331,Alzey-Worms,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Bad Dürkheim,105,True,07332,Bad Dürkheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Bad Kreuznach,161,True,07133,Bad Kreuznach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Bernkastel-Wittlich,167,True,07231,Bernkastel-Wittlich,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Birkenfeld,57,True,07134,Birkenfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Cochem-Zell,80,True,07135,Cochem-Zell,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Donnersbergkreis,58,True,07333,Donnersbergkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Eifelkreis Bitburg-Prüm,98,True,07232,Eifelkreis Bitburg-Prüm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Germersheim,81,True,07334,Germersheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Kaiserslautern,70,True,07335,Kaiserslautern,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Kusel,29,True,07336,Kusel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Mainz-Bingen,229,True,07339,Mainz-Bingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Mayen-Koblenz,230,True,07137,Mayen-Koblenz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Neuwied,199,True,07138,Neuwied,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Rhein-Hunsrück-Kreis,152,True,07140,Rhein-Hunsrück-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Rhein-Lahn-Kreis,97,True,07141,Rhein-Lahn-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Rhein-Pfalz-Kreis,125,True,07338,Rhein-Pfalz-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Südliche Weinstraße,88,True,07337,Südliche Weinstraße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Südwestpfalz,50,True,07340,Südwestpfalz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Trier-Saarburg,157,True,07235,Trier-Saarburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Vulkaneifel,110,True,07233,Vulkaneifel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Rheinland-Pfalz,Landkreis Westerwaldkreis,234,True,07143,Westerwaldkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Saarland,Landkreis Merzig-Wadern,90,True,10042,Merzig-Wadern,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Saarland,Landkreis Neunkirchen,72,True,10043,Neunkirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Saarland,Landkreis Regionalverband Saarbrücken,277,True,10041,Regionalverband Saarbrücken,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Saarland,Landkreis Saarlouis,127,True,10044,Saarlouis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Saarland,Landkreis Saarpfalz-Kreis,152,True,10045,Saarpfalz-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Saarland,Landkreis St. Wendel,78,True,10046,St. Wendel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Kreisfreie Stadt Chemnitz,304,True,14511,"Chemnitz, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Kreisfreie Stadt Dresden,571,True,14612,"Dresden, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Kreisfreie Stadt Leipzig,731,True,14713,"Leipzig, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Bautzen,245,True,14625,Bautzen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Erzgebirgskreis,268,True,14521,Erzgebirgskreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Görlitz,153,True,14626,Görlitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Leipzig,238,True,14729,Leipzig,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Meißen,183,True,14627,Meißen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Mittelsachsen,181,True,14522,Mittelsachsen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Nordsachsen,156,True,14730,Nordsachsen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Sächsische Schweiz-Osterzgebirge,197,True,14628,Sächsische Schweiz-Osterzgebirge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Vogtlandkreis,163,True,14523,Vogtlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen,Landkreis Zwickau,431,True,14524,Zwickau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Kreisfreie Stadt Dessau-Roßlau,66,True,15001,"Dessau-Roßlau, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Kreisfreie Stadt Halle (Saale),173,True,15002,"Halle (Saale), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Kreisfreie Stadt Magdeburg,273,True,15003,"Magdeburg, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Altmarkkreis Salzwedel,61,True,15081,Altmarkkreis Salzwedel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Anhalt-Bitterfeld,168,True,15082,Anhalt-Bitterfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Burgenlandkreis,150,True,15084,Burgenlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Börde,195,True,15083,Börde,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Harz,219,True,15085,Harz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Jerichower Land,48,True,15086,Jerichower Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Mansfeld-Südharz,129,True,15087,Mansfeld-Südharz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Saalekreis,154,True,15088,Saalekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Salzlandkreis,133,True,15089,Salzlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Stendal,157,True,15090,Stendal,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Sachsen-Anhalt,Landkreis Wittenberg,52,True,15091,Wittenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Dithmarschen,249,True,01051,Dithmarschen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Herzogtum Lauenburg,178,True,01053,Herzogtum Lauenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Nordfriesland,477,True,01054,Nordfriesland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Ostholstein,400,True,01055,Ostholstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Pinneberg,318,True,01056,Pinneberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Plön,168,True,01057,Plön,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,369,True,01058,Rendsburg-Eckernförde,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Schleswig-Flensburg,384,True,01059,Schleswig-Flensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Segeberg,291,True,01060,Segeberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Steinburg,110,True,01061,Steinburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreis Stormarn,355,True,01062,Stormarn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreisfreie Stadt Flensburg,175,True,01001,"Flensburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreisfreie Stadt Kiel,312,True,01002,"Kiel, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreisfreie Stadt Lübeck,392,True,01003,"Lübeck, Hansestadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Schleswig-Holstein,Kreisfreie Stadt Neumünster,171,True,01004,"Neumünster, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Kreisfreie Stadt Erfurt,266,True,16051,"Erfurt, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Kreisfreie Stadt Gera,121,True,16052,"Gera, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Kreisfreie Stadt Jena,201,True,16053,"Jena, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Kreisfreie Stadt Suhl,46,True,16054,"Suhl, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Kreisfreie Stadt Weimar,118,True,16055,"Weimar, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Altenburger Land,65,True,16077,Altenburger Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Eichsfeld,101,True,16061,Eichsfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Gotha,139,True,16067,Gotha,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Greiz,52,True,16076,Greiz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Hildburghausen,55,True,16069,Hildburghausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Ilm-Kreis,128,True,16070,Ilm-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Kyffhäuserkreis,35,True,16065,Kyffhäuserkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Nordhausen,87,True,16062,Nordhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Saale-Holzland-Kreis,106,True,16074,Saale-Holzland-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Saale-Orla-Kreis,132,True,16075,Saale-Orla-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Saalfeld-Rudolstadt,107,True,16073,Saalfeld-Rudolstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Schmalkalden-Meiningen,131,True,16066,Schmalkalden-Meiningen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Sonneberg,44,True,16072,Sonneberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Sömmerda,43,True,16068,Sömmerda,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Unstrut-Hainich-Kreis,75,True,16064,Unstrut-Hainich-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Wartburgkreis,169,True,16063,Wartburgkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2024-12-31,Thüringen,Landkreis Weimarer Land,96,True,16071,Weimarer Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Alb-Donau-Kreis,609,True,08425,Alb-Donau-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Biberach,170,True,08426,Biberach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Bodenseekreis,354,True,08435,Bodenseekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,389,True,08315,Breisgau-Hochschwarzwald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Böblingen,1113,True,08115,Böblingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Calw,264,True,08235,Calw,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Emmendingen,262,True,08316,Emmendingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Enzkreis,212,True,08236,Enzkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Esslingen,717,True,08116,Esslingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Freudenstadt,198,True,08237,Freudenstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Göppingen,424,True,08117,Göppingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Heidenheim,134,True,08135,Heidenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Heilbronn,664,True,08125,Heilbronn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Hohenlohekreis,285,True,08126,Hohenlohekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Karlsruhe,536,True,08215,Karlsruhe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Konstanz,417,True,08335,Konstanz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ludwigsburg,723,True,08118,Ludwigsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Lörrach,256,True,08336,Lörrach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Main-Tauber-Kreis,255,True,08128,Main-Tauber-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Neckar-Odenwald-Kreis,178,True,08225,Neckar-Odenwald-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ortenaukreis,727,True,08317,Ortenaukreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ostalbkreis,460,True,08136,Ostalbkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rastatt,328,True,08216,Rastatt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ravensburg,614,True,08436,Ravensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rems-Murr-Kreis,586,True,08119,Rems-Murr-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Reutlingen,377,True,08415,Reutlingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rhein-Neckar-Kreis,635,True,08226,Rhein-Neckar-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rottweil,192,True,08325,Rottweil,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Schwarzwald-Baar-Kreis,266,True,08326,Schwarzwald-Baar-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Schwäbisch Hall,316,True,08127,Schwäbisch Hall,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Sigmaringen,119,True,08437,Sigmaringen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Tuttlingen,183,True,08327,Tuttlingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Tübingen,377,True,08416,Tübingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Waldshut,228,True,08337,Waldshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Zollernalbkreis,154,True,08417,Zollernalbkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Baden-Baden,109,True,08211,"Baden-Baden, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Freiburg im Breisgau,475,True,08311,"Freiburg im Breisgau, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Heidelberg,411,True,08221,"Heidelberg, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Heilbronn,405,True,08121,"Heilbronn, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Karlsruhe,334,True,08212,"Karlsruhe, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Mannheim,468,True,08222,"Mannheim, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Pforzheim,185,True,08231,"Pforzheim, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Stuttgart,2414,True,08111,"Stuttgart, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Ulm,340,True,08421,"Ulm, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Amberg,44,True,09361,Amberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Ansbach,57,True,09561,Ansbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Aschaffenburg,95,True,09661,Aschaffenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Augsburg,331,True,09761,Augsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Bamberg,170,True,09461,Bamberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Bayreuth,146,True,09462,Bayreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Coburg,66,True,09463,Coburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Erlangen,139,True,09562,Erlangen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Fürth,284,True,09563,Fürth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Hof,46,True,09464,Hof,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Ingolstadt,858,True,09161,Ingolstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Kaufbeuren,111,True,09762,Kaufbeuren,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Kempten (Allgäu),166,True,09763,Kempten (Allgäu),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Landshut,125,True,09261,Landshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Memmingen,115,True,09764,Memmingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt München,2390,True,09162,"München, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Nürnberg,840,True,09564,Nürnberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Passau,173,True,09262,Passau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Regensburg,802,True,09362,Regensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Rosenheim,85,True,09163,Rosenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Schwabach,36,True,09565,Schwabach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Schweinfurt,123,True,09662,Schweinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Straubing,75,True,09263,Straubing,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Weiden i.d. OPf.,57,True,09363,Weiden i.d.OPf.,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Würzburg,306,True,09663,Würzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Aichach-Friedberg,160,True,09771,Aichach-Friedberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Altötting,214,True,09171,Altötting,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Amberg-Sulzbach,128,True,09371,Amberg-Sulzbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Ansbach,393,True,09571,Ansbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Aschaffenburg,263,True,09671,Aschaffenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Augsburg,312,True,09772,Augsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bad Kissingen,112,True,09672,Bad Kissingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bad Tölz-Wolfratshausen,200,True,09173,Bad Tölz-Wolfratshausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bamberg,174,True,09471,Bamberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bayreuth,97,True,09472,Bayreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Berchtesgadener Land,211,True,09172,Berchtesgadener Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Cham,161,True,09372,Cham,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Coburg,89,True,09473,Coburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Dachau,155,True,09174,Dachau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Deggendorf,271,True,09271,Deggendorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Dillingen a.d. Donau,89,True,09773,Dillingen a.d.Donau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Dingolfing-Landau,468,True,09279,Dingolfing-Landau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Donau-Ries,175,True,09779,Donau-Ries,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Ebersberg,236,True,09175,Ebersberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Eichstätt,229,True,09176,Eichstätt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Erding,197,True,09177,Erding,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Erlangen-Höchstadt,166,True,09572,Erlangen-Höchstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Forchheim,152,True,09474,Forchheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Freising,482,True,09178,Freising,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Freyung-Grafenau,186,True,09272,Freyung-Grafenau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Fürstenfeldbruck,268,True,09179,Fürstenfeldbruck,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Fürth,120,True,09573,Fürth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Garmisch-Partenkirchen,205,True,09180,Garmisch-Partenkirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Günzburg,238,True,09774,Günzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Haßberge,106,True,09674,Haßberge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Hof,160,True,09475,Hof,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kelheim,179,True,09273,Kelheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kitzingen,256,True,09675,Kitzingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kronach,72,True,09476,Kronach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kulmbach,134,True,09477,Kulmbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Landsberg am Lech,236,True,09181,Landsberg am Lech,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Landshut,245,True,09274,Landshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Lichtenfels,52,True,09478,Lichtenfels,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Lindau (Bodensee),139,True,09776,Lindau (Bodensee),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Main-Spessart,164,True,09677,Main-Spessart,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Miesbach,251,True,09182,Miesbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Miltenberg,100,True,09676,Miltenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Mühldorf a. Inn,162,True,09183,Mühldorf a.Inn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis München,859,True,09184,München,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neu-Ulm,300,True,09775,Neu-Ulm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neuburg-Schrobenhausen,117,True,09185,Neuburg-Schrobenhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neumarkt i.d. OPf.,201,True,09373,Neumarkt i.d.OPf.,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neustadt a.d. Aisch-Bad Windsheim,164,True,09575,Neustadt a.d.Aisch-Bad Windsheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neustadt a.d. Waldnaab,153,True,09374,Neustadt a.d.Waldnaab,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Nürnberger Land,250,True,09574,Nürnberger Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Oberallgäu,372,True,09780,Oberallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Ostallgäu,319,True,09777,Ostallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Passau,371,True,09275,Passau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Pfaffenhofen a.d. Ilm,229,True,09186,Pfaffenhofen a.d.Ilm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Regen,137,True,09276,Regen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Regensburg,278,True,09375,Regensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Rhön-Grabfeld,98,True,09673,Rhön-Grabfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Rosenheim,474,True,09187,Rosenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Roth,227,True,09576,Roth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Rottal-Inn,128,True,09277,Rottal-Inn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Schwandorf,222,True,09376,Schwandorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Schweinfurt,146,True,09678,Schweinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Starnberg,173,True,09188,Starnberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Straubing-Bogen,148,True,09278,Straubing-Bogen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Tirschenreuth,119,True,09377,Tirschenreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Traunstein,283,True,09189,Traunstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Unterallgäu,381,True,09778,Unterallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Weilheim-Schongau,200,True,09190,Weilheim-Schongau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Weißenburg-Gunzenhausen,122,True,09577,Weißenburg-Gunzenhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Wunsiedel i. Fichtelgebirge,106,True,09479,Wunsiedel i.Fichtelgebirge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Würzburg,214,True,09679,Würzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Berlin,Kreisfreie Stadt Berlin,4953,True,11000,"Berlin, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Brandenburg an der Havel,69,True,12051,"Brandenburg an der Havel, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Cottbus,103,True,12052,"Cottbus, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Frankfurt (Oder),63,True,12053,"Frankfurt (Oder), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Potsdam,153,True,12054,"Potsdam, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Barnim,201,True,12060,Barnim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Dahme-Spreewald,248,True,12061,Dahme-Spreewald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Elbe-Elster,58,True,12062,Elbe-Elster,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Havelland,161,True,12063,Havelland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Märkisch-Oderland,132,True,12064,Märkisch-Oderland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Oberhavel,197,True,12065,Oberhavel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Oberspreewald-Lausitz,116,True,12066,Oberspreewald-Lausitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Oder-Spree,717,True,12067,Oder-Spree,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Ostprignitz-Ruppin,143,True,12068,Ostprignitz-Ruppin,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Potsdam-Mittelmark,215,True,12069,Potsdam-Mittelmark,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Prignitz,37,True,12070,Prignitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Spree-Neiße,71,True,12071,Spree-Neiße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Teltow-Fläming,204,True,12072,Teltow-Fläming,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Uckermark,144,True,12073,Uckermark,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bremen,Kreisfreie Stadt Bremen,796,True,04011,"Bremen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bremen,Kreisfreie Stadt Bremerhaven,88,True,04012,"Bremerhaven, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hamburg,Kreisfreie Stadt Hamburg,3314,True,02000,"Hamburg, Freie und Hansestadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Darmstadt,182,True,06411,"Darmstadt, Wissenschaftsstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Frankfurt am Main,1297,True,06412,"Frankfurt am Main, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Hanau,144,False,,,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Kassel,303,True,06611,"Kassel, documenta-Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Offenbach am Main,113,True,06413,"Offenbach am Main, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Wiesbaden,740,True,06414,"Wiesbaden, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Bergstraße,371,True,06431,Bergstraße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Darmstadt-Dieburg,345,True,06432,Darmstadt-Dieburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Fulda,420,True,06631,Fulda,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Gießen,364,True,06531,Gießen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Groß-Gerau,659,True,06433,Groß-Gerau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Hersfeld-Rotenburg,187,True,06632,Hersfeld-Rotenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Hochtaunuskreis,215,True,06434,Hochtaunuskreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Kassel,340,True,06633,Kassel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Lahn-Dill-Kreis,307,True,06532,Lahn-Dill-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Limburg-Weilburg,243,True,06533,Limburg-Weilburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Main-Kinzig-Kreis,437,True,06435,Main-Kinzig-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Main-Taunus-Kreis,341,True,06436,Main-Taunus-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Marburg-Biedenkopf,266,True,06534,Marburg-Biedenkopf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Odenwaldkreis,77,True,06437,Odenwaldkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Offenbach,355,True,06438,Offenbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Rheingau-Taunus-Kreis,194,True,06439,Rheingau-Taunus-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Schwalm-Eder-Kreis,262,True,06634,Schwalm-Eder-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Vogelsbergkreis,152,True,06535,Vogelsbergkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Waldeck-Frankenberg,238,True,06635,Waldeck-Frankenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Werra-Meißner-Kreis,96,True,06636,Werra-Meißner-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Wetteraukreis,304,True,06440,Wetteraukreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Kreisfreie Stadt Rostock,201,True,13003,Rostock,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Kreisfreie Stadt Schwerin,121,True,13004,Schwerin,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Ludwigslust-Parchim,180,True,13076,Ludwigslust-Parchim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Mecklenburgische Seenplatte,263,True,13071,Mecklenburgische Seenplatte,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Nordwestmecklenburg,159,True,13074,Nordwestmecklenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Rostock,253,True,13072,Landkreis Rostock,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Vorpommern-Greifswald,205,True,13075,Vorpommern-Greifswald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Vorpommern-Rügen,455,True,13073,Vorpommern-Rügen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Braunschweig,674,True,03101,"Braunschweig, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Delmenhorst,90,True,03401,"Delmenhorst, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Emden,111,True,03402,"Emden, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Oldenburg (Oldb),216,True,03403,"Oldenburg (Oldb), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Osnabrück,303,True,03404,"Osnabrück, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Salzgitter,175,True,03102,"Salzgitter, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Wilhelmshaven,56,True,03405,"Wilhelmshaven, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Wolfsburg,653,True,03103,"Wolfsburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Ammerland,152,True,03451,Ammerland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Aurich,216,True,03452,Aurich,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Celle,182,True,03351,Celle,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Cloppenburg,299,True,03453,Cloppenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Cuxhaven,190,True,03352,Cuxhaven,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Diepholz,318,True,03251,Diepholz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Emsland,617,True,03454,Emsland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Friesland,141,True,03455,Friesland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Gifhorn,179,True,03151,Gifhorn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Goslar,179,True,03153,Goslar,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Grafschaft Bentheim,200,True,03456,Grafschaft Bentheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Göttingen,363,True,03159,Göttingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Hameln-Pyrmont,116,True,03252,Hameln-Pyrmont,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Harburg,289,True,03353,Harburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Heidekreis,314,True,03358,Heidekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Helmstedt,99,True,03154,Helmstedt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Hildesheim,299,True,03254,Hildesheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Holzminden,50,True,03255,Holzminden,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Leer,176,True,03457,Leer,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Lüchow-Dannenberg,39,True,03354,Lüchow-Dannenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Lüneburg,189,True,03355,Lüneburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Nienburg (Weser),130,True,03256,Nienburg (Weser),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Northeim,262,True,03155,Northeim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Oldenburg,134,True,03458,Oldenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Osnabrück,378,True,03459,Osnabrück,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Osterholz,126,True,03356,Osterholz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Peine,153,True,03157,Peine,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Region Hannover,1946,True,03241,Region Hannover,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Rotenburg (Wümme),263,True,03357,Rotenburg (Wümme),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Schaumburg,200,True,03257,Schaumburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Stade,208,True,03359,Stade,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Uelzen,87,True,03360,Uelzen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Vechta,242,True,03460,Vechta,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Verden,179,True,03361,Verden,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Wesermarsch,137,True,03461,Wesermarsch,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Wittmund,66,True,03462,Wittmund,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Wolfenbüttel,86,True,03158,Wolfenbüttel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Borken,727,True,05554,Borken,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Coesfeld,276,True,05558,Coesfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Düren,443,True,05358,Düren,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Ennepe-Ruhr-Kreis,301,True,05954,Ennepe-Ruhr-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Euskirchen,210,True,05366,Euskirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Gütersloh,416,True,05754,Gütersloh,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Heinsberg,295,True,05370,Heinsberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Herford,220,True,05758,Herford,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Hochsauerlandkreis,328,True,05958,Hochsauerlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Höxter,169,True,05762,Höxter,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Kleve,381,True,05154,Kleve,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Lippe,296,True,05766,Lippe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Mettmann,735,True,05158,Mettmann,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Minden-Lübbecke,284,True,05770,Minden-Lübbecke,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Märkischer Kreis,376,True,05962,Märkischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Oberbergischer Kreis,229,True,05374,Oberbergischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Olpe,113,True,05966,Olpe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Paderborn,513,True,05774,Paderborn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Recklinghausen,586,True,05562,Recklinghausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rhein-Erft-Kreis,426,True,05362,Rhein-Erft-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rhein-Kreis Neuss,508,True,05162,Rhein-Kreis Neuss,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rhein-Sieg-Kreis,554,True,05382,Rhein-Sieg-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rheinisch-Bergischer Kreis,270,True,05378,Rheinisch-Bergischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Siegen-Wittgenstein,243,True,05970,Siegen-Wittgenstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Soest,383,True,05974,Soest,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Steinfurt,469,True,05566,Steinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Städteregion Aachen,974,True,05334,Städteregion Aachen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Unna,485,True,05978,Unna,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Viersen,365,True,05166,Viersen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Warendorf,323,True,05570,Warendorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Wesel,643,True,05170,Wesel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bielefeld,396,True,05711,"Bielefeld, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bochum,598,True,05911,"Bochum, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bonn,613,True,05314,"Bonn, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bottrop,124,True,05512,"Bottrop, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Dortmund,912,True,05913,"Dortmund, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Duisburg,632,True,05112,"Duisburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Düsseldorf,1457,True,05111,"Düsseldorf, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Essen,673,True,05113,"Essen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Gelsenkirchen,238,True,05513,"Gelsenkirchen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Hagen,167,True,05914,"Hagen, Stadt der FernUniversität",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Hamm,202,True,05915,"Hamm, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Herne,105,True,05916,"Herne, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Krefeld,151,True,05114,"Krefeld, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Köln,1475,True,05315,"Köln, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Leverkusen,201,True,05316,"Leverkusen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Mönchengladbach,387,True,05116,"Mönchengladbach, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Mülheim an der Ruhr,209,True,05117,"Mülheim an der Ruhr, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Münster,405,True,05515,"Münster, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Oberhausen,394,True,05119,"Oberhausen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Remscheid,122,True,05120,"Remscheid, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Solingen,234,True,05122,"Solingen, Klingenstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Wuppertal,264,True,05124,"Wuppertal, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Frankenthal (Pfalz),42,True,07311,"Frankenthal (Pfalz), kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Kaiserslautern,196,True,07312,"Kaiserslautern, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Koblenz,218,True,07111,"Koblenz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Landau in der Pfalz,80,True,07313,"Landau in der Pfalz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Ludwigshafen am Rhein,211,True,07314,"Ludwigshafen am Rhein, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Mainz,330,True,07315,"Mainz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Neustadt an der Weinstraße,74,True,07316,"Neustadt an der Weinstraße, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Pirmasens,23,True,07317,"Pirmasens, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Speyer,119,True,07318,"Speyer, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Trier,112,True,07211,"Trier, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Worms,60,True,07319,"Worms, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Zweibrücken,89,True,07320,"Zweibrücken, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Ahrweiler,176,True,07131,Ahrweiler,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),94,True,07132,Altenkirchen (Westerwald),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Alzey-Worms,126,True,07331,Alzey-Worms,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Bad Dürkheim,105,True,07332,Bad Dürkheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Bad Kreuznach,161,True,07133,Bad Kreuznach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Bernkastel-Wittlich,167,True,07231,Bernkastel-Wittlich,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Birkenfeld,57,True,07134,Birkenfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Cochem-Zell,80,True,07135,Cochem-Zell,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Donnersbergkreis,58,True,07333,Donnersbergkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Eifelkreis Bitburg-Prüm,98,True,07232,Eifelkreis Bitburg-Prüm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Germersheim,81,True,07334,Germersheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Kaiserslautern,70,True,07335,Kaiserslautern,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Kusel,29,True,07336,Kusel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Mainz-Bingen,229,True,07339,Mainz-Bingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Mayen-Koblenz,230,True,07137,Mayen-Koblenz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Neuwied,199,True,07138,Neuwied,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Rhein-Hunsrück-Kreis,152,True,07140,Rhein-Hunsrück-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Rhein-Lahn-Kreis,97,True,07141,Rhein-Lahn-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Rhein-Pfalz-Kreis,125,True,07338,Rhein-Pfalz-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Südliche Weinstraße,88,True,07337,Südliche Weinstraße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Südwestpfalz,50,True,07340,Südwestpfalz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Trier-Saarburg,157,True,07235,Trier-Saarburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Vulkaneifel,110,True,07233,Vulkaneifel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Westerwaldkreis,234,True,07143,Westerwaldkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Merzig-Wadern,90,True,10042,Merzig-Wadern,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Neunkirchen,72,True,10043,Neunkirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Regionalverband Saarbrücken,277,True,10041,Regionalverband Saarbrücken,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Saarlouis,127,True,10044,Saarlouis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Saarpfalz-Kreis,152,True,10045,Saarpfalz-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis St. Wendel,78,True,10046,St. Wendel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Kreisfreie Stadt Chemnitz,304,True,14511,"Chemnitz, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Kreisfreie Stadt Dresden,571,True,14612,"Dresden, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Kreisfreie Stadt Leipzig,731,True,14713,"Leipzig, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Bautzen,245,True,14625,Bautzen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Erzgebirgskreis,268,True,14521,Erzgebirgskreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Görlitz,153,True,14626,Görlitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Leipzig,238,True,14729,Leipzig,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Meißen,183,True,14627,Meißen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Mittelsachsen,181,True,14522,Mittelsachsen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Nordsachsen,156,True,14730,Nordsachsen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Sächsische Schweiz-Osterzgebirge,197,True,14628,Sächsische Schweiz-Osterzgebirge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Vogtlandkreis,163,True,14523,Vogtlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Zwickau,431,True,14524,Zwickau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Kreisfreie Stadt Dessau-Roßlau,66,True,15001,"Dessau-Roßlau, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Kreisfreie Stadt Halle (Saale),173,True,15002,"Halle (Saale), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Kreisfreie Stadt Magdeburg,273,True,15003,"Magdeburg, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Altmarkkreis Salzwedel,61,True,15081,Altmarkkreis Salzwedel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Anhalt-Bitterfeld,168,True,15082,Anhalt-Bitterfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Burgenlandkreis,150,True,15084,Burgenlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Börde,195,True,15083,Börde,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Harz,219,True,15085,Harz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Jerichower Land,48,True,15086,Jerichower Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Mansfeld-Südharz,129,True,15087,Mansfeld-Südharz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Saalekreis,154,True,15088,Saalekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Salzlandkreis,133,True,15089,Salzlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Stendal,157,True,15090,Stendal,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Wittenberg,52,True,15091,Wittenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Dithmarschen,249,True,01051,Dithmarschen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Herzogtum Lauenburg,178,True,01053,Herzogtum Lauenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Nordfriesland,477,True,01054,Nordfriesland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Ostholstein,400,True,01055,Ostholstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Pinneberg,318,True,01056,Pinneberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Plön,168,True,01057,Plön,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,369,True,01058,Rendsburg-Eckernförde,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Schleswig-Flensburg,384,True,01059,Schleswig-Flensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Segeberg,291,True,01060,Segeberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Steinburg,110,True,01061,Steinburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Stormarn,355,True,01062,Stormarn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Flensburg,175,True,01001,"Flensburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Kiel,312,True,01002,"Kiel, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Lübeck,392,True,01003,"Lübeck, Hansestadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Neumünster,171,True,01004,"Neumünster, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Erfurt,266,True,16051,"Erfurt, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Gera,121,True,16052,"Gera, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Jena,201,True,16053,"Jena, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Suhl,46,True,16054,"Suhl, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Weimar,118,True,16055,"Weimar, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Altenburger Land,65,True,16077,Altenburger Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Eichsfeld,101,True,16061,Eichsfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Gotha,139,True,16067,Gotha,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Greiz,52,True,16076,Greiz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Hildburghausen,55,True,16069,Hildburghausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Ilm-Kreis,128,True,16070,Ilm-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Kyffhäuserkreis,35,True,16065,Kyffhäuserkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Nordhausen,87,True,16062,Nordhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Saale-Holzland-Kreis,106,True,16074,Saale-Holzland-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Saale-Orla-Kreis,132,True,16075,Saale-Orla-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Saalfeld-Rudolstadt,107,True,16073,Saalfeld-Rudolstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Schmalkalden-Meiningen,131,True,16066,Schmalkalden-Meiningen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Sonneberg,44,True,16072,Sonneberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Sömmerda,43,True,16068,Sömmerda,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Unstrut-Hainich-Kreis,75,True,16064,Unstrut-Hainich-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Wartburgkreis,169,True,16063,Wartburgkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Weimarer Land,96,True,16071,Weimarer Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Alb-Donau-Kreis,609,True,08425,Alb-Donau-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Biberach,170,True,08426,Biberach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Bodenseekreis,354,True,08435,Bodenseekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Breisgau-Hochschwarzwald,389,True,08315,Breisgau-Hochschwarzwald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Böblingen,1113,True,08115,Böblingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Calw,264,True,08235,Calw,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Emmendingen,262,True,08316,Emmendingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Enzkreis,212,True,08236,Enzkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Esslingen,717,True,08116,Esslingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Freudenstadt,198,True,08237,Freudenstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Göppingen,424,True,08117,Göppingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Heidenheim,134,True,08135,Heidenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Heilbronn,664,True,08125,Heilbronn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Hohenlohekreis,285,True,08126,Hohenlohekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Karlsruhe,536,True,08215,Karlsruhe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Konstanz,417,True,08335,Konstanz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ludwigsburg,723,True,08118,Ludwigsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Lörrach,256,True,08336,Lörrach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Main-Tauber-Kreis,255,True,08128,Main-Tauber-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Neckar-Odenwald-Kreis,178,True,08225,Neckar-Odenwald-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ortenaukreis,727,True,08317,Ortenaukreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ostalbkreis,460,True,08136,Ostalbkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rastatt,328,True,08216,Rastatt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Ravensburg,614,True,08436,Ravensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rems-Murr-Kreis,586,True,08119,Rems-Murr-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Reutlingen,377,True,08415,Reutlingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rhein-Neckar-Kreis,635,True,08226,Rhein-Neckar-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Rottweil,192,True,08325,Rottweil,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Schwarzwald-Baar-Kreis,266,True,08326,Schwarzwald-Baar-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Schwäbisch Hall,316,True,08127,Schwäbisch Hall,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Sigmaringen,119,True,08437,Sigmaringen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Tuttlingen,183,True,08327,Tuttlingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Tübingen,377,True,08416,Tübingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Waldshut,228,True,08337,Waldshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Landkreis Zollernalbkreis,154,True,08417,Zollernalbkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Baden-Baden,109,True,08211,"Baden-Baden, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Freiburg im Breisgau,475,True,08311,"Freiburg im Breisgau, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Heidelberg,411,True,08221,"Heidelberg, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Heilbronn,405,True,08121,"Heilbronn, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Karlsruhe,334,True,08212,"Karlsruhe, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Mannheim,468,True,08222,"Mannheim, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Pforzheim,185,True,08231,"Pforzheim, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Stuttgart,2414,True,08111,"Stuttgart, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Baden-Württemberg,Stadtkreis Ulm,340,True,08421,"Ulm, Stadtkreis",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Amberg,44,True,09361,Amberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Ansbach,57,True,09561,Ansbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Aschaffenburg,95,True,09661,Aschaffenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Augsburg,331,True,09761,Augsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Bamberg,170,True,09461,Bamberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Bayreuth,146,True,09462,Bayreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Coburg,66,True,09463,Coburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Erlangen,139,True,09562,Erlangen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Fürth,284,True,09563,Fürth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Hof,46,True,09464,Hof,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Ingolstadt,858,True,09161,Ingolstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Kaufbeuren,111,True,09762,Kaufbeuren,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Kempten (Allgäu),166,True,09763,Kempten (Allgäu),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Landshut,125,True,09261,Landshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Memmingen,115,True,09764,Memmingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt München,2390,True,09162,"München, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Nürnberg,840,True,09564,Nürnberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Passau,173,True,09262,Passau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Regensburg,802,True,09362,Regensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Rosenheim,85,True,09163,Rosenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Schwabach,36,True,09565,Schwabach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Schweinfurt,123,True,09662,Schweinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Straubing,75,True,09263,Straubing,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Weiden i.d. OPf.,57,True,09363,Weiden i.d.OPf.,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Kreisfreie Stadt Würzburg,306,True,09663,Würzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Aichach-Friedberg,160,True,09771,Aichach-Friedberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Altötting,214,True,09171,Altötting,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Amberg-Sulzbach,128,True,09371,Amberg-Sulzbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Ansbach,393,True,09571,Ansbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Aschaffenburg,263,True,09671,Aschaffenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Augsburg,312,True,09772,Augsburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bad Kissingen,112,True,09672,Bad Kissingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bad Tölz-Wolfratshausen,200,True,09173,Bad Tölz-Wolfratshausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bamberg,174,True,09471,Bamberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Bayreuth,97,True,09472,Bayreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Berchtesgadener Land,211,True,09172,Berchtesgadener Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Cham,161,True,09372,Cham,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Coburg,89,True,09473,Coburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Dachau,155,True,09174,Dachau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Deggendorf,271,True,09271,Deggendorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Dillingen a.d. Donau,89,True,09773,Dillingen a.d.Donau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Dingolfing-Landau,468,True,09279,Dingolfing-Landau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Donau-Ries,175,True,09779,Donau-Ries,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Ebersberg,236,True,09175,Ebersberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Eichstätt,229,True,09176,Eichstätt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Erding,197,True,09177,Erding,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Erlangen-Höchstadt,166,True,09572,Erlangen-Höchstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Forchheim,152,True,09474,Forchheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Freising,482,True,09178,Freising,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Freyung-Grafenau,186,True,09272,Freyung-Grafenau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Fürstenfeldbruck,268,True,09179,Fürstenfeldbruck,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Fürth,120,True,09573,Fürth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Garmisch-Partenkirchen,205,True,09180,Garmisch-Partenkirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Günzburg,238,True,09774,Günzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Haßberge,106,True,09674,Haßberge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Hof,160,True,09475,Hof,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kelheim,179,True,09273,Kelheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kitzingen,256,True,09675,Kitzingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kronach,72,True,09476,Kronach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Kulmbach,134,True,09477,Kulmbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Landsberg am Lech,236,True,09181,Landsberg am Lech,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Landshut,245,True,09274,Landshut,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Lichtenfels,52,True,09478,Lichtenfels,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Lindau (Bodensee),139,True,09776,Lindau (Bodensee),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Main-Spessart,164,True,09677,Main-Spessart,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Miesbach,251,True,09182,Miesbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Miltenberg,100,True,09676,Miltenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Mühldorf a. Inn,162,True,09183,Mühldorf a.Inn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis München,859,True,09184,München,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neu-Ulm,300,True,09775,Neu-Ulm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neuburg-Schrobenhausen,117,True,09185,Neuburg-Schrobenhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neumarkt i.d. OPf.,201,True,09373,Neumarkt i.d.OPf.,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neustadt a.d. Aisch-Bad Windsheim,164,True,09575,Neustadt a.d.Aisch-Bad Windsheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Neustadt a.d. Waldnaab,153,True,09374,Neustadt a.d.Waldnaab,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Nürnberger Land,250,True,09574,Nürnberger Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Oberallgäu,372,True,09780,Oberallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Ostallgäu,319,True,09777,Ostallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Passau,371,True,09275,Passau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Pfaffenhofen a.d. Ilm,229,True,09186,Pfaffenhofen a.d.Ilm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Regen,137,True,09276,Regen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Regensburg,278,True,09375,Regensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Rhön-Grabfeld,98,True,09673,Rhön-Grabfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Rosenheim,474,True,09187,Rosenheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Roth,227,True,09576,Roth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Rottal-Inn,128,True,09277,Rottal-Inn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Schwandorf,222,True,09376,Schwandorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Schweinfurt,146,True,09678,Schweinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Starnberg,173,True,09188,Starnberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Straubing-Bogen,148,True,09278,Straubing-Bogen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Tirschenreuth,119,True,09377,Tirschenreuth,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Traunstein,283,True,09189,Traunstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Unterallgäu,381,True,09778,Unterallgäu,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Weilheim-Schongau,200,True,09190,Weilheim-Schongau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Weißenburg-Gunzenhausen,122,True,09577,Weißenburg-Gunzenhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Wunsiedel i. Fichtelgebirge,106,True,09479,Wunsiedel i.Fichtelgebirge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bayern,Landkreis Würzburg,214,True,09679,Würzburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Berlin,Kreisfreie Stadt Berlin,4953,True,11000,"Berlin, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Brandenburg an der Havel,69,True,12051,"Brandenburg an der Havel, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Cottbus,103,True,12052,"Cottbus, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Frankfurt (Oder),63,True,12053,"Frankfurt (Oder), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Kreisfreie Stadt Potsdam,153,True,12054,"Potsdam, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Barnim,201,True,12060,Barnim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Dahme-Spreewald,248,True,12061,Dahme-Spreewald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Elbe-Elster,58,True,12062,Elbe-Elster,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Havelland,161,True,12063,Havelland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Märkisch-Oderland,132,True,12064,Märkisch-Oderland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Oberhavel,197,True,12065,Oberhavel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Oberspreewald-Lausitz,116,True,12066,Oberspreewald-Lausitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Oder-Spree,717,True,12067,Oder-Spree,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Ostprignitz-Ruppin,143,True,12068,Ostprignitz-Ruppin,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Potsdam-Mittelmark,215,True,12069,Potsdam-Mittelmark,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Prignitz,37,True,12070,Prignitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Spree-Neiße,71,True,12071,Spree-Neiße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Teltow-Fläming,204,True,12072,Teltow-Fläming,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Brandenburg,Landkreis Uckermark,144,True,12073,Uckermark,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bremen,Kreisfreie Stadt Bremen,796,True,04011,"Bremen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Bremen,Kreisfreie Stadt Bremerhaven,88,True,04012,"Bremerhaven, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hamburg,Kreisfreie Stadt Hamburg,3314,True,02000,"Hamburg, Freie und Hansestadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Darmstadt,182,True,06411,"Darmstadt, Wissenschaftsstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Frankfurt am Main,1297,True,06412,"Frankfurt am Main, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Hanau,144,True,06415,"Hanau, Brüder-Grimm-Stadt",documented Hanau 2026 effective-date exception
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Kassel,303,True,06611,"Kassel, documenta-Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Offenbach am Main,113,True,06413,"Offenbach am Main, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Kreisfreie Stadt Wiesbaden,740,True,06414,"Wiesbaden, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Bergstraße,371,True,06431,Bergstraße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Darmstadt-Dieburg,345,True,06432,Darmstadt-Dieburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Fulda,420,True,06631,Fulda,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Gießen,364,True,06531,Gießen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Groß-Gerau,659,True,06433,Groß-Gerau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Hersfeld-Rotenburg,187,True,06632,Hersfeld-Rotenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Hochtaunuskreis,215,True,06434,Hochtaunuskreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Kassel,340,True,06633,Kassel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Lahn-Dill-Kreis,307,True,06532,Lahn-Dill-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Limburg-Weilburg,243,True,06533,Limburg-Weilburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Main-Kinzig-Kreis,437,True,06435,Main-Kinzig-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Main-Taunus-Kreis,341,True,06436,Main-Taunus-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Marburg-Biedenkopf,266,True,06534,Marburg-Biedenkopf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Odenwaldkreis,77,True,06437,Odenwaldkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Offenbach,355,True,06438,Offenbach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Rheingau-Taunus-Kreis,194,True,06439,Rheingau-Taunus-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Schwalm-Eder-Kreis,262,True,06634,Schwalm-Eder-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Vogelsbergkreis,152,True,06535,Vogelsbergkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Waldeck-Frankenberg,238,True,06635,Waldeck-Frankenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Werra-Meißner-Kreis,96,True,06636,Werra-Meißner-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Hessen,Landkreis Wetteraukreis,304,True,06440,Wetteraukreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Kreisfreie Stadt Rostock,201,True,13003,Rostock,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Kreisfreie Stadt Schwerin,121,True,13004,Schwerin,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Ludwigslust-Parchim,180,True,13076,Ludwigslust-Parchim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Mecklenburgische Seenplatte,263,True,13071,Mecklenburgische Seenplatte,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Nordwestmecklenburg,159,True,13074,Nordwestmecklenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Rostock,253,True,13072,Landkreis Rostock,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Vorpommern-Greifswald,205,True,13075,Vorpommern-Greifswald,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Mecklenburg-Vorpommern,Landkreis Vorpommern-Rügen,455,True,13073,Vorpommern-Rügen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Braunschweig,674,True,03101,"Braunschweig, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Delmenhorst,90,True,03401,"Delmenhorst, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Emden,111,True,03402,"Emden, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Oldenburg (Oldb),216,True,03403,"Oldenburg (Oldb), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Osnabrück,303,True,03404,"Osnabrück, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Salzgitter,175,True,03102,"Salzgitter, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Wilhelmshaven,56,True,03405,"Wilhelmshaven, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Kreisfreie Stadt Wolfsburg,653,True,03103,"Wolfsburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Ammerland,152,True,03451,Ammerland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Aurich,216,True,03452,Aurich,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Celle,182,True,03351,Celle,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Cloppenburg,299,True,03453,Cloppenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Cuxhaven,190,True,03352,Cuxhaven,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Diepholz,318,True,03251,Diepholz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Emsland,617,True,03454,Emsland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Friesland,141,True,03455,Friesland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Gifhorn,179,True,03151,Gifhorn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Goslar,179,True,03153,Goslar,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Grafschaft Bentheim,200,True,03456,Grafschaft Bentheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Göttingen,363,True,03159,Göttingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Hameln-Pyrmont,116,True,03252,Hameln-Pyrmont,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Harburg,289,True,03353,Harburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Heidekreis,314,True,03358,Heidekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Helmstedt,99,True,03154,Helmstedt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Hildesheim,299,True,03254,Hildesheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Holzminden,50,True,03255,Holzminden,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Leer,176,True,03457,Leer,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Lüchow-Dannenberg,39,True,03354,Lüchow-Dannenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Lüneburg,189,True,03355,Lüneburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Nienburg (Weser),130,True,03256,Nienburg (Weser),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Northeim,262,True,03155,Northeim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Oldenburg,134,True,03458,Oldenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Osnabrück,378,True,03459,Osnabrück,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Osterholz,126,True,03356,Osterholz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Peine,153,True,03157,Peine,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Region Hannover,1946,True,03241,Region Hannover,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Rotenburg (Wümme),263,True,03357,Rotenburg (Wümme),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Schaumburg,200,True,03257,Schaumburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Stade,208,True,03359,Stade,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Uelzen,87,True,03360,Uelzen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Vechta,242,True,03460,Vechta,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Verden,179,True,03361,Verden,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Wesermarsch,137,True,03461,Wesermarsch,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Wittmund,66,True,03462,Wittmund,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Niedersachsen,Landkreis Wolfenbüttel,86,True,03158,Wolfenbüttel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Borken,727,True,05554,Borken,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Coesfeld,276,True,05558,Coesfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Düren,443,True,05358,Düren,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Ennepe-Ruhr-Kreis,301,True,05954,Ennepe-Ruhr-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Euskirchen,210,True,05366,Euskirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Gütersloh,416,True,05754,Gütersloh,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Heinsberg,295,True,05370,Heinsberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Herford,220,True,05758,Herford,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Hochsauerlandkreis,328,True,05958,Hochsauerlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Höxter,169,True,05762,Höxter,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Kleve,381,True,05154,Kleve,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Lippe,296,True,05766,Lippe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Mettmann,735,True,05158,Mettmann,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Minden-Lübbecke,284,True,05770,Minden-Lübbecke,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Märkischer Kreis,376,True,05962,Märkischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Oberbergischer Kreis,229,True,05374,Oberbergischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Olpe,113,True,05966,Olpe,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Paderborn,513,True,05774,Paderborn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Recklinghausen,586,True,05562,Recklinghausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rhein-Erft-Kreis,426,True,05362,Rhein-Erft-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rhein-Kreis Neuss,508,True,05162,Rhein-Kreis Neuss,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rhein-Sieg-Kreis,554,True,05382,Rhein-Sieg-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Rheinisch-Bergischer Kreis,270,True,05378,Rheinisch-Bergischer Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Siegen-Wittgenstein,243,True,05970,Siegen-Wittgenstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Soest,383,True,05974,Soest,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Steinfurt,469,True,05566,Steinfurt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Städteregion Aachen,974,True,05334,Städteregion Aachen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Unna,485,True,05978,Unna,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Viersen,365,True,05166,Viersen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Warendorf,323,True,05570,Warendorf,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreis Wesel,643,True,05170,Wesel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bielefeld,396,True,05711,"Bielefeld, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bochum,598,True,05911,"Bochum, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bonn,613,True,05314,"Bonn, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Bottrop,124,True,05512,"Bottrop, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Dortmund,912,True,05913,"Dortmund, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Duisburg,632,True,05112,"Duisburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Düsseldorf,1457,True,05111,"Düsseldorf, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Essen,673,True,05113,"Essen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Gelsenkirchen,238,True,05513,"Gelsenkirchen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Hagen,167,True,05914,"Hagen, Stadt der FernUniversität",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Hamm,202,True,05915,"Hamm, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Herne,105,True,05916,"Herne, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Krefeld,151,True,05114,"Krefeld, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Köln,1475,True,05315,"Köln, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Leverkusen,201,True,05316,"Leverkusen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Mönchengladbach,387,True,05116,"Mönchengladbach, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Mülheim an der Ruhr,209,True,05117,"Mülheim an der Ruhr, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Münster,405,True,05515,"Münster, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Oberhausen,394,True,05119,"Oberhausen, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Remscheid,122,True,05120,"Remscheid, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Solingen,234,True,05122,"Solingen, Klingenstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Nordrhein-Westfalen,Kreisfreie Stadt Wuppertal,264,True,05124,"Wuppertal, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Frankenthal (Pfalz),42,True,07311,"Frankenthal (Pfalz), kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Kaiserslautern,196,True,07312,"Kaiserslautern, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Koblenz,218,True,07111,"Koblenz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Landau in der Pfalz,80,True,07313,"Landau in der Pfalz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Ludwigshafen am Rhein,211,True,07314,"Ludwigshafen am Rhein, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Mainz,330,True,07315,"Mainz, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Neustadt an der Weinstraße,74,True,07316,"Neustadt an der Weinstraße, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Pirmasens,23,True,07317,"Pirmasens, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Speyer,119,True,07318,"Speyer, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Trier,112,True,07211,"Trier, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Worms,60,True,07319,"Worms, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Kreisfreie Stadt Zweibrücken,89,True,07320,"Zweibrücken, kreisfreie Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Ahrweiler,176,True,07131,Ahrweiler,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Altenkirchen (Westerwald),94,True,07132,Altenkirchen (Westerwald),state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Alzey-Worms,126,True,07331,Alzey-Worms,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Bad Dürkheim,105,True,07332,Bad Dürkheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Bad Kreuznach,161,True,07133,Bad Kreuznach,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Bernkastel-Wittlich,167,True,07231,Bernkastel-Wittlich,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Birkenfeld,57,True,07134,Birkenfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Cochem-Zell,80,True,07135,Cochem-Zell,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Donnersbergkreis,58,True,07333,Donnersbergkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Eifelkreis Bitburg-Prüm,98,True,07232,Eifelkreis Bitburg-Prüm,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Germersheim,81,True,07334,Germersheim,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Kaiserslautern,70,True,07335,Kaiserslautern,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Kusel,29,True,07336,Kusel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Mainz-Bingen,229,True,07339,Mainz-Bingen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Mayen-Koblenz,230,True,07137,Mayen-Koblenz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Neuwied,199,True,07138,Neuwied,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Rhein-Hunsrück-Kreis,152,True,07140,Rhein-Hunsrück-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Rhein-Lahn-Kreis,97,True,07141,Rhein-Lahn-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Rhein-Pfalz-Kreis,125,True,07338,Rhein-Pfalz-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Südliche Weinstraße,88,True,07337,Südliche Weinstraße,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Südwestpfalz,50,True,07340,Südwestpfalz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Trier-Saarburg,157,True,07235,Trier-Saarburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Vulkaneifel,110,True,07233,Vulkaneifel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Rheinland-Pfalz,Landkreis Westerwaldkreis,234,True,07143,Westerwaldkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Merzig-Wadern,90,True,10042,Merzig-Wadern,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Neunkirchen,72,True,10043,Neunkirchen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Regionalverband Saarbrücken,277,True,10041,Regionalverband Saarbrücken,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Saarlouis,127,True,10044,Saarlouis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis Saarpfalz-Kreis,152,True,10045,Saarpfalz-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Saarland,Landkreis St. Wendel,78,True,10046,St. Wendel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Kreisfreie Stadt Chemnitz,304,True,14511,"Chemnitz, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Kreisfreie Stadt Dresden,571,True,14612,"Dresden, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Kreisfreie Stadt Leipzig,731,True,14713,"Leipzig, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Bautzen,245,True,14625,Bautzen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Erzgebirgskreis,268,True,14521,Erzgebirgskreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Görlitz,153,True,14626,Görlitz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Leipzig,238,True,14729,Leipzig,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Meißen,183,True,14627,Meißen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Mittelsachsen,181,True,14522,Mittelsachsen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Nordsachsen,156,True,14730,Nordsachsen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Sächsische Schweiz-Osterzgebirge,197,True,14628,Sächsische Schweiz-Osterzgebirge,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Vogtlandkreis,163,True,14523,Vogtlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen,Landkreis Zwickau,431,True,14524,Zwickau,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Kreisfreie Stadt Dessau-Roßlau,66,True,15001,"Dessau-Roßlau, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Kreisfreie Stadt Halle (Saale),173,True,15002,"Halle (Saale), Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Kreisfreie Stadt Magdeburg,273,True,15003,"Magdeburg, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Altmarkkreis Salzwedel,61,True,15081,Altmarkkreis Salzwedel,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Anhalt-Bitterfeld,168,True,15082,Anhalt-Bitterfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Burgenlandkreis,150,True,15084,Burgenlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Börde,195,True,15083,Börde,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Harz,219,True,15085,Harz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Jerichower Land,48,True,15086,Jerichower Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Mansfeld-Südharz,129,True,15087,Mansfeld-Südharz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Saalekreis,154,True,15088,Saalekreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Salzlandkreis,133,True,15089,Salzlandkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Stendal,157,True,15090,Stendal,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Sachsen-Anhalt,Landkreis Wittenberg,52,True,15091,Wittenberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Dithmarschen,249,True,01051,Dithmarschen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Herzogtum Lauenburg,178,True,01053,Herzogtum Lauenburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Nordfriesland,477,True,01054,Nordfriesland,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Ostholstein,400,True,01055,Ostholstein,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Pinneberg,318,True,01056,Pinneberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Plön,168,True,01057,Plön,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Rendsburg-Eckernförde,369,True,01058,Rendsburg-Eckernförde,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Schleswig-Flensburg,384,True,01059,Schleswig-Flensburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Segeberg,291,True,01060,Segeberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Steinburg,110,True,01061,Steinburg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreis Stormarn,355,True,01062,Stormarn,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Flensburg,175,True,01001,"Flensburg, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Kiel,312,True,01002,"Kiel, Landeshauptstadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Lübeck,392,True,01003,"Lübeck, Hansestadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Schleswig-Holstein,Kreisfreie Stadt Neumünster,171,True,01004,"Neumünster, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Erfurt,266,True,16051,"Erfurt, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Gera,121,True,16052,"Gera, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Jena,201,True,16053,"Jena, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Suhl,46,True,16054,"Suhl, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Kreisfreie Stadt Weimar,118,True,16055,"Weimar, Stadt",state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Altenburger Land,65,True,16077,Altenburger Land,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Eichsfeld,101,True,16061,Eichsfeld,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Gotha,139,True,16067,Gotha,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Greiz,52,True,16076,Greiz,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Hildburghausen,55,True,16069,Hildburghausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Ilm-Kreis,128,True,16070,Ilm-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Kyffhäuserkreis,35,True,16065,Kyffhäuserkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Nordhausen,87,True,16062,Nordhausen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Saale-Holzland-Kreis,106,True,16074,Saale-Holzland-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Saale-Orla-Kreis,132,True,16075,Saale-Orla-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Saalfeld-Rudolstadt,107,True,16073,Saalfeld-Rudolstadt,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Schmalkalden-Meiningen,131,True,16066,Schmalkalden-Meiningen,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Sonneberg,44,True,16072,Sonneberg,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Sömmerda,43,True,16068,Sömmerda,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Unstrut-Hainich-Kreis,75,True,16064,Unstrut-Hainich-Kreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Wartburgkreis,169,True,16063,Wartburgkreis,state + administrative type + conservative normalized name
+BNetzA 2026-09-01,2026-06-30,Thüringen,Landkreis Weimarer Land,96,True,16071,Weimarer Land,state + administrative type + conservative normalized name

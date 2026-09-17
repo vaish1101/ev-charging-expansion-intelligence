@@ -1,0 +1,402 @@
+source_reference_date,source_district_key,source_district_name,target_analysis_region_key,target_analysis_region_name,relationship_type,valid_from,mapping_rationale
+2026-06-30,01001,"Flensburg, Stadt",01001,"FLENSBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01002,"Kiel, Landeshauptstadt",01002,"KIEL,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01003,"Lübeck, Hansestadt",01003,"LUEBECK,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01004,"Neumünster, Stadt",01004,"NEUMUENSTER,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01051,Dithmarschen,01051,DITHMARSCHEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01053,Herzogtum Lauenburg,01053,HERZOGTUM LAUENBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01054,Nordfriesland,01054,NORDFRIESLAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01055,Ostholstein,01055,OSTHOLSTEIN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01056,Pinneberg,01056,PINNEBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01057,Plön,01057,PLOEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01058,Rendsburg-Eckernförde,01058,RENDSBURG-ECKERNFOERDE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01059,Schleswig-Flensburg,01059,SCHLESWIG-FLENSBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01060,Segeberg,01060,SEGEBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01061,Steinburg,01061,STEINBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,01062,Stormarn,01062,STORMARN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,02000,"Hamburg, Freie und Hansestadt",02000,HAMBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03101,"Braunschweig, Stadt",03101,"BRAUNSCHWEIG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03102,"Salzgitter, Stadt",03102,"SALZGITTER,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03103,"Wolfsburg, Stadt",03103,"WOLFSBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03151,Gifhorn,03151,GIFHORN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03153,Goslar,03153,GOSLAR,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03154,Helmstedt,03154,HELMSTEDT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03155,Northeim,03155,NORTHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03157,Peine,03157,PEINE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03158,Wolfenbüttel,03158,WOLFENBUETTEL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03159,Göttingen,03159,GOETTINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03241,Region Hannover,03241,HANNOVER,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03251,Diepholz,03251,DIEPHOLZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03252,Hameln-Pyrmont,03252,HAMELN-PYRMONT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03254,Hildesheim,03254,HILDESHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03255,Holzminden,03255,HOLZMINDEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03256,Nienburg (Weser),03256,NIENBURG(WESER),one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03257,Schaumburg,03257,SCHAUMBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03351,Celle,03351,CELLE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03352,Cuxhaven,03352,CUXHAVEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03353,Harburg,03353,HARBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03354,Lüchow-Dannenberg,03354,LUECHOW-DANNENBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03355,Lüneburg,03355,LUENEBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03356,Osterholz,03356,OSTERHOLZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03357,Rotenburg (Wümme),03357,ROTENBURG(WUEMME),one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03358,Heidekreis,03358,HEIDEKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03359,Stade,03359,STADE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03360,Uelzen,03360,UELZEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03361,Verden,03361,VERDEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03401,"Delmenhorst, Stadt",03401,"DELMENHORST,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03402,"Emden, Stadt",03402,"EMDEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03403,"Oldenburg (Oldb), Stadt",03403,"OLDENBURG(OLDENB),STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03404,"Osnabrück, Stadt",03404,"OSNABRUECK,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03405,"Wilhelmshaven, Stadt",03405,"WILHELMSHAVEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03451,Ammerland,03451,AMMERLAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03452,Aurich,03452,AURICH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03453,Cloppenburg,03453,CLOPPENBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03454,Emsland,03454,EMSLAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03455,Friesland,03455,FRIESLAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03456,Grafschaft Bentheim,03456,GRAFSCHAFT BENTHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03457,Leer,03457,LEER,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03458,Oldenburg,03458,OLDENBURG(OLDENBURG),one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03459,Osnabrück,03459,OSNABRUECK,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03460,Vechta,03460,VECHTA,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03461,Wesermarsch,03461,WESERMARSCH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,03462,Wittmund,03462,WITTMUND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,04011,"Bremen, Stadt",04011,"BREMEN, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,04012,"Bremerhaven, Stadt",04012,"BREMERHAVEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05111,"Düsseldorf, Stadt",05111,"DUESSELDORF, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05112,"Duisburg, Stadt",05112,"DUISBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05113,"Essen, Stadt",05113,"ESSEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05114,"Krefeld, Stadt",05114,"KREFELD,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05116,"Mönchengladbach, Stadt",05116,"MOENCHENGLADBACH,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05117,"Mülheim an der Ruhr, Stadt",05117,"MUELHEIM A.D.RUHR,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05119,"Oberhausen, Stadt",05119,"OBERHAUSEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05120,"Remscheid, Stadt",05120,"REMSCHEID,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05122,"Solingen, Klingenstadt",05122,"SOLINGEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05124,"Wuppertal, Stadt",05124,"WUPPERTAL,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05154,Kleve,05154,KLEVE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05158,Mettmann,05158,METTMANN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05162,Rhein-Kreis Neuss,05162,NEUSS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05166,Viersen,05166,VIERSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05170,Wesel,05170,WESEL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05314,"Bonn, Stadt",05314,"BONN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05315,"Köln, Stadt",05315,"KOELN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05316,"Leverkusen, Stadt",05316,"LEVERKUSEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05334,Städteregion Aachen,05334,"AACHEN, STAEDTEREGION",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05358,Düren,05358,DUEREN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05362,Rhein-Erft-Kreis,05362,RHEIN-ERFT-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05366,Euskirchen,05366,EUSKIRCHEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05370,Heinsberg,05370,HEINSBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05374,Oberbergischer Kreis,05374,OBERBERGISCHER KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05378,Rheinisch-Bergischer Kreis,05378,RHEIN.-BERGISCHER KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05382,Rhein-Sieg-Kreis,05382,RHEIN-SIEG-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05512,"Bottrop, Stadt",05512,"BOTTROP,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05513,"Gelsenkirchen, Stadt",05513,"GELSENKIRCHEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05515,"Münster, Stadt",05515,"MUENSTER,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05554,Borken,05554,BORKEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05558,Coesfeld,05558,COESFELD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05562,Recklinghausen,05562,RECKLINGHAUSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05566,Steinfurt,05566,STEINFURT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05570,Warendorf,05570,WARENDORF,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05711,"Bielefeld, Stadt",05711,"BIELEFELD,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05754,Gütersloh,05754,GUETERSLOH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05758,Herford,05758,HERFORD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05762,Höxter,05762,HOEXTER,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05766,Lippe,05766,LIPPE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05770,Minden-Lübbecke,05770,MINDEN-LUEBBECKE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05774,Paderborn,05774,PADERBORN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05911,"Bochum, Stadt",05911,"BOCHUM,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05913,"Dortmund, Stadt",05913,"DORTMUND,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05914,"Hagen, Stadt der FernUniversität",05914,"HAGEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05915,"Hamm, Stadt",05915,"HAMM,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05916,"Herne, Stadt",05916,"HERNE,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05954,Ennepe-Ruhr-Kreis,05954,ENNEPE-RUHR-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05958,Hochsauerlandkreis,05958,HOCHSAUERLANDKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05962,Märkischer Kreis,05962,MAERKISCHER KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05966,Olpe,05966,OLPE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05970,Siegen-Wittgenstein,05970,SIEGEN-WITTGENSTEIN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05974,Soest,05974,SOEST,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,05978,Unna,05978,UNNA,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06411,"Darmstadt, Wissenschaftsstadt",06411,"DARMSTADT,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06412,"Frankfurt am Main, Stadt",06412,"FRANKFURT AM MAIN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06413,"Offenbach am Main, Stadt",06413,"OFFENBACH AM MAIN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06414,"Wiesbaden, Landeshauptstadt",06414,"WIESBADEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06415,"Hanau, Brüder-Grimm-Stadt",06415,"HANAU,STADT",one-to-one,2026-01-01,Hanau became kreisfreie Stadt effective 2026-01-01.
+2026-06-30,06431,Bergstraße,06431,BERGSTRASSE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06432,Darmstadt-Dieburg,06432,DARMSTADT-DIEBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06433,Groß-Gerau,06433,GROSS-GERAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06434,Hochtaunuskreis,06434,HOCHTAUNUSKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06435,Main-Kinzig-Kreis,06435,MAIN-KINZIG-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06436,Main-Taunus-Kreis,06436,MAIN-TAUNUS-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06437,Odenwaldkreis,06437,ODENWALDKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06438,Offenbach,06438,OFFENBACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06439,Rheingau-Taunus-Kreis,06439,RHEINGAU-TAUNUS-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06440,Wetteraukreis,06440,WETTERAUKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06531,Gießen,06531,GIESSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06532,Lahn-Dill-Kreis,06532,LAHN-DILL-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06533,Limburg-Weilburg,06533,LIMBURG-WEILBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06534,Marburg-Biedenkopf,06534,MARBURG-BIEDENKOPF,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06535,Vogelsbergkreis,06535,VOGELSBERGKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06611,"Kassel, documenta-Stadt",06611,"KASSEL,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06631,Fulda,06631,FULDA,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06632,Hersfeld-Rotenburg,06632,HERSFELD-ROTENBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06633,Kassel,06633,"KASSEL, LAND",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06634,Schwalm-Eder-Kreis,06634,SCHWALM-EDER-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06635,Waldeck-Frankenberg,06635,WALDECK-FRANKENBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,06636,Werra-Meißner-Kreis,06636,WERRA-MEISSNER-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07111,"Koblenz, kreisfreie Stadt",07111,"KOBLENZ,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07131,Ahrweiler,07131,AHRWEILER,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07132,Altenkirchen (Westerwald),07132,ALTENKIRCHEN(WESTWLD.),one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07133,Bad Kreuznach,07133,BAD KREUZNACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07134,Birkenfeld,07134,BIRKENFELD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07135,Cochem-Zell,07135,COCHEM-ZELL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07137,Mayen-Koblenz,07137,MAYEN-KOBLENZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07138,Neuwied,07138,NEUWIED,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07140,Rhein-Hunsrück-Kreis,07140,RHEIN-HUNSRUECK-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07141,Rhein-Lahn-Kreis,07141,RHEIN-LAHN-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07143,Westerwaldkreis,07143,WESTERWALDKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07211,"Trier, kreisfreie Stadt",07211,TRIER-SAARBURG,many-to-one aggregation,,Aggregate Trier city and Trier-Saarburg supply upward; never split KBA demand downward.
+2026-06-30,07231,Bernkastel-Wittlich,07231,BERNKASTEL-WITTLICH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07232,Eifelkreis Bitburg-Prüm,07232,EIFELKREIS BITBURG-PRUEM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07233,Vulkaneifel,07233,VULKANEIFEL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07235,Trier-Saarburg,07211,TRIER-SAARBURG,many-to-one aggregation,,Aggregate Trier city and Trier-Saarburg supply upward; never split KBA demand downward.
+2026-06-30,07311,"Frankenthal (Pfalz), kreisfreie Stadt",07311,"FRANKENTHAL(PFALZ),STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07312,"Kaiserslautern, kreisfreie Stadt",07312,"KAISERSLAUTERN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07313,"Landau in der Pfalz, kreisfreie Stadt",07313,"LANDAU I.D.PFALZ,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07314,"Ludwigshafen am Rhein, kreisfreie Stadt",07314,"LUDWIGSHAFEN A.RH.,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07315,"Mainz, kreisfreie Stadt",07315,"MAINZ,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07316,"Neustadt an der Weinstraße, kreisfreie Stadt",07316,"NEUSTADT A.D.WSTR.,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07317,"Pirmasens, kreisfreie Stadt",07317,"PIRMASENS,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07318,"Speyer, kreisfreie Stadt",07318,"SPEYER,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07319,"Worms, kreisfreie Stadt",07319,"WORMS,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07320,"Zweibrücken, kreisfreie Stadt",07320,"ZWEIBRUECKEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07331,Alzey-Worms,07331,ALZEY-WORMS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07332,Bad Dürkheim,07332,BAD DUERKHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07333,Donnersbergkreis,07333,DONNERSBERGKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07334,Germersheim,07334,GERMERSHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07335,Kaiserslautern,07335,KAISERSLAUTERN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07336,Kusel,07336,KUSEL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07337,Südliche Weinstraße,07337,SUEDLICHE WEINSTRASSE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07338,Rhein-Pfalz-Kreis,07338,RHEIN-PFALZ-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07339,Mainz-Bingen,07339,MAINZ-BINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,07340,Südwestpfalz,07340,SUEDWESTPFALZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08111,"Stuttgart, Stadtkreis",08111,"STUTTGART,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08115,Böblingen,08115,BOEBLINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08116,Esslingen,08116,ESSLINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08117,Göppingen,08117,GOEPPINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08118,Ludwigsburg,08118,LUDWIGSBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08119,Rems-Murr-Kreis,08119,REMS-MURR-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08121,"Heilbronn, Stadtkreis",08121,"HEILBRONN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08125,Heilbronn,08125,HEILBRONN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08126,Hohenlohekreis,08126,HOHENLOHEKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08127,Schwäbisch Hall,08127,SCHWAEBISCH-HALL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08128,Main-Tauber-Kreis,08128,MAIN-TAUBER-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08135,Heidenheim,08135,HEIDENHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08136,Ostalbkreis,08136,OSTALBKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08211,"Baden-Baden, Stadtkreis",08211,"BADEN-BADEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08212,"Karlsruhe, Stadtkreis",08212,"KARLSRUHE,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08215,Karlsruhe,08215,KARLSRUHE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08216,Rastatt,08216,RASTATT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08221,"Heidelberg, Stadtkreis",08221,"HEIDELBERG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08222,"Mannheim, Stadtkreis",08222,"MANNHEIM,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08225,Neckar-Odenwald-Kreis,08225,NECKAR-ODENWALD-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08226,Rhein-Neckar-Kreis,08226,RHEIN-NECKAR-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08231,"Pforzheim, Stadtkreis",08231,"PFORZHEIM,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08235,Calw,08235,CALW,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08236,Enzkreis,08236,ENZKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08237,Freudenstadt,08237,FREUDENSTADT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08311,"Freiburg im Breisgau, Stadtkreis",08311,FREIBURG I.BREISG.STADT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08315,Breisgau-Hochschwarzwald,08315,BREISGAU-HOCHSCHWARZWALD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08316,Emmendingen,08316,EMMENDINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08317,Ortenaukreis,08317,ORTENAUKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08325,Rottweil,08325,ROTTWEIL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08326,Schwarzwald-Baar-Kreis,08326,SCHWARZWALD-BAAR-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08327,Tuttlingen,08327,TUTTLINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08335,Konstanz,08335,KONSTANZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08336,Lörrach,08336,LOERRACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08337,Waldshut,08337,WALDSHUT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08415,Reutlingen,08415,REUTLINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08416,Tübingen,08416,TUEBINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08417,Zollernalbkreis,08417,ZOLLERNALBKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08421,"Ulm, Stadtkreis",08421,"ULM,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08425,Alb-Donau-Kreis,08425,ALB-DONAU-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08426,Biberach,08426,BIBERACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08435,Bodenseekreis,08435,BODENSEEKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08436,Ravensburg,08436,RAVENSBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,08437,Sigmaringen,08437,SIGMARINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09161,Ingolstadt,09161,"INGOLSTADT,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09162,"München, Landeshauptstadt",09162,"MUENCHEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09163,Rosenheim,09163,"ROSENHEIM,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09171,Altötting,09171,ALTOETTING,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09172,Berchtesgadener Land,09172,BERCHTESGADENER LAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09173,Bad Tölz-Wolfratshausen,09173,BAD TOELZ-WOLFRATSHAUSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09174,Dachau,09174,DACHAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09175,Ebersberg,09175,EBERSBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09176,Eichstätt,09176,EICHSTAETT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09177,Erding,09177,ERDING,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09178,Freising,09178,FREISING,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09179,Fürstenfeldbruck,09179,FUERSTENFELDBRUCK,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09180,Garmisch-Partenkirchen,09180,GARMISCH-PARTENKIRCHEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09181,Landsberg am Lech,09181,LANDSBERG AM LECH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09182,Miesbach,09182,MIESBACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09183,Mühldorf a.Inn,09183,MUEHLDORF A.INN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09184,München,09184,MUENCHEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09185,Neuburg-Schrobenhausen,09185,NEUBURG-SCHROBENHAUSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09186,Pfaffenhofen a.d.Ilm,09186,PFAFFENHOFEN A.D.ILM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09187,Rosenheim,09187,ROSENHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09188,Starnberg,09188,STARNBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09189,Traunstein,09189,TRAUNSTEIN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09190,Weilheim-Schongau,09190,WEILHEIM-SCHONGAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09261,Landshut,09261,"LANDSHUT,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09262,Passau,09262,"PASSAU,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09263,Straubing,09263,"STRAUBING,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09271,Deggendorf,09271,DEGGENDORF,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09272,Freyung-Grafenau,09272,FREYUNG-GRAFENAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09273,Kelheim,09273,KELHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09274,Landshut,09274,LANDSHUT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09275,Passau,09275,PASSAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09276,Regen,09276,REGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09277,Rottal-Inn,09277,ROTTAL-INN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09278,Straubing-Bogen,09278,STRAUBING-BOGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09279,Dingolfing-Landau,09279,DINGOLFING-LANDAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09361,Amberg,09361,"AMBERG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09362,Regensburg,09362,"REGENSBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09363,Weiden i.d.OPf.,09363,"WEIDEN I.D.OPF.,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09371,Amberg-Sulzbach,09371,AMBERG-SULZBACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09372,Cham,09372,CHAM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09373,Neumarkt i.d.OPf.,09373,NEUMARKT I.D.OPF.,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09374,Neustadt a.d.Waldnaab,09374,NEUSTADT A.D.WALDNAAB,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09375,Regensburg,09375,REGENSBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09376,Schwandorf,09376,SCHWANDORF,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09377,Tirschenreuth,09377,TIRSCHENREUTH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09461,Bamberg,09461,"BAMBERG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09462,Bayreuth,09462,"BAYREUTH,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09463,Coburg,09463,"COBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09464,Hof,09464,"HOF,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09471,Bamberg,09471,BAMBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09472,Bayreuth,09472,BAYREUTH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09473,Coburg,09473,COBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09474,Forchheim,09474,FORCHHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09475,Hof,09475,HOF,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09476,Kronach,09476,KRONACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09477,Kulmbach,09477,KULMBACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09478,Lichtenfels,09478,LICHTENFELS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09479,Wunsiedel i.Fichtelgebirge,09479,WUNSIEDEL I.FICHTELGEB.,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09561,Ansbach,09561,"ANSBACH,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09562,Erlangen,09562,"ERLANGEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09563,Fürth,09563,"FUERTH,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09564,Nürnberg,09564,"NUERNBERG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09565,Schwabach,09565,"SCHWABACH,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09571,Ansbach,09571,ANSBACH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09572,Erlangen-Höchstadt,09572,ERLANGEN-HOECHSTADT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09573,Fürth,09573,FUERTH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09574,Nürnberger Land,09574,NUERNBERGER LAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09575,Neustadt a.d.Aisch-Bad Windsheim,09575,NEUSTADT/AISCH-WINDSHEIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09576,Roth,09576,ROTH,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09577,Weißenburg-Gunzenhausen,09577,WEISSENBURG-GUNZENHAUSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09661,Aschaffenburg,09661,"ASCHAFFENBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09662,Schweinfurt,09662,"SCHWEINFURT,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09663,Würzburg,09663,"WUERZBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09671,Aschaffenburg,09671,ASCHAFFENBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09672,Bad Kissingen,09672,BAD KISSINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09673,Rhön-Grabfeld,09673,RHOEN-GRABFELD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09674,Haßberge,09674,HASSBERGE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09675,Kitzingen,09675,KITZINGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09676,Miltenberg,09676,MILTENBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09677,Main-Spessart,09677,MAIN-SPESSART,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09678,Schweinfurt,09678,SCHWEINFURT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09679,Würzburg,09679,WUERZBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09761,Augsburg,09761,"AUGSBURG,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09762,Kaufbeuren,09762,"KAUFBEUREN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09763,Kempten (Allgäu),09763,"KEMPTEN(ALLGAEU),STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09764,Memmingen,09764,"MEMMINGEN,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09771,Aichach-Friedberg,09771,AICHACH-FRIEDBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09772,Augsburg,09772,AUGSBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09773,Dillingen a.d.Donau,09773,DILLINGEN A.D.DONAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09774,Günzburg,09774,GUENZBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09775,Neu-Ulm,09775,NEU-ULM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09776,Lindau (Bodensee),09776,LINDAU (BODENSEE),one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09777,Ostallgäu,09777,OSTALLGAEU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09778,Unterallgäu,09778,UNTERALLGAEU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09779,Donau-Ries,09779,DONAU-RIES,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,09780,Oberallgäu,09780,OBERALLGAEU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,10041,Regionalverband Saarbrücken,10041,"SAARBRUECKEN,STADTVERB.",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,10042,Merzig-Wadern,10042,MERZIG-WADERN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,10043,Neunkirchen,10043,NEUNKIRCHEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,10044,Saarlouis,10044,SAARLOUIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,10045,Saarpfalz-Kreis,10045,SAAR-PFALZ-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,10046,St. Wendel,10046,SANKT WENDEL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,11000,"Berlin, Stadt",11000,BERLIN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12051,"Brandenburg an der Havel, Stadt",12051,"BRANDENBURG/HAVEL,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12052,"Cottbus, Stadt",12052,"COTTBUS, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12053,"Frankfurt (Oder), Stadt",12053,"FRANKFURT/ODER,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12054,"Potsdam, Stadt",12054,"POTSDAM,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12060,Barnim,12060,BARNIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12061,Dahme-Spreewald,12061,DAHME-SPREEWALD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12062,Elbe-Elster,12062,ELBE-ELSTER,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12063,Havelland,12063,HAVELLAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12064,Märkisch-Oderland,12064,MAERKISCH-ODERLAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12065,Oberhavel,12065,OBERHAVEL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12066,Oberspreewald-Lausitz,12066,OBERSPREEWALD-LAUSITZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12067,Oder-Spree,12067,ODER-SPREE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12068,Ostprignitz-Ruppin,12068,OSTPRIGNITZ-RUPPIN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12069,Potsdam-Mittelmark,12069,POTSDAM-MITTELMARK,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12070,Prignitz,12070,PRIGNITZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12071,Spree-Neiße,12071,SPREE-NEISSE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12072,Teltow-Fläming,12072,TELTOW-FLAEMING,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,12073,Uckermark,12073,UCKERMARK,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13003,Rostock,13003,"ROSTOCK, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13004,Schwerin,13004,"SCHWERIN, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13071,Mecklenburgische Seenplatte,13071,MECKLENBURGISCHE SEENPLA,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13072,Landkreis Rostock,13072,ROSTOCK,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13073,Vorpommern-Rügen,13073,VORPOMMERN-RUEGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13074,Nordwestmecklenburg,13074,NORDWESTMECKLENBURG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13075,Vorpommern-Greifswald,13075,VORPOMMERN-GREIFSWALD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,13076,Ludwigslust-Parchim,13076,LUDWIGSLUST-PARCHIM,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14511,"Chemnitz, Stadt",14511,"CHEMNITZ, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14521,Erzgebirgskreis,14521,ERZGEBIRGSKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14522,Mittelsachsen,14522,MITTELSACHSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14523,Vogtlandkreis,14523,VOGTLANDKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14524,Zwickau,14524,ZWICKAU,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14612,"Dresden, Stadt",14612,"DRESDEN, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14625,Bautzen,14625,BAUTZEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14626,Görlitz,14626,GOERLITZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14627,Meißen,14627,MEISSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14628,Sächsische Schweiz-Osterzgebirge,14628,SAECHS.SCHWEIZ-OSTERZGEB,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14713,"Leipzig, Stadt",14713,"LEIPZIG, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14729,Leipzig,14729,LEIPZIG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,14730,Nordsachsen,14730,NORDSACHSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15001,"Dessau-Roßlau, Stadt",15001,"DESSAU-ROSSLAU,STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15002,"Halle (Saale), Stadt",15002,"HALLE (SAALE),STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15003,"Magdeburg, Landeshauptstadt",15003,"MAGDEBURG, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15081,Altmarkkreis Salzwedel,15081,ALTMARKKREIS SALZWEDEL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15082,Anhalt-Bitterfeld,15082,ANHALT-BITTERFELD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15083,Börde,15083,BOERDE,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15084,Burgenlandkreis,15084,BURGENLANDKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15085,Harz,15085,HARZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15086,Jerichower Land,15086,JERICHOWER LAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15087,Mansfeld-Südharz,15087,MANSFELD-SUEDHARZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15088,Saalekreis,15088,SAALEKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15089,Salzlandkreis,15089,SALZLANDKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15090,Stendal,15090,STENDAL,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,15091,Wittenberg,15091,WITTENBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16051,"Erfurt, Stadt",16051,"ERFURT, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16052,"Gera, Stadt",16052,"GERA, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16053,"Jena, Stadt",16053,"JENA, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16054,"Suhl, Stadt",16054,"SUHL, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16055,"Weimar, Stadt",16055,"WEIMAR, STADT",one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16061,Eichsfeld,16061,EICHSFELD,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16062,Nordhausen,16062,NORDHAUSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16063,Wartburgkreis,16063,WARTBURGKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16064,Unstrut-Hainich-Kreis,16064,UNSTRUT-HAINICH-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16065,Kyffhäuserkreis,16065,KYFFHAEUSERKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16066,Schmalkalden-Meiningen,16066,SCHMALKALDEN-MEININGEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16067,Gotha,16067,GOTHA,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16068,Sömmerda,16068,SOEMMERDA,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16069,Hildburghausen,16069,HILDBURGHAUSEN,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16070,Ilm-Kreis,16070,ILM-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16071,Weimarer Land,16071,WEIMARER-LAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16072,Sonneberg,16072,SONNEBERG,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16073,Saalfeld-Rudolstadt,16073,SAALFELD-RUDOLSTADT,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16074,Saale-Holzland-Kreis,16074,SAALE-HOLZLANDKREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16075,Saale-Orla-Kreis,16075,SAALE-ORLA-KREIS,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16076,Greiz,16076,GREIZ,one-to-one,,Current administrative district corresponds to one KBA analysis region.
+2026-06-30,16077,Altenburger Land,16077,ALTENBURGER LAND,one-to-one,,Current administrative district corresponds to one KBA analysis region.

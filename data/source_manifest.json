@@ -1,0 +1,38 @@
+{
+  "manifest_version": "public_core_v1",
+  "sources": [
+    {
+      "provider": "Bundesnetzagentur",
+      "dataset": "Ladesäulenregister",
+      "reference_date": "2026-09-01",
+      "retrieval_date": "2026-09-11",
+      "filename": "data/raw/bnetza/Ladesaeulenregister_BNetzA_2026-09-01.csv",
+      "size_bytes": 55559083,
+      "sha256": "cdd8e38f1fa7e8512bd97caa8cf77e9f875436be1f8fe3fe1f2bd9789a504c5b",
+      "source_page": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenkarte/start.html",
+      "source_url": "https://data.bundesnetzagentur.de/Bundesnetzagentur/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/Ladesaeulenregister_BNetzA_2026-09-01.csv"
+    },
+    {
+      "provider": "Kraftfahrt-Bundesamt",
+      "dataset": "FZ 27.15",
+      "reference_date": "2026-07-01",
+      "retrieval_date": "2026-09-12",
+      "filename": "data/raw/kba/fz27_202607.xlsx",
+      "size_bytes": 1478376,
+      "sha256": "d6a26702fa6f8358cc5f0e15e88c04ac6c36527be404058674138dd9571bc803",
+      "source_page": "https://www.kba.de/DE/Statistik/Produktkatalog/produkte/Fahrzeuge/fz27_b_uebersicht.html",
+      "source_url": "https://www.kba.de/SharedDocs/Downloads/DE/Statistik/Fahrzeuge/FZ27/fz27_202607.xlsx?__blob=publicationFile&v=3"
+    },
+    {
+      "provider": "Statistisches Bundesamt (Destatis)",
+      "dataset": "GV-ISys",
+      "reference_date": "2026-06-30",
+      "retrieval_date": "2026-09-11",
+      "filename": "data/raw/destatis/30062026_Auszug_GV.xlsx",
+      "size_bytes": 1868818,
+      "sha256": "92e51ee097b1fea2f76a1c383c02d01ffa889975647d640b61c39845a1067174",
+      "source_page": "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV2QAktuell.html",
+      "source_url": "https://www.destatis.de/DE/Themen/Laender-Regionen/Regionales/Gemeindeverzeichnis/Administrativ/Archiv/GVAuszugQ/AuszugGV2QAktuell.xlsx?__blob=publicationFile&v=13"
+    }
+  ]
+}

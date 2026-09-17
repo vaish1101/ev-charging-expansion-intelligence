@@ -1,0 +1,128 @@
+{
+  "kpi_definition_version": "phase1_kpi_dictionary_v1",
+  "ratio_rounding": "ROUND_HALF_UP",
+  "ratio_scale": 4,
+  "kpis": [
+    {
+      "id": "KPI-01",
+      "name": "Registered BEV Passenger-Car Stock",
+      "column": "registered_bev_passenger_car_stock",
+      "formula": "bev_stock",
+      "source": "silver.fact_ev_stock.bev_passenger_car_stock",
+      "filter": "none beyond accepted Silver contract",
+      "type": "BIGINT",
+      "unit": "registered BEV passenger cars"
+    },
+    {
+      "id": "KPI-02",
+      "name": "Registered Passenger-Car Stock",
+      "column": "registered_passenger_car_stock",
+      "formula": "total_passenger_car_stock",
+      "source": "silver.fact_ev_stock.total_passenger_car_stock",
+      "filter": "none beyond accepted Silver contract",
+      "type": "BIGINT",
+      "unit": "registered passenger cars"
+    },
+    {
+      "id": "KPI-03",
+      "name": "BEV Penetration Among Passenger Cars (%)",
+      "column": "bev_penetration_percent",
+      "formula": "100 * registered_bev_passenger_car_stock / registered_passenger_car_stock",
+      "source": "KPI-01 / KPI-02",
+      "filter": "denominator > 0",
+      "type": "DECIMAL(18,4)",
+      "unit": "percent"
+    },
+    {
+      "id": "KPI-04",
+      "name": "In-Service Registered Charging Facilities",
+      "column": "in_service_registered_charging_facilities",
+      "formula": "count distinct facility_id",
+      "source": "silver.fact_charging_facility_snapshot",
+      "filter": "is_in_service = true",
+      "type": "BIGINT",
+      "unit": "registered charging facilities"
+    },
+    {
+      "id": "KPI-05",
+      "name": "In-Service Registered Charging Points",
+      "column": "in_service_registered_charging_points",
+      "formula": "count populated point slots",
+      "source": "silver.fact_charging_point_snapshot joined to eligible parent facility",
+      "filter": "parent is_in_service = true",
+      "type": "BIGINT",
+      "unit": "registered charging points"
+    },
+    {
+      "id": "KPI-06",
+      "name": "In-Service Registered Normal Charging Points",
+      "column": "in_service_registered_normal_charging_points",
+      "formula": "count points where point_class = NORMAL",
+      "source": "silver.fact_charging_point_snapshot joined to eligible parent facility",
+      "filter": "parent is_in_service = true",
+      "type": "BIGINT",
+      "unit": "registered normal charging points"
+    },
+    {
+      "id": "KPI-07",
+      "name": "In-Service Registered Fast Charging Points",
+      "column": "in_service_registered_fast_charging_points",
+      "formula": "count points where point_class = FAST",
+      "source": "silver.fact_charging_point_snapshot joined to eligible parent facility",
+      "filter": "parent is_in_service = true",
+      "type": "BIGINT",
+      "unit": "registered fast charging points"
+    },
+    {
+      "id": "KPI-08",
+      "name": "Registered Cumulative Nominal Power of In-Service Charging Facilities (kW)",
+      "column": "in_service_registered_facility_nominal_power_kw",
+      "formula": "sum registered_facility_nominal_power_kw once per unique facility",
+      "source": "silver.fact_charging_facility_snapshot",
+      "filter": "is_in_service = true",
+      "type": "DECIMAL(20,3)",
+      "unit": "kW"
+    },
+    {
+      "id": "KPI-09",
+      "name": "In-Service Registered Charging Points per 1,000 BEVs",
+      "column": "in_service_registered_charging_points_per_1000_bevs",
+      "formula": "1000 * KPI-05 / KPI-01",
+      "source": "KPI-05 / KPI-01",
+      "filter": "denominator > 0",
+      "type": "DECIMAL(18,4)",
+      "unit": "points per 1,000 BEVs"
+    },
+    {
+      "id": "KPI-10",
+      "name": "In-Service Registered Fast Charging Points per 1,000 BEVs",
+      "column": "in_service_registered_fast_charging_points_per_1000_bevs",
+      "formula": "1000 * KPI-07 / KPI-01",
+      "source": "KPI-07 / KPI-01",
+      "filter": "denominator > 0",
+      "type": "DECIMAL(18,4)",
+      "unit": "fast points per 1,000 BEVs"
+    },
+    {
+      "id": "KPI-11",
+      "name": "In-Service Registered Charging Facilities per 1,000 BEVs",
+      "column": "in_service_registered_charging_facilities_per_1000_bevs",
+      "formula": "1000 * KPI-04 / KPI-01",
+      "source": "KPI-04 / KPI-01",
+      "filter": "denominator > 0",
+      "type": "DECIMAL(18,4)",
+      "unit": "facilities per 1,000 BEVs"
+    },
+    {
+      "id": "KPI-12",
+      "name": "Registered Nominal Power of In-Service Charging Facilities per 1,000 BEVs",
+      "column": "in_service_registered_facility_nominal_power_kw_per_1000_bevs",
+      "formula": "1000 * KPI-08 / KPI-01",
+      "source": "KPI-08 / KPI-01",
+      "filter": "denominator > 0",
+      "type": "DECIMAL(18,4)",
+      "unit": "kW per 1,000 BEVs"
+    }
+  ]
+}
+

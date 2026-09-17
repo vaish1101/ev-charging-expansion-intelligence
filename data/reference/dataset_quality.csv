@@ -1,0 +1,2 @@
+date_set_id,date_set_label,kba_reference_date,bnetza_reference_date,destatis_reference_date,publication_state,passed_dq_checks,failed_dq_checks,kba_to_bnetza_lag_days,power_bi_refresh_ready
+ds_4d740680cd09d152a4b4b3d148b91a6cdd0e7157f2b152089f553c8a554ce17d,Core V1 source set - 2026 Q3,2026-07-01,2026-09-01,2026-06-30,published,73,0,62,True
