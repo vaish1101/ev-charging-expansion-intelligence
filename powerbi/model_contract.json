@@ -1,0 +1,99 @@
+{
+  "artifact_mode": "final_pbip_source",
+  "project_entry_point": "EV Charging Intelligence.pbip",
+  "visible_report_pages": 2,
+  "semantic_model_measure_count": 74,
+  "power_bi_service_deployed": false,
+  "connection": {
+    "connector": "Databricks",
+    "server_hostname_placeholder": "DATABRICKS_SERVER_HOSTNAME",
+    "http_path_placeholder": "DATABRICKS_SQL_WAREHOUSE_ID",
+    "catalog_placeholder": "DATABRICKS_CATALOG",
+    "schema": "gold",
+    "storage_mode": "Import",
+    "development_authentication": "OAuth (OIDC) organizational account",
+    "credentials_in_repository": false
+  },
+  "imported_gold_objects": [
+    "<catalog>.gold.vw_powerbi_region_kpi_published",
+    "<catalog>.gold.vw_powerbi_date_set_quality"
+  ],
+  "semantic_tables": [
+    {
+      "name": "Regional KPI",
+      "role": "fact",
+      "source": "<catalog>.gold.vw_powerbi_region_kpi_published",
+      "grain": "date_set_id x analysis_region_sk",
+      "expected_current_rows": 400,
+      "key": ["date_set_id", "analysis_region_sk"]
+    },
+    {
+      "name": "Analysis Region",
+      "role": "dimension",
+      "source": "distinct projection of Regional KPI",
+      "grain": "analysis_region_sk",
+      "expected_current_rows": 400,
+      "key": ["analysis_region_sk"]
+    },
+    {
+      "name": "Dataset",
+      "role": "dimension_and_quality_metadata",
+      "source": "<catalog>.gold.vw_powerbi_date_set_quality",
+      "grain": "date_set_id",
+      "expected_current_rows": 1,
+      "key": ["date_set_id"]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Analysis Region.analysis_region_sk",
+      "to": "Regional KPI.analysis_region_sk",
+      "cardinality": "one_to_many",
+      "filter_direction": "single"
+    },
+    {
+      "from": "Dataset.date_set_id",
+      "to": "Regional KPI.date_set_id",
+      "cardinality": "one_to_many",
+      "filter_direction": "single"
+    }
+  ],
+  "business_fields": [
+    {"source_column": "analysis_region_name", "label": "Analysis Region", "table": "Analysis Region"},
+    {"source_column": "analysis_region_code", "label": "Analysis Region Code", "table": "Analysis Region"},
+    {"source_column": "registered_bev_passenger_car_stock", "label": "Registered BEVs", "kpi_id": "KPI-01"},
+    {"source_column": "registered_passenger_car_stock", "label": "Registered Passenger Cars", "kpi_id": "KPI-02"},
+    {"source_column": "bev_penetration_percent", "label": "BEV Penetration", "kpi_id": "KPI-03"},
+    {"source_column": "in_service_registered_charging_facilities", "label": "In-Service Charging Facilities", "kpi_id": "KPI-04"},
+    {"source_column": "in_service_registered_charging_points", "label": "In-Service Charging Points", "kpi_id": "KPI-05"},
+    {"source_column": "in_service_registered_normal_charging_points", "label": "In-Service Normal Charging Points", "kpi_id": "KPI-06"},
+    {"source_column": "in_service_registered_fast_charging_points", "label": "In-Service Fast Charging Points", "kpi_id": "KPI-07"},
+    {"source_column": "in_service_registered_facility_nominal_power_kw", "label": "Registered Nominal Power of In-Service Charging Facilities", "kpi_id": "KPI-08"},
+    {"source_column": "in_service_registered_charging_points_per_1000_bevs", "label": "Charging Points per 1,000 BEVs", "kpi_id": "KPI-09"},
+    {"source_column": "in_service_registered_fast_charging_points_per_1000_bevs", "label": "Fast Charging Points per 1,000 BEVs", "kpi_id": "KPI-10"},
+    {"source_column": "in_service_registered_charging_facilities_per_1000_bevs", "label": "Charging Facilities per 1,000 BEVs", "kpi_id": "KPI-11"},
+    {"source_column": "in_service_registered_facility_nominal_power_kw_per_1000_bevs", "label": "Registered Nominal Power per 1,000 BEVs", "kpi_id": "KPI-12"}
+  ],
+  "hidden_technical_fields": [
+    "Regional KPI.date_set_id",
+    "Regional KPI.analysis_region_sk",
+    "Regional KPI.analysis_region_code",
+    "Regional KPI.analysis_region_name",
+    "Regional KPI.bev_denominator_quality_reason",
+    "Regional KPI.kpi_12_unit",
+    "Regional KPI.quality_status",
+    "Regional KPI.publication_state",
+    "Regional KPI.date_set_label",
+    "Analysis Region.analysis_region_sk",
+    "Dataset.gold_run_id",
+    "Dataset.completed_at"
+  ],
+  "model_rules": {
+    "fact_to_fact_relationships": 0,
+    "bidirectional_relationships": 0,
+    "many_to_many_relationships": 0,
+    "facility_or_point_detail_imported": false,
+    "governed_kpi_formulas_reimplemented_in_dax": false,
+    "composite_priority_score": false
+  }
+}

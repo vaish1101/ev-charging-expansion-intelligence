@@ -1,0 +1,82 @@
+table Dataset
+	column date_set_id
+		dataType: string
+		isKey
+		summarizeBy: none
+		sourceColumn: date_set_id
+
+	column date_set_label
+		dataType: string
+		summarizeBy: none
+		sourceColumn: date_set_label
+
+	column kba_reference_date
+		dataType: dateTime
+		formatString: dd MMM yyyy
+		summarizeBy: none
+		sourceColumn: kba_reference_date
+
+	column bnetza_reference_date
+		dataType: dateTime
+		formatString: dd MMM yyyy
+		summarizeBy: none
+		sourceColumn: bnetza_reference_date
+
+	column destatis_reference_date
+		dataType: dateTime
+		formatString: dd MMM yyyy
+		summarizeBy: none
+		sourceColumn: destatis_reference_date
+
+	column publication_state
+		dataType: string
+		summarizeBy: none
+		sourceColumn: publication_state
+
+	column gold_run_id
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: gold_run_id
+
+	column passed_dq_checks
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: passed_dq_checks
+
+	column failed_dq_checks
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: failed_dq_checks
+
+	column completed_at
+		dataType: dateTime
+		isHidden
+		summarizeBy: none
+		sourceColumn: completed_at
+
+	column kba_to_bnetza_lag_days
+		dataType: int64
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: kba_to_bnetza_lag_days
+
+	column power_bi_refresh_ready
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: power_bi_refresh_ready
+
+	partition Dataset = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("DATABRICKS_SERVER_HOSTNAME", "/sql/1.0/warehouses/DATABRICKS_SQL_WAREHOUSE_ID", [Catalog = null, Database = null, EnableAutomaticProxyDiscovery = null, Implementation = "2.0"]),
+				    Catalog = Source{[Name = "DATABRICKS_CATALOG", Kind = "Database"]}[Data],
+				    Gold = Catalog{[Name = "gold", Kind = "Schema"]}[Data],
+				    PublishedQualityView = Gold{[Name = "vw_powerbi_date_set_quality", Kind = "View"]}[Data]
+				in
+				    PublishedQualityView
+
+	annotation PBI_ResultType = Table

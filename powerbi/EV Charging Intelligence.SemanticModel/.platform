@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "EV Charging Intelligence"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ac19a481-e52b-4e61-93c8-e58196e1a46c"
+  }
+}

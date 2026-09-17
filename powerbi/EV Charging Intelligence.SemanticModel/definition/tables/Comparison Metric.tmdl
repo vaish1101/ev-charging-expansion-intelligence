@@ -1,0 +1,35 @@
+table 'Comparison Metric'
+	measure 'Selected Region Value' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), SWITCH ( SELECTEDVALUE ( 'Comparison Metric'[Metric] ), "Total points / 1,000 BEVs", [Charging Points per 1,000 BEVs], "Fast points / 1,000 BEVs", [Fast Charging Points per 1,000 BEVs], "Facilities / 1,000 BEVs", [Charging Facilities per 1,000 BEVs] ) )
+		formatString: #,0.0
+
+	measure 'Regional Median' = SWITCH ( SELECTEDVALUE ( 'Comparison Metric'[Metric] ), "Total points / 1,000 BEVs", [Regional Median - Charging Points per 1,000 BEVs], "Fast points / 1,000 BEVs", [Regional Median - Fast Charging Points per 1,000 BEVs], "Facilities / 1,000 BEVs", [Regional Median - Charging Facilities per 1,000 BEVs] )
+		formatString: #,0.0
+
+	measure 'Signed Delta' = IF ( NOT ISBLANK ( [Selected Region Value] ), [Selected Region Value] - [Regional Median] )
+		formatString: +#,0.0;-#,0.0;0.0
+
+	measure 'Delta Percent' = DIVIDE ( [Signed Delta], [Regional Median] )
+		formatString: +0.0%;-0.0%;0.0%
+
+	column Metric
+		dataType: string
+		summarizeBy: none
+		isDataTypeInferred
+		sourceColumn: [Value1]
+		sortByColumn: 'Sort Order'
+
+	column 'Sort Order'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		isDataTypeInferred
+		sourceColumn: [Value2]
+
+	partition 'Comparison Metric' = calculated
+		mode: import
+		source =
+				{
+				    ("Total points / 1,000 BEVs", 1),
+				    ("Fast points / 1,000 BEVs", 2),
+				    ("Facilities / 1,000 BEVs", 3)
+				}

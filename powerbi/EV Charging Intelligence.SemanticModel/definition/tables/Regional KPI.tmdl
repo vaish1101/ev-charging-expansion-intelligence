@@ -1,0 +1,368 @@
+table 'Regional KPI'
+	measure 'Registered BEVs' = SUM ( 'Regional KPI'[registered_bev_passenger_car_stock] )
+		formatString: #,0
+
+	measure 'Registered Passenger Cars' = SUM ( 'Regional KPI'[registered_passenger_car_stock] )
+		formatString: #,0
+
+	measure 'In-Service Charging Facilities' = SUM ( 'Regional KPI'[in_service_registered_charging_facilities] )
+		formatString: #,0
+
+	measure 'In-Service Charging Points' = SUM ( 'Regional KPI'[in_service_registered_charging_points] )
+		formatString: #,0
+
+	measure 'In-Service Normal Charging Points' = SUM ( 'Regional KPI'[in_service_registered_normal_charging_points] )
+		formatString: #,0
+
+	measure 'In-Service Fast Charging Points' = SUM ( 'Regional KPI'[in_service_registered_fast_charging_points] )
+		formatString: #,0
+
+	measure 'Screening Cohort' = VAR t = [Charging Points per 1,000 BEVs] VAR f = [Fast Charging Points per 1,000 BEVs] RETURN SWITCH ( TRUE (), t < 84.6839 && f < 25.2989, "Below both medians", f < 25.2989, "Below fast median only", t < 84.6839, "Below total median only", "At or above both medians" )
+
+	measure 'Scatter Fast - At or Above Both' = IF ( [Screening Cohort] = "At or above both medians", [Fast Charging Points per 1,000 BEVs] )
+		formatString: #,0.00
+
+	measure 'Scatter Fast - Below Fast Only' = IF ( [Screening Cohort] = "Below fast median only", [Fast Charging Points per 1,000 BEVs] )
+		formatString: #,0.00
+
+	measure 'Scatter Fast - Below Total Only' = IF ( [Screening Cohort] = "Below total median only", [Fast Charging Points per 1,000 BEVs] )
+		formatString: #,0.00
+
+	measure 'Scatter Fast - Below Both' = IF ( [Screening Cohort] = "Below both medians", [Fast Charging Points per 1,000 BEVs] )
+		formatString: #,0.00
+
+	measure 'Investigation Attention Score' = VAR marketRank = RANKX ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), CALCULATE ( [Registered BEVs] ), , DESC, DENSE ) VAR cohort = [Screening Cohort] RETURN IF ( marketRank <= 100 && cohort <> "At or above both medians", IF ( cohort = "Below both medians", 2000000000, 1000000000 ) + [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Investigation Rank' = VAR candidates = FILTER ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), NOT ISBLANK ( CALCULATE ( [Investigation Attention Score] ) ) ) RETURN IF ( NOT ISBLANK ( [Investigation Attention Score] ), RANKX ( candidates, CALCULATE ( [Investigation Attention Score] ), , DESC, DENSE ) )
+		formatString: 0
+
+	measure 'Top 10 Investigation BEVs' = IF ( [Investigation Rank] <= 10, [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Top 10 BEV Markets' = VAR marketRank = RANKX ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), CALCULATE ( [Registered BEVs] ), , DESC, DENSE ) RETURN IF ( marketRank <= 10, [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Fast Gap Below' = VAR gap = DIVIDE ( [Fast Charging Points per 1,000 BEVs] - 25.2989, 25.2989 ) RETURN IF ( [Registered BEVs] >= 20000 && gap < 0, gap )
+		formatString: 0.0%;-0.0%;0.0%
+
+	measure 'Fast Gap Above' = VAR gap = DIVIDE ( [Fast Charging Points per 1,000 BEVs] - 25.2989, 25.2989 ) RETURN IF ( [Registered BEVs] >= 20000 && gap >= 0, gap )
+		formatString: 0.0%;-0.0%;0.0%
+
+	measure 'Fast Gap Sort' = VAR gap = DIVIDE ( [Fast Charging Points per 1,000 BEVs] - 25.2989, 25.2989 ) RETURN IF ( [Registered BEVs] >= 20000, gap )
+		formatString: 0.0%;-0.0%;0.0%
+
+	measure 'Above Both' = VAR marketRank = RANKX ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), CALCULATE ( [Registered BEVs] ), , DESC, DENSE ) RETURN IF ( marketRank <= 10 && [Screening Cohort] = "At or above both medians", [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Fast Gap' = VAR marketRank = RANKX ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), CALCULATE ( [Registered BEVs] ), , DESC, DENSE ) RETURN IF ( marketRank <= 10 && [Screening Cohort] = "Below fast median only", [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Total Gap' = VAR marketRank = RANKX ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), CALCULATE ( [Registered BEVs] ), , DESC, DENSE ) RETURN IF ( marketRank <= 10 && [Screening Cohort] = "Below total median only", [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Both Gaps' = VAR marketRank = RANKX ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), CALCULATE ( [Registered BEVs] ), , DESC, DENSE ) RETURN IF ( marketRank <= 10 && [Screening Cohort] = "Below both medians", [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Registered Nominal Power of In-Service Charging Facilities' = SUM ( 'Regional KPI'[in_service_registered_facility_nominal_power_kw] )
+		formatString: #,0.00
+
+	measure 'Registered BEVs Display' = FORMAT ( DIVIDE ( [Registered BEVs], 1000000 ), "0.00" ) & "M"
+
+	measure 'Public Charging Points Display' = FORMAT ( DIVIDE ( [In-Service Charging Points], 1000 ), "0.0" ) & "K"
+
+	measure 'Fast Charging Points Display' = FORMAT ( DIVIDE ( [In-Service Fast Charging Points], 1000 ), "0.0" ) & "K"
+
+	measure 'BEV Penetration' = SELECTEDVALUE ( 'Regional KPI'[bev_penetration_percent] )
+		formatString: 0.00\%
+
+	measure 'National BEV Penetration' = DIVIDE ( [Registered BEVs], [Registered Passenger Cars] )
+		formatString: 0.00%
+
+	measure 'Charging Points per 1,000 BEVs' = SELECTEDVALUE ( 'Regional KPI'[in_service_registered_charging_points_per_1000_bevs] )
+		formatString: #,0.00
+
+	measure 'Fast Charging Points per 1,000 BEVs' = SELECTEDVALUE ( 'Regional KPI'[in_service_registered_fast_charging_points_per_1000_bevs] )
+		formatString: #,0.00
+
+	measure 'Charging Facilities per 1,000 BEVs' = SELECTEDVALUE ( 'Regional KPI'[in_service_registered_charging_facilities_per_1000_bevs] )
+		formatString: #,0.00
+
+	measure 'Registered Nominal Power per 1,000 BEVs' = SELECTEDVALUE ( 'Regional KPI'[in_service_registered_facility_nominal_power_kw_per_1000_bevs] )
+		formatString: #,0.00
+
+	measure 'Regional Median - BEV Penetration' = VAR regions = CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ) RETURN MEDIANX ( regions, VAR currentRegion = 'Analysis Region'[analysis_region_sk] RETURN CALCULATE ( MAX ( 'Regional KPI'[bev_penetration_percent] ), REMOVEFILTERS ( 'Analysis Region' ), TREATAS ( { currentRegion }, 'Analysis Region'[analysis_region_sk] ) ) )
+		formatString: 0.00\%
+
+	measure 'Regional Median - Charging Points per 1,000 BEVs' = VAR regions = CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ) RETURN MEDIANX ( regions, VAR currentRegion = 'Analysis Region'[analysis_region_sk] RETURN CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_charging_points_per_1000_bevs] ), REMOVEFILTERS ( 'Analysis Region' ), TREATAS ( { currentRegion }, 'Analysis Region'[analysis_region_sk] ) ) )
+		formatString: #,0.00
+
+	measure 'Regional Median - Fast Charging Points per 1,000 BEVs' = VAR regions = CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ) RETURN MEDIANX ( regions, VAR currentRegion = 'Analysis Region'[analysis_region_sk] RETURN CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_fast_charging_points_per_1000_bevs] ), REMOVEFILTERS ( 'Analysis Region' ), TREATAS ( { currentRegion }, 'Analysis Region'[analysis_region_sk] ) ) )
+		formatString: #,0.00
+
+	measure 'Regional Median - Charging Facilities per 1,000 BEVs' = VAR regions = CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ) RETURN MEDIANX ( regions, VAR currentRegion = 'Analysis Region'[analysis_region_sk] RETURN CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_charging_facilities_per_1000_bevs] ), REMOVEFILTERS ( 'Analysis Region' ), TREATAS ( { currentRegion }, 'Analysis Region'[analysis_region_sk] ) ) )
+		formatString: #,0.00
+
+	measure 'Regional Median - Registered Nominal Power per 1,000 BEVs' = VAR regions = CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ) RETURN MEDIANX ( regions, VAR currentRegion = 'Analysis Region'[analysis_region_sk] RETURN CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_facility_nominal_power_kw_per_1000_bevs] ), REMOVEFILTERS ( 'Analysis Region' ), TREATAS ( { currentRegion }, 'Analysis Region'[analysis_region_sk] ) ) )
+		formatString: #,0.00
+
+	measure 'BEV Penetration vs Regional Median (pp)' = [BEV Penetration] - [Regional Median - BEV Penetration]
+		formatString: +0.00\%;-0.00\%;0.00\%
+
+	measure 'Charging Points vs Regional Median' = [Charging Points per 1,000 BEVs] - [Regional Median - Charging Points per 1,000 BEVs]
+		formatString: +#,0.00;-#,0.00;0.00
+
+	measure 'Fast Charging Points vs Regional Median' = [Fast Charging Points per 1,000 BEVs] - [Regional Median - Fast Charging Points per 1,000 BEVs]
+		formatString: +#,0.00;-#,0.00;0.00
+
+	measure 'Charging Facilities vs Regional Median' = [Charging Facilities per 1,000 BEVs] - [Regional Median - Charging Facilities per 1,000 BEVs]
+		formatString: +#,0.00;-#,0.00;0.00
+
+	measure 'Registered Nominal Power vs Regional Median' = [Registered Nominal Power per 1,000 BEVs] - [Regional Median - Registered Nominal Power per 1,000 BEVs]
+		formatString: +#,0.00;-#,0.00;0.00
+
+	measure 'Charging Points % vs Regional Median' = DIVIDE ( [Charging Points vs Regional Median], [Regional Median - Charging Points per 1,000 BEVs] )
+		formatString: +0.0%;-0.0%;0.0%
+
+	measure 'Fast Charging Points % vs Regional Median' = DIVIDE ( [Fast Charging Points vs Regional Median], [Regional Median - Fast Charging Points per 1,000 BEVs] )
+		formatString: +0.0%;-0.0%;0.0%
+
+	measure 'Charging Facilities % vs Regional Median' = DIVIDE ( [Charging Facilities vs Regional Median], [Regional Median - Charging Facilities per 1,000 BEVs] )
+		formatString: +0.0%;-0.0%;0.0%
+
+	measure 'Registered Nominal Power % vs Regional Median' = DIVIDE ( [Registered Nominal Power vs Regional Median], [Regional Median - Registered Nominal Power per 1,000 BEVs] )
+		formatString: +0.0%;-0.0%;0.0%
+
+	measure 'Presentation - Fast Share of In-Service Points' = DIVIDE ( [In-Service Fast Charging Points], [In-Service Charging Points] )
+		formatString: 0.0%
+
+	measure 'Region Count' = DISTINCTCOUNT ( 'Analysis Region'[analysis_region_sk] )
+		formatString: #,0
+
+	measure 'Regions Above Total Median but Below Fast Median' = VAR tm = [Regional Median - Charging Points per 1,000 BEVs] VAR fm = [Regional Median - Fast Charging Points per 1,000 BEVs] RETURN COUNTROWS ( FILTER ( CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ), CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_charging_points_per_1000_bevs] ) ) > tm && CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_fast_charging_points_per_1000_bevs] ) ) < fm ) )
+		formatString: #,0
+
+	measure 'Regions Above Total Median and Above Fast Median' = VAR tm = [Regional Median - Charging Points per 1,000 BEVs] VAR fm = [Regional Median - Fast Charging Points per 1,000 BEVs] RETURN COUNTROWS ( FILTER ( CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ), CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_charging_points_per_1000_bevs] ) ) >= tm && CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_fast_charging_points_per_1000_bevs] ) ) >= fm ) )
+		formatString: #,0
+
+	measure 'Regions Below Total Median and Above Fast Median' = VAR tm = [Regional Median - Charging Points per 1,000 BEVs] VAR fm = [Regional Median - Fast Charging Points per 1,000 BEVs] RETURN COUNTROWS ( FILTER ( CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ), CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_charging_points_per_1000_bevs] ) ) < tm && CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_fast_charging_points_per_1000_bevs] ) ) >= fm ) )
+		formatString: #,0
+
+	measure 'Regions Below Total Median and Below Fast Median' = VAR tm = [Regional Median - Charging Points per 1,000 BEVs] VAR fm = [Regional Median - Fast Charging Points per 1,000 BEVs] RETURN COUNTROWS ( FILTER ( CALCULATETABLE ( VALUES ( 'Analysis Region'[analysis_region_sk] ), REMOVEFILTERS ( 'Analysis Region' ) ), CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_charging_points_per_1000_bevs] ) ) < tm && CALCULATE ( MAX ( 'Regional KPI'[in_service_registered_fast_charging_points_per_1000_bevs] ) ) < fm ) )
+		formatString: #,0
+
+	measure 'Top 100 BEV Regions Below Both Medians' = VAR tm = [Regional Median - Charging Points per 1,000 BEVs] VAR fm = [Regional Median - Fast Charging Points per 1,000 BEVs] VAR top100 = TOPN ( 100, CALCULATETABLE ( 'Regional KPI', REMOVEFILTERS ( 'Analysis Region' ) ), 'Regional KPI'[registered_bev_passenger_car_stock], DESC, 'Regional KPI'[analysis_region_sk], ASC ) RETURN COUNTROWS ( FILTER ( top100, 'Regional KPI'[in_service_registered_charging_points_per_1000_bevs] < tm && 'Regional KPI'[in_service_registered_fast_charging_points_per_1000_bevs] < fm ) )
+		formatString: #,0
+
+	measure 'Top 100 Below Both Display' = FORMAT ( [Top 100 BEV Regions Below Both Medians], "0" ) & " of 100"
+
+	measure 'Screening Signal' = VAR totalDelta = [Charging Points vs Regional Median] VAR fastDelta = [Fast Charging Points vs Regional Median] RETURN SWITCH ( TRUE (), ISBLANK ( totalDelta ) || ISBLANK ( fastDelta ), BLANK (), totalDelta < 0 && fastDelta < 0, "Below both medians", totalDelta < 0, "Below total median", fastDelta < 0, "Below fast median", "Above both medians" )
+
+	measure 'Selected Region' = SELECTEDVALUE ( 'Analysis Region'[Region], "Select one analysis region" )
+
+	measure 'Selected Registered BEVs' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), [Registered BEVs] )
+		formatString: #,0
+
+	measure 'Selected Registered BEVs Display' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), SUBSTITUTE ( FORMAT ( [Registered BEVs], "#,0" ), ".", "," ) )
+
+	measure 'Selected Total Points per 1,000 BEVs' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), [Charging Points per 1,000 BEVs] )
+		formatString: #,0.00
+
+	measure 'Selected Fast Points per 1,000 BEVs' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), [Fast Charging Points per 1,000 BEVs] )
+		formatString: #,0.00
+
+	measure 'BEV Stock Rank' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), RANKX ( ALL ( 'Analysis Region'[analysis_region_sk], 'Analysis Region'[Region] ), CALCULATE ( [Registered BEVs] ), , DESC, DENSE ) )
+		formatString: #,0
+
+	measure 'BEV Stock Rank Support' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), "BEV stock rank: " & FORMAT ( [BEV Stock Rank], "0" ) & " of 400" )
+
+	measure 'Total Provision Support' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), FORMAT ( ABS ( [Charging Points % vs Regional Median] ), "0.0%" ) & " " & IF ( [Charging Points % vs Regional Median] < 0, "below", "above" ) & " regional median" )
+
+	measure 'Fast Provision Support' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), FORMAT ( ABS ( [Fast Charging Points % vs Regional Median] ), "0.0%" ) & " " & IF ( [Fast Charging Points % vs Regional Median] < 0, "below", "above" ) & " regional median" )
+
+	measure 'Dynamic Region Summary' = VAR r = [Selected Region] VAR rk = [BEV Stock Rank] VAR suffix = SWITCH ( TRUE (), MOD ( rk, 100 ) IN { 11, 12, 13 }, "th", MOD ( rk, 10 ) = 1, "st", MOD ( rk, 10 ) = 2, "nd", MOD ( rk, 10 ) = 3, "rd", "th" ) VAR totalDelta = [Charging Points vs Regional Median] VAR fastDelta = [Fast Charging Points vs Regional Median] VAR positionText = SWITCH ( TRUE (), totalDelta < 0 && fastDelta < 0, "below the regional median on both total and fast charging provision", totalDelta < 0, "below the regional median on total charging provision", fastDelta < 0, "below the regional median on fast charging provision", "above the regional median on both total and fast charging provision" ) RETURN IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), r & " ranks " & FORMAT ( rk, "0" ) & suffix & " by registered BEV stock and is " & positionText & ".", "Select one region to view its profile." )
+
+	measure 'Infrastructure Detail' = IF ( HASONEVALUE ( 'Analysis Region'[analysis_region_sk] ), FORMAT ( [In-Service Charging Facilities], "#,0" ) & " facilities  |  " & FORMAT ( [In-Service Normal Charging Points], "#,0" ) & " normal  |  " & FORMAT ( [In-Service Fast Charging Points], "#,0" ) & " fast  |  " & FORMAT ( DIVIDE ( [Registered Nominal Power of In-Service Charging Facilities], 1000 ), "0.00" ) & "K kW" )
+
+	measure 'Region Profile Title' = "Region Profile: " & [Selected Region]
+
+	measure 'Dataset Publication State' = SELECTEDVALUE ( Dataset[publication_state], "No published dataset selected" )
+
+	measure 'Gold DQ Status' = VAR f = SELECTEDVALUE ( Dataset[failed_dq_checks] ) VAR p = SELECTEDVALUE ( Dataset[passed_dq_checks] ) RETURN IF ( NOT ISBLANK ( f ), FORMAT ( p, "#,0" ) & " passed / " & FORMAT ( f, "#,0" ) & " failed" )
+
+	measure 'Source Date Disclosure' = VAR k = SELECTEDVALUE ( Dataset[kba_reference_date] ) VAR b = SELECTEDVALUE ( Dataset[bnetza_reference_date] ) VAR d = SELECTEDVALUE ( Dataset[destatis_reference_date] ) VAR l = SELECTEDVALUE ( Dataset[kba_to_bnetza_lag_days] ) RETURN "KBA " & FORMAT ( k, "dd MMM yyyy" ) & "  |  BNetzA " & FORMAT ( b, "dd MMM yyyy" ) & "  |  Destatis " & FORMAT ( d, "dd MMM yyyy" ) & "  |  KBA to BNetzA lag: " & FORMAT ( l, "0" ) & " days"
+
+	column date_set_id
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: date_set_id
+
+	column analysis_region_sk
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: analysis_region_sk
+
+	column analysis_region_code
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: analysis_region_code
+
+	column analysis_region_name
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: analysis_region_name
+
+	column registered_bev_passenger_car_stock
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: registered_bev_passenger_car_stock
+
+	column registered_passenger_car_stock
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: registered_passenger_car_stock
+
+	column bev_penetration_percent
+		dataType: double
+		formatString: 0.00\%
+		summarizeBy: none
+		sourceColumn: bev_penetration_percent
+
+	column in_service_registered_charging_facilities
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: in_service_registered_charging_facilities
+
+	column in_service_registered_charging_points
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: in_service_registered_charging_points
+
+	column in_service_registered_normal_charging_points
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: in_service_registered_normal_charging_points
+
+	column in_service_registered_fast_charging_points
+		dataType: int64
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: in_service_registered_fast_charging_points
+
+	column in_service_registered_unclassified_charging_points
+		dataType: int64
+		isHidden
+		formatString: #,0
+		summarizeBy: none
+		sourceColumn: in_service_registered_unclassified_charging_points
+
+	column in_service_registered_facility_nominal_power_kw
+		dataType: double
+		formatString: #,0.0 \"kW\"
+		summarizeBy: none
+		sourceColumn: in_service_registered_facility_nominal_power_kw
+
+	column in_service_registered_charging_points_per_1000_bevs
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: in_service_registered_charging_points_per_1000_bevs
+
+	column in_service_registered_fast_charging_points_per_1000_bevs
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: in_service_registered_fast_charging_points_per_1000_bevs
+
+	column in_service_registered_charging_facilities_per_1000_bevs
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: in_service_registered_charging_facilities_per_1000_bevs
+
+	column in_service_registered_facility_nominal_power_kw_per_1000_bevs
+		dataType: double
+		formatString: #,0.00
+		summarizeBy: none
+		sourceColumn: in_service_registered_facility_nominal_power_kw_per_1000_bevs
+
+	column bev_denominator_quality_reason
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: bev_denominator_quality_reason
+
+	column kpi_12_unit
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: kpi_12_unit
+
+	column quality_status
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: quality_status
+
+	column kba_reference_date
+		dataType: dateTime
+		isHidden
+		formatString: dd MMM yyyy
+		summarizeBy: none
+		sourceColumn: kba_reference_date
+
+	column bnetza_reference_date
+		dataType: dateTime
+		isHidden
+		formatString: dd MMM yyyy
+		summarizeBy: none
+		sourceColumn: bnetza_reference_date
+
+	column destatis_reference_date
+		dataType: dateTime
+		isHidden
+		formatString: dd MMM yyyy
+		summarizeBy: none
+		sourceColumn: destatis_reference_date
+
+	column kba_to_bnetza_lag_days
+		dataType: int64
+		isHidden
+		formatString: 0
+		summarizeBy: none
+		sourceColumn: kba_to_bnetza_lag_days
+
+	column publication_state
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: publication_state
+
+	column date_set_label
+		dataType: string
+		isHidden
+		summarizeBy: none
+		sourceColumn: date_set_label
+
+	partition 'Regional KPI' = m
+		mode: import
+		source =
+				let
+				    Source = DatabricksMultiCloud.Catalogs("DATABRICKS_SERVER_HOSTNAME", "/sql/1.0/warehouses/DATABRICKS_SQL_WAREHOUSE_ID", [Catalog = null, Database = null, EnableAutomaticProxyDiscovery = null, Implementation = "2.0"]),
+				    Catalog = Source{[Name = "DATABRICKS_CATALOG", Kind = "Database"]}[Data],
+				    Gold = Catalog{[Name = "gold", Kind = "Schema"]}[Data],
+				    PublishedView = Gold{[Name = "vw_powerbi_region_kpi_published", Kind = "View"]}[Data],
+				    SelectedColumns = Table.SelectColumns(PublishedView,{"date_set_id","analysis_region_sk","analysis_region_code","analysis_region_name","registered_bev_passenger_car_stock","registered_passenger_car_stock","bev_penetration_percent","in_service_registered_charging_facilities","in_service_registered_charging_points","in_service_registered_normal_charging_points","in_service_registered_fast_charging_points","in_service_registered_unclassified_charging_points","in_service_registered_facility_nominal_power_kw","in_service_registered_charging_points_per_1000_bevs","in_service_registered_fast_charging_points_per_1000_bevs","in_service_registered_charging_facilities_per_1000_bevs","in_service_registered_facility_nominal_power_kw_per_1000_bevs","bev_denominator_quality_reason","kpi_12_unit","quality_status","kba_reference_date","bnetza_reference_date","destatis_reference_date","kba_to_bnetza_lag_days","publication_state","date_set_label"})
+				in
+				    SelectedColumns
+
+	annotation PBI_ResultType = Table

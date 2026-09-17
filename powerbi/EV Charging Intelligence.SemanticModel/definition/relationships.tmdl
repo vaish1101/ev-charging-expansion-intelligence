@@ -1,0 +1,7 @@
+relationship 20e9ba9a-6bbb-4b74-939f-2d138c256c7a
+	fromColumn: 'Regional KPI'.analysis_region_sk
+	toColumn: 'Analysis Region'.analysis_region_sk
+
+relationship 1d8cc840-b2aa-43cc-85fb-4704cc495143
+	fromColumn: 'Regional KPI'.date_set_id
+	toColumn: Dataset.date_set_id
