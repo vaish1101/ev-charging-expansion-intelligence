@@ -1,0 +1,57 @@
+name: Portfolio validation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-safe-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install test dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run public test suite
+        run: pytest -q
+
+      - name: Validate JSON and Python syntax
+        run: |
+          python scripts/prepare_bundle.py --catalog ci_ev_analytics --skip-source-check
+          python -m json.tool .bundle_artifacts/ev_charging_intelligence.lvdash.json >/dev/null
+          python -m compileall -q src scripts databricks/notebooks tests
+
+      - name: Validate public links, evidence and identifiers
+        run: |
+          python scripts/validate_public_release.py
+          python scripts/validate_release_structure.py
+
+      - name: Reject committed raw snapshots and credentials
+        run: |
+          if git ls-files 'data/raw/*.csv' 'data/raw/*.xlsx' 'data/raw/**/*.csv' 'data/raw/**/*.xlsx' | grep -q .; then
+            echo "Raw provider snapshots must not be committed."
+            exit 1
+          fi
+          if git grep -nEi '(dapi[a-z0-9]{20,}|client_secret[[:space:]]*[:=]|access_token[[:space:]]*[:=]|refresh_token[[:space:]]*[:=])'; then
+            echo "Potential credential material found."
+            exit 1
+          fi
+          if find powerbi -type d -name '.pbi' -o -type f \( -name 'cache.abf' -o -name 'localSettings.json' -o -name 'editorSettings.json' \) | grep -q .; then
+            echo "Temporary Power BI Desktop state must not be committed."
+            exit 1
+          fi
+
+  exact-source-contract-gate:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Enable only in a controlled runner supplied with the three approved immutable source revisions; never weaken their checksum contracts."
