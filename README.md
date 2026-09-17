@@ -1,6 +1,5 @@
 # EV Charging Expansion Intelligence
 
-## One sentence value proposition
 
 Identifies German regions where registered public charging provision is comparatively low relative to registered battery electric vehicle adoption, using official KBA, BNetzA and Destatis data.
 
