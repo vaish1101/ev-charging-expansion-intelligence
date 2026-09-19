@@ -3,37 +3,22 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATE_SET_ID = "ds_4d740680cd09d152a4b4b3d148b91a6cdd0e7157f2b152089f553c8a554ce17d"
-
-
 def load_json(relative_path: str) -> dict:
     return json.loads((ROOT / relative_path).read_text(encoding="utf-8"))
 
 
-def test_phase3_evidence_is_bound_to_published_gold() -> None:
-    evidence = load_json("evidence/analysis_evidence.json")
-    assert evidence["date_set_id"] == DATE_SET_ID
-    assert evidence["source"]["publication_state"] == "published"
-    assert evidence["source"]["power_bi_refresh_ready"] is True
-    assert evidence["source"]["published_rows"] == 400
-    assert evidence["national_controls"] == {
-        "analysis_regions": 400,
-        "registered_bevs": 2362218,
-        "registered_passenger_cars": 49644855,
-        "in_service_charging_facilities": 116423,
-        "in_service_charging_points": 209098,
-        "in_service_normal_charging_points": 154702,
-        "in_service_fast_charging_points": 54396,
-        "in_service_registered_facility_nominal_power_kw": "9086313.500",
-    }
-    assert evidence["quality"]["gold_dq_failed"] == 0
-    assert evidence["quality"]["regional_reconciliation_passed"] == 400
+def test_public_analysis_summary_matches_final_controls() -> None:
+    summary = load_json("evidence/analysis_summary.json")
+    assert summary["project_status"] == "complete"
+    assert summary["analysis_regions"] == 400
+    assert summary["registered_bevs"] == 2362218
+    assert summary["in_service_charging_points"] == 209098
+    assert summary["top_100_bev_markets_below_both_provision_medians"] == 53
+    assert summary["gold_blocking_checks"] == {"passed": 73, "failed": 0}
+    assert summary["dashboard_pages"] == {"databricks": 2, "power_bi": 2}
 
 
 def test_final_pbip_source_is_present_without_pbix_claim() -> None:
-    evidence = load_json("evidence/analysis_evidence.json")
-    assert evidence["connection"]["databricks_sql_result"] == "PASS"
-    assert evidence["artifact_status"]["pbix_created"] is False
     assert (ROOT / "powerbi/EV Charging Intelligence.pbip").is_file()
     assert (ROOT / "powerbi/EV Charging Intelligence.Report").is_dir()
     assert (ROOT / "powerbi/EV Charging Intelligence.SemanticModel").is_dir()
@@ -187,13 +172,13 @@ def test_report_spec_has_drillthrough_methodology_and_writing_contract() -> None
     assert "Power BI" in standard
 
 
-def test_analysis_contains_supported_insights_and_recommendations() -> None:
-    evidence = load_json("evidence/analysis_evidence.json")
-    assert 5 <= len(evidence["insights"]) <= 8
-    assert len(evidence["recommendations"]) >= 3
-    assert evidence["pattern_summary"]["highest_bev_quartile_below_both_medians"] == 53
-    assert evidence["pattern_summary"]["above_median_total_below_median_fast"] == 55
-    assert all(item["caveat"] for item in evidence["insights"])
+def test_analysis_summary_keeps_screening_scope_explicit() -> None:
+    summary = load_json("evidence/analysis_summary.json")
+    assert summary["governed_reporting_layer"] == (
+        "Both dashboards use the same published Gold KPI layer."
+    )
+    assert "Screening evidence only" in summary["interpretation"]
+    assert "does not make investment recommendations" in summary["interpretation"]
 
 
 def test_theme_and_sql_request_files_are_valid_json() -> None:
@@ -269,12 +254,7 @@ def test_final_pbip_is_public_safe_and_cache_free() -> None:
     assert windows_user_prefix not in combined
 
 
-def test_only_final_clean_power_bi_screenshots_are_public() -> None:
-    screenshots = sorted(
-        path.relative_to(ROOT).as_posix()
-        for path in (ROOT / "powerbi").rglob("*.png")
-    )
-    assert screenshots == [
-        "powerbi/screenshots-final-clean/executive-regional-screening.png",
-        "powerbi/screenshots-final-clean/region-profile.png",
-    ]
+def test_power_bi_screenshots_have_one_canonical_public_location() -> None:
+    assert not list((ROOT / "powerbi").rglob("*.png"))
+    assert (ROOT / "dashboards/powerbi/executive-regional-screening.png").is_file()
+    assert (ROOT / "dashboards/powerbi/region-profile.png").is_file()

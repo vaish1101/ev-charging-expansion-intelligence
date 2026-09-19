@@ -7,7 +7,6 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 DASHBOARD = ROOT / "databricks/dashboards/ev_charging_intelligence.template.lvdash.json"
-LABEL_AUDIT = ROOT / "evidence/geography_display_label_audit.json"
 def load_dashboard() -> dict:
     return json.loads(DASHBOARD.read_text(encoding="utf-8"))
 
@@ -281,18 +280,26 @@ def test_region_profile_has_story_headlines_comparison_context_and_scope() -> No
 
 
 def test_all_region_display_labels_are_governed_unique_and_complete() -> None:
-    audit = json.loads(LABEL_AUDIT.read_text(encoding="utf-8"))
-    assert audit["analysis_region_rows"] == 400
-    assert audit["label_rows"] == 400
-    assert audit["unique_region_codes"] == 400
-    assert audit["unique_display_labels"] == 400
-    assert audit["null_or_blank_labels"] == 0
-    assert audit["representative_labels"]["09162"] == "München, Stadt"
-    assert audit["representative_labels"]["09184"] == "München, Landkreis"
-    assert audit["representative_labels"]["05378"] == "Rheinisch-Bergischer Kreis"
-    dashboard_text = DASHBOARD.read_text(encoding="utf-8")
-    assert dashboard_text.count("display_labels(analysis_region_code, analysis_region_display_name)") == 4
-    assert "INITCAP(REGEXP_REPLACE(analysis_region_name" not in dashboard_text
+    dashboard = load_dashboard()
+    query_texts = ["".join(dataset["queryLines"]) for dataset in dashboard["datasets"]]
+    mappings = []
+    for query in query_texts:
+        if "display_labels(analysis_region_code, analysis_region_display_name)" not in query:
+            continue
+        values = query.split(" AS (VALUES ", 1)[1].split("),\nbase AS", 1)[0]
+        pairs = re.findall(r"\('(\d{5})', '((?:''|[^'])*)'\)", values)
+        mapping = {code: label.replace("''", "'") for code, label in pairs}
+        assert len(pairs) == 400
+        assert len(mapping) == 400
+        assert len(set(mapping.values())) == 400
+        assert all(label.strip() for label in mapping.values())
+        assert mapping["09162"] == "München, Stadt"
+        assert mapping["09184"] == "München, Landkreis"
+        assert mapping["05378"] == "Rheinisch-Bergischer Kreis"
+        mappings.append(mapping)
+    assert len(mappings) == 4
+    assert all(mapping == mappings[0] for mapping in mappings[1:])
+    assert "INITCAP(REGEXP_REPLACE(analysis_region_name" not in "\n".join(query_texts)
 
 
 def test_market_scatter_focus_mix_delta_headers_and_freshness() -> None:

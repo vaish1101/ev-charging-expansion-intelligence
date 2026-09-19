@@ -34,3 +34,7 @@ The release uses blocking checks rather than warning-only validation. A Gold can
 Twenty facilities with `Status = 'In Wartung'` remain in lineage but are excluded from operational KPIs. They account for 38 registered charging points and 484.000 kW in the approved source snapshot.
 
 Controlled schema and checksum failures were rejected before publication, and the prior published Gold values remained unchanged. The machine-readable evidence is in [`../evidence/`](../evidence/).
+
+## Geography display labels
+
+The final dashboard mapping contains 400 analysis-region rows, 400 unique region codes and 400 unique nonblank display labels. Representative governed labels include `München, Stadt`, `München, Landkreis`, `Rheinisch-Bergischer Kreis`, `Hanau, Stadt` and `Trier-Saarburg (incl. Trier, Stadt)`. Automated tests validate the complete mapping embedded in the source-controlled dashboard definition.

@@ -1,6 +1,6 @@
 # Dashboard Visual Design, Writing and Labeling Standard
 
-This standard applies to the two-page Databricks AI/BI dashboard and the two-page Power BI report blueprint. It governs presentation only. It must not change Gold calculations, business keys, source values or analytical grain.
+This standard applies to the final two-page Databricks AI/BI dashboard and two-page Power BI report. It governs presentation only. It does not change Gold calculations, business keys, source values or analytical grain.
 
 ## Visual design and theme
 

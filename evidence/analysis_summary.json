@@ -1,0 +1,18 @@
+{
+  "project_status": "complete",
+  "analysis_scope": "Regional screening of registered public charging provision relative to registered BEV stock",
+  "analysis_regions": 400,
+  "registered_bevs": 2362218,
+  "in_service_charging_points": 209098,
+  "top_100_bev_markets_below_both_provision_medians": 53,
+  "gold_blocking_checks": {
+    "passed": 73,
+    "failed": 0
+  },
+  "dashboard_pages": {
+    "databricks": 2,
+    "power_bi": 2
+  },
+  "governed_reporting_layer": "Both dashboards use the same published Gold KPI layer.",
+  "interpretation": "Screening evidence only. The project does not make investment recommendations."
+}

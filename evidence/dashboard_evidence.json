@@ -1,114 +1,67 @@
 {
   "validated_at": "2026-09-15",
+  "status": "complete",
   "dashboard": {
     "display_name": "EV Charging Expansion Intelligence",
-    "lifecycle_state": "ACTIVE",
     "published": true,
-    "draft_update_time": "2026-09-15T17:48:34.960Z",
-    "published_revision_created_at": "2026-09-15T17:48:45.805Z",
-    "embed_credentials": false,
-    "dataset_catalog": "ev_analytics",
-    "dataset_schema": "gold",
-    "published_url": "[workspace URL omitted]",
-    "source_control_path": "databricks/dashboards/ev_charging_intelligence.lvdash.json"
+    "source_control_path": "databricks/dashboards/ev_charging_intelligence.template.lvdash.json",
+    "pages": [
+      "Germany Market & Provision Screening",
+      "Region Profile"
+    ]
   },
-  "pages": [
-    "Germany Market & Provision Screening",
-    "Region Profile"
-  ],
   "source_policy": {
     "published_gold_only": true,
     "regional_view": "ev_analytics.gold.vw_powerbi_region_kpi_published",
     "quality_view": "ev_analytics.gold.vw_powerbi_date_set_quality",
-    "regional_view_qualified_references": 6,
-    "quality_view_qualified_references": 6,
     "unqualified_serving_view_references": 0,
-    "bronze_or_silver_queries": false,
-    "map_included": false,
-    "composite_score_included": false
+    "bronze_or_silver_queries": false
   },
-  "post_redesign_dataset_queries": [
-    {
-      "dataset": "ds_region",
-      "state": "SUCCEEDED",
-      "row_count": 400
-    },
-    {
-      "dataset": "ds_national",
-      "state": "SUCCEEDED",
-      "row_count": 1
-    },
-    {
-      "dataset": "ds_profile_compare",
-      "state": "SUCCEEDED",
-      "row_count": 1200
-    },
-    {
-      "dataset": "ds_quality",
-      "state": "SUCCEEDED",
-      "row_count": 1
-    },
-    {
-      "dataset": "ds_profile_region",
-      "state": "SUCCEEDED",
-      "row_count": 1,
-      "parameter": "München, Stadt"
-    },
-    {
-      "dataset": "ds_profile_compare_parameterized",
-      "state": "SUCCEEDED",
-      "row_count": 3,
-      "parameter": "München, Stadt"
-    }
-  ],
+  "dataset_validation": {
+    "regional_rows": 400,
+    "national_rows": 1,
+    "profile_comparison_rows": 1200,
+    "quality_rows": 1,
+    "default_region": "München, Stadt",
+    "default_region_rows": 1,
+    "default_region_comparison_rows": 3,
+    "result": "PASS"
+  },
   "national_reconciliation": {
     "analysis_regions": 400,
     "registered_bevs": 2362218,
     "registered_passenger_cars": 49644855,
-    "national_bev_penetration_percent": "4.7582",
     "in_service_points": 209098,
     "in_service_normal_points": 154702,
     "in_service_fast_points": 54396,
     "median_points_per_1000_bevs": "84.6839",
     "median_fast_points_per_1000_bevs": "25.2989",
-    "high_bev_below_both": 53,
+    "top_100_bev_markets_below_both_medians": 53,
     "result": "PASS"
   },
-  "presentation_contract": {
-    "standard": "docs/implementation/DASHBOARD_DESIGN_STANDARD.md",
-    "theme": "dark teal canvas and panels / teal primary focus / magenta screening attention / slate benchmark and background / off-white text",
+  "presentation_validation": {
     "visible_page_count": 2,
-    "hero_scatter_count": 1,
-    "scatter_focus": "All 400 regions retained; Top 100 BEV markets receive role-based focus colors",
-    "national_point_mix": "100% composition bar with exact counts in the subtitle",
-    "region_label_audit": "PASS / 400 codes / 400 unique nonblank display labels",
+    "region_label_audit": "PASS: 400 codes and 400 unique nonblank display labels",
     "visible_copy_em_dash_count": 0,
     "prohibited_marketing_phrase_count": 0,
     "result": "PASS"
   },
-  "rendered_visual_validation": {
+  "rendered_validation": {
     "status": "PASS",
-    "method": "Authenticated inspection of the final published revision in the Databricks workspace",
-    "passed": [
-      "Published title rendered as EV Charging Expansion Intelligence with no investment claim",
-      "Both pages rendered without an error banner or TABLE_OR_VIEW_NOT_FOUND",
-      "Page 1 rendered 2.36m BEVs, 209.1k public points, 54.4k fast points and the 53-of-100 screening signal",
-      "The market-scale scatter, point mix and paginated Regions to Investigate table rendered",
-      "Scatter legend rendered under the business title Screening group, with Top-100 attention/focus groups and muted all other regions",
-      "The table rendered Δ Total % and Δ Fast % headings plus governed German labels including München, Landkreis and Rhein-Neckar-Kreis",
-      "Page 1 rendered KBA, BNetzA and Destatis dates plus the 62-day demand-to-supply lag",
-      "Direct Region Profile access defaulted to München, Stadt and displayed exactly 62,153 BEVs",
-      "The BEV card rendered market rank 1 of 400 and the dynamic story used the same transparent rank",
-      "München total provision rendered as 58.95 per 1,000 and 30.4% below median",
-      "München fast provision rendered as 7.19 per 1,000 and 71.6% below median",
-      "The grouped selected-region-versus-median comparison and compact Infrastructure Details row rendered",
-      "The compact published-status line rendered Published, 73/73 checks passed, 400 regions, source dates and 62-day lag",
-      "Native drill-through from the Berlin screening-table row opened Region Profile filtered to Berlin",
-      "The drilled Berlin profile displayed 54,437 BEVs and a Berlin-specific screening sentence"
-    ],
-    "portfolio_capture_remaining": false,
-    "claim": "The existing dashboard was redesigned, republished in place and passed authenticated rendered and drill-through QA.",
-    "checklist": "docs/assets/dashboard/README.md"
+    "summary": "The final published dashboard rendered both pages, national controls, the screening visual, the regions table and the München region profile without data or binding errors.",
+    "region_profile": {
+      "registered_bevs": 62153,
+      "bev_stock_rank": "1 of 400",
+      "total_points_per_1000_bevs": "58.95",
+      "fast_points_per_1000_bevs": "7.19"
+    }
   },
-  "warehouse_state_after_validation": "STOPPED"
+  "public_references": {
+    "design": "docs/dashboard_design.md",
+    "architecture": "docs/architecture.md",
+    "methodology": "docs/methodology.md",
+    "data_quality": "docs/data_quality.md",
+    "databricks_assets": "dashboards/databricks/",
+    "power_bi_assets": "dashboards/powerbi/"
+  }
 }

@@ -12,8 +12,10 @@
 #   python scripts/prepare_bundle.py --catalog ev_analytics
 #   databricks bundle validate --profile <your-profile> \
 #     --var="warehouse_id=<warehouse-id>" --var="catalog=ev_analytics"
-#   databricks bundle deploy   --profile <your-profile>
-#   databricks bundle run ev_charging_pipeline --profile <your-profile>
+#   databricks bundle deploy --profile <your-profile> \
+#     --var="warehouse_id=<warehouse-id>" --var="catalog=ev_analytics"
+#   databricks bundle run ev_charging_pipeline --profile <your-profile> \
+#     --var="warehouse_id=<warehouse-id>" --var="catalog=ev_analytics"
 
 bundle:
   name: ev-charging-expansion-intelligence

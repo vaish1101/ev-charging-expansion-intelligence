@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -11,6 +12,23 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[1]
+INVENTORY = ROOT / "evidence/release/FILE_INVENTORY.sha256"
+EXCLUDED_DIRS = {
+    ".bundle_artifacts",
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    "__pycache__",
+}
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def validate_serialized_files() -> None:
@@ -56,8 +74,6 @@ def validate_media() -> None:
 
     video = (ROOT / "assets/demo/ev_charging_demo.mp4").read_bytes()[:32]
     assert b"ftyp" in video
-    thumbnail = ROOT / "assets/demo/ev_charging_demo_thumbnail.png"
-    assert thumbnail.read_bytes().startswith(b"\x89PNG\r\n\x1a\n")
 
 
 def validate_mermaid() -> None:
@@ -92,12 +108,29 @@ def validate_public_tree() -> None:
             assert allowed_data in path.resolve().parents
 
 
+def validate_checksum_inventory() -> None:
+    entries = {}
+    for line in INVENTORY.read_text(encoding="utf-8").splitlines():
+        expected, relative = line.split("  ", 1)
+        entries[relative] = expected
+    actual_files = {
+        path.relative_to(ROOT).as_posix(): path
+        for path in ROOT.rglob("*")
+        if path.is_file()
+        and path != INVENTORY
+        and not any(part in EXCLUDED_DIRS for part in path.relative_to(ROOT).parts)
+    }
+    assert set(entries) == set(actual_files)
+    assert all(sha256(actual_files[relative]) == expected for relative, expected in entries.items())
+
+
 def main() -> None:
     validate_serialized_files()
     validate_power_bi()
     validate_media()
     validate_mermaid()
     validate_public_tree()
+    validate_checksum_inventory()
     print("Release structure validation passed")
 
 

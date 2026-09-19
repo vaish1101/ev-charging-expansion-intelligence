@@ -21,9 +21,9 @@ The report is a screening tool. It does not estimate utilization, recommend site
 
 ## Final report images
 
-![Executive and Regional Screening](screenshots-final-clean/executive-regional-screening.png)
+![Executive and Regional Screening](../dashboards/powerbi/executive-regional-screening.png)
 
-![München Region Profile](screenshots-final-clean/region-profile.png)
+![München Region Profile](../dashboards/powerbi/region-profile.png)
 
 These clean exports contain no Power BI Desktop ribbon, filter pane, local path or account information. A two-page PDF is available at [`../dashboards/powerbi/power-bi-dashboard.pdf`](../dashboards/powerbi/power-bi-dashboard.pdf).
 
